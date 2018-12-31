@@ -2,8 +2,6 @@ class MyProfile extends HTMLElement {
   constructor() {
     super();
 
-    const shadowRoot = this.attachShadow({mode: 'open'});
-
     const profile = {
       name: 'Naoya Otsuka',
       mail: 'otknoy@gmail.com',
@@ -12,6 +10,7 @@ class MyProfile extends HTMLElement {
       facebook: 'naoya.otsuka.9'
     };
 
+    const shadowRoot = this.attachShadow({mode: 'open'});
     shadowRoot.innerHTML = this.template(profile);
   }
 
