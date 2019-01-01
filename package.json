@@ -1,10 +1,12 @@
 {
   "name": "otknoy.github.io",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "twitter-widgets": "^2.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files='**/*'"
+    "start": "webpack --watch -d & browser-sync start --server --files='**/*'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://otknoy.github.io",
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.3",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2"
   }
 }
