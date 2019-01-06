@@ -24,7 +24,7 @@ class TwitterTimeline extends HTMLElement {
       };
       const target = this.shadowRoot.getElementById('twitter-timeline');
       const options = {
-        height: 480,
+        height: 320,
       };
 
       twttr.widgets.createTimeline(dataSource, target, options);
