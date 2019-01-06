@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files='index.html,dist/*'",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "lint": "eslint ./src"
+
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "homepage": "https://otknoy.github.io",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "eslint": "^5.12.0",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.1.2"
   }
