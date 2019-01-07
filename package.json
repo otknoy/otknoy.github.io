@@ -9,7 +9,6 @@
     "start": "browser-sync start --server --files='index.html,dist/*'",
     "watch": "webpack --watch",
     "lint": "eslint ./src"
-
   },
   "repository": {
     "type": "git",
