@@ -2,21 +2,32 @@
   <head>
     <title>otknoy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+     header.page, footer.page {
+       background-color: red;
+     }
+    </style>
   </head>
   <body>
-    <header>
+    <header class="page">
       <h1>otknoy</h1>
     </header>
 
-    <twitter-timeline account="otknoy"></twitter-timeline>
+    <my-profile></my-profile>
 
-    <div>
-      <my-profile></my-profile>
-      <my-skill></my-skill>
-      <my-interest></my-interest>
-    </div>
+    <section class="page">
+      <h1>blog</h1>
 
-    <footer>
+      <article>
+        <header>
+          <h1>sample title</h1>
+        </header>
+
+        <p>sample text.</p>
+      </article>
+    </section>
+
+    <footer class="page">
       <p>(C) 1988-2019 Naoya Otsuka</p>
     </footer>
 

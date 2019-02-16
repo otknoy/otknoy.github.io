@@ -1,3 +1,5 @@
+import './skill_and_interest.js';
+
 class MyProfile extends HTMLElement {
   constructor() {
     super();
@@ -16,8 +18,8 @@ class MyProfile extends HTMLElement {
 
   template(profile) {
     return `
-<div>
-  <h2>Profile</h2>
+<section>
+  <h1>Profile</h1>
   <ul>
     <li>${profile.name}</li>
     <li>${profile.mail}</li>
@@ -25,7 +27,9 @@ class MyProfile extends HTMLElement {
     <li><a href="https://twitter.com/${profile.twitter}">Twitter</a></li>
     <li><a href="https://www.facebook.com/${profile.facebook}">Facebook</a></li>
   </ul>
-</div>
+
+  <my-skill-and-interest></my-skill-and-interest>
+</section>
 `;
   }
 }
