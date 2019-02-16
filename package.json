@@ -23,6 +23,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "eslint": "^5.12.1",
+    "jest": "^24.1.0",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
   }
