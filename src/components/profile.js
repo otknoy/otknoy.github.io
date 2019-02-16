@@ -1,8 +1,11 @@
+import './skill_and_interest.js';
+
 class MyProfile extends HTMLElement {
   constructor() {
     super();
 
     const profile = {
+      icon: "https://pbs.twimg.com/profile_images/538376795251146753/aNwx731b_400x400.png",
       name: 'Naoya Otsuka',
       mail: 'otknoy@gmail.com',
       github: 'otknoy',
@@ -16,16 +19,28 @@ class MyProfile extends HTMLElement {
 
   template(profile) {
     return `
-<div>
-  <h2>Profile</h2>
+<section>
+  <h1>Profile</h1>
+
+  <img src="${profile.icon}" width="64px">
+
   <ul>
     <li>${profile.name}</li>
     <li>${profile.mail}</li>
-    <li><a href="https://github.com/${profile.github}">GitHub</a></li>
-    <li><a href="https://twitter.com/${profile.twitter}">Twitter</a></li>
-    <li><a href="https://www.facebook.com/${profile.facebook}">Facebook</a></li>
   </ul>
-</div>
+
+  <div>
+    <a href="https://github.com/${profile.github}">GitHub</a>
+    <a href="https://twitter.com/${profile.twitter}">
+     <img
+       src="./img/Twitter_Social_Icon_Rounded_Square_Color.svg"
+       width="16px">
+    </a>
+    <a href="https://www.facebook.com/${profile.facebook}">Facebook</a>
+  </div>
+
+  <my-skill-and-interest></my-skill-and-interest>
+</section>
 `;
   }
 }
