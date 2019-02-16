@@ -5,6 +5,7 @@ class MyProfile extends HTMLElement {
     super();
 
     const profile = {
+      icon: "https://pbs.twimg.com/profile_images/538376795251146753/aNwx731b_400x400.png",
       name: 'Naoya Otsuka',
       mail: 'otknoy@gmail.com',
       github: 'otknoy',
@@ -20,6 +21,8 @@ class MyProfile extends HTMLElement {
     return `
 <section>
   <h1>Profile</h1>
+
+  <img src="${profile.icon}" width="64px">
 
   <ul>
     <li>${profile.name}</li>
