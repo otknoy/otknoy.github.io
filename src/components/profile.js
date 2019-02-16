@@ -20,11 +20,19 @@ class MyProfile extends HTMLElement {
     return `
 <section>
   <h1>Profile</h1>
+
   <ul>
     <li>${profile.name}</li>
     <li>${profile.mail}</li>
     <li><a href="https://github.com/${profile.github}">GitHub</a></li>
-    <li><a href="https://twitter.com/${profile.twitter}">Twitter</a></li>
+    <li>
+      <a href="https://twitter.com/${profile.twitter}">
+       <img
+         src="./img/Twitter_Social_Icon_Rounded_Square_Color.svg"
+         width="16px"
+       >
+      </a>
+    </li>
     <li><a href="https://www.facebook.com/${profile.facebook}">Facebook</a></li>
   </ul>
 
