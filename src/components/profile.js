@@ -1,4 +1,5 @@
 import './skill_and_interest.js';
+import './twitter-link.js';
 
 class MyProfile extends HTMLElement {
   constructor() {
@@ -9,7 +10,6 @@ class MyProfile extends HTMLElement {
       name: 'Naoya Otsuka',
       mail: 'otknoy@gmail.com',
       github: 'otknoy',
-      twitter: 'otknoy',
       facebook: 'naoya.otsuka.9'
     };
 
@@ -31,11 +31,7 @@ class MyProfile extends HTMLElement {
 
   <div>
     <a href="https://github.com/${profile.github}">GitHub</a>
-    <a href="https://twitter.com/${profile.twitter}">
-     <img
-       src="./img/Twitter_Social_Icon_Rounded_Square_Color.svg"
-       width="16px">
-    </a>
+    <twitter-link account="otknoy"></twitter-link>
     <a href="https://www.facebook.com/${profile.facebook}">Facebook</a>
   </div>
 
