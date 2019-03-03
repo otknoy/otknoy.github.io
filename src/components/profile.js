@@ -10,6 +10,7 @@ class MyProfile extends HTMLElement {
       name: 'Naoya Otsuka',
       mail: 'otknoy@gmail.com',
       github: 'otknoy',
+      twitter: 'otknoy',
       facebook: 'naoya.otsuka.9'
     };
 
@@ -57,7 +58,7 @@ h1 {
       <li>
         <div>
           <a href="https://github.com/${profile.github}">GitHub</a>
-          <twitter-link account="otknoy"></twitter-link>
+          <twitter-link account="${profile.twitter}"></twitter-link>
           <a href="https://www.facebook.com/${profile.facebook}">Facebook</a>
         </div>
       </li>
