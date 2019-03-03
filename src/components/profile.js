@@ -17,9 +17,8 @@ class MyProfile extends HTMLElement {
     shadowRoot.innerHTML = this.template(profile);
   }
 
-  template(profile) {
+  css() {
     return `
-<style>
 section {
   padding: 12px;
 }
@@ -38,6 +37,13 @@ img {
 h1 {
   margin: 0px;
 }
+`;
+  }
+
+  template(profile) {
+    return `
+<style>
+  ${this.css()}
 </style>
 <section>
   <h1>Profile</h1>
