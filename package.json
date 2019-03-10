@@ -18,6 +18,6 @@
   "homepage": "https://otknoy.github.io",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "eslint": "^5.12.1"
+    "eslint": "^5.15.1"
   }
 }
