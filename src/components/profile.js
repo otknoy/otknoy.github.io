@@ -1,4 +1,5 @@
-import './skill_and_interest.js';
+import './skill.js';
+import './interest.js';
 import './twitter-link.js';
 
 class MyProfile extends HTMLElement {
@@ -66,6 +67,8 @@ h1 {
   </div>
 
   <my-skill-and-interest></my-skill-and-interest>
+  <my-skill></my-skill>
+  <my-interest></my-interest>
 </section>
 `;
   }
