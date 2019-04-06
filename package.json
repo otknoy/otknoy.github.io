@@ -5,6 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "lint": "eslint ./src",
+    "deploy": "gh-pages -b master -d . -s index.html -a dist/bundle.js",
     "watch:build": "webpack -w",
     "watch:server": "browser-sync start --server --files='index.html,dist/**/*'"
   },
@@ -21,6 +22,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "eslint": "^5.15.1",
+    "gh-pages": "^2.0.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }

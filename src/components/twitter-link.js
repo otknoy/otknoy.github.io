@@ -12,7 +12,7 @@ class TwitterLink extends HTMLElement {
     return `
 <a href="https://twitter.com/${account}">
   <img
-   src="./img/Twitter_Social_Icon_Rounded_Square_Color.svg"
+   src="./static/img/Twitter_Social_Icon_Rounded_Square_Color.svg"
    width="16px">
 </a>
 `;
