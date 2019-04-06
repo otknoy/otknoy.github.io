@@ -1,15 +1,20 @@
+import { html, render } from 'lit-html';
+
 class MyArticles extends HTMLElement {
   constructor() {
     super();
 
-    const shadowRoot = this.attachShadow({mode: 'open'});
-    shadowRoot.innerHTML = this.template();
+    // render(this.html(), this.attachShadow({mode: 'open'});
+
+    // const shadowRoot = this.attachShadow({mode: 'open'});
+    // shadowRoot.innerHTML = this.templante();
+    render(this.template(), this.attachShadow({mode: 'open'}));
   }
 
   template() {
-    return `
+    return html`
 <section>
-  <h1>blog</h1>
+  <h1>Articles</h1>
 
   <article>
     <header>

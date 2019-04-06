@@ -1,6 +1,5 @@
 import './skill.js';
 import './interest.js';
-import './twitter-link.js';
 
 class MyProfile extends HTMLElement {
   constructor() {
@@ -59,7 +58,7 @@ h1 {
       <li>
         <div>
           <a href="https://github.com/${profile.github}">GitHub</a>
-          <twitter-link account="${profile.twitter}"></twitter-link>
+          <a href="https://twitter.com/${profile.twitter}">Twitter</a>
           <a href="https://www.facebook.com/${profile.facebook}">Facebook</a>
         </div>
       </li>
