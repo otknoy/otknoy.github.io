@@ -2,12 +2,11 @@
   "name": "otknoy.github.io",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch -d & browser-sync start --server --files='index.html,dist/**/*'",
     "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src",
-    "deploy": "npm run build && gh-pages -b master -d . -a index.html -a dist/bundle.js",
-    "watch:build": "webpack -w",
-    "watch:server": "browser-sync start --server --files='index.html,dist/**/*'"
+    "deploy": "npm run build && gh-pages -b master -d . -a index.html -a dist/bundle.js"
   },
   "repository": {
     "type": "git",
