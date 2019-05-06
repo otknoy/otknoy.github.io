@@ -1,3 +1,5 @@
+import '../atoms/title.js';
+
 class Interest extends HTMLElement {
   constructor() {
     super();
@@ -16,7 +18,7 @@ class Interest extends HTMLElement {
   render(interests) {
     return `
 <section>
-  <h1>Interest</h1>
+  <x-title size="medium">Interest</x-title>
 
   <ul>
     ${interests.map(e => `<li>${e}</li>`).join('')}

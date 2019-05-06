@@ -1,3 +1,5 @@
+import '../atoms/title.js';
+
 class Skill extends HTMLElement {
   constructor() {
     super();
@@ -16,7 +18,7 @@ class Skill extends HTMLElement {
   render(skills) {
     return `
 <section>
-  <h1>Skill</h1>
+  <x-title size="medium">Skill</x-title>
 
   <ul>
     ${skills.map(e => `<li>${e}</li>`).join('')}
