@@ -1,6 +1,8 @@
 import './skill.js';
 import './interest.js';
 
+import '../atoms/title.js'
+
 class MyProfile extends HTMLElement {
   constructor() {
     super();
@@ -21,7 +23,7 @@ class MyProfile extends HTMLElement {
   css() {
     return `
 section {
-  padding: 12px;
+  padding: 8px;
 }
 
 .profile {
@@ -47,7 +49,7 @@ h1 {
   ${this.css()}
 </style>
 <section>
-  <h1>Profile</h1>
+  <medium-title>Profile</medium-title>
 
   <div class="profile">
     <img src="${profile.icon}">
