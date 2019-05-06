@@ -1,5 +1,3 @@
-import { html, render } from 'lit-html';
-
 import '../atoms/title.js';
 import '../atoms/text.js';
 
@@ -11,11 +9,11 @@ class Article extends HTMLElement {
     const text = this.getAttribute('text');
 
     this.attachShadow({mode: 'open'});
-    render(this.template(title, text), this.shadowRoot);
+    this.shadowRoot.innerHTML = this.html(title, text);
   }
 
-  template(title, text) {
-    return html`
+  html(title, text) {
+    return `
 <style>
 div {
   padding: 8px;
