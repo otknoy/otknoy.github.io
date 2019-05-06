@@ -13,8 +13,8 @@ class Title extends HTMLElement {
   fontSize() {
     const fontSize = {
       small: '16px',
-      medium: '20px',
-      large: '24px'
+      medium: '22px',
+      large: '28px'
     };
     
     const type = this.getAttribute('size');
