@@ -1,17 +1,41 @@
-const createTextElement = (size) => {
-  class Text extends HTMLElement {
-    constructor() {
-      super();
+class Text extends HTMLElement {
+  constructor() {
+    super();
 
-      this.attachShadow({mode: 'open'});
-      this.shadowRoot.innerHTML = this.html(size);
-    }
+    this.attachShadow({mode: 'open'});
+    this.shadowRoot.innerHTML = this.html(
+      this.fontSize(),
+      this.fontColor()
+    );
+  }
 
-    html(size) {
-      return ` 
+  fontSize() {
+    const fontSize = {
+      small: '14px',
+      medium: '18px',
+      large: '22px'
+    };
+
+    const type = this.getAttribute('size');
+
+    return type in fontSize ? fontSize[type] : fontSize['medium'];
+  }
+
+  fontColor() {
+    const color = this.getAttribute('color');
+
+    return [
+      'white',
+      'black'
+    ].includes(color) ? color : 'black';
+  }
+
+  html(fontSize, fontColor) {
+    return `
 <style>
 :host {
-  font-size: ${size};
+  font-size: ${fontSize};
+  color: ${fontColor};
 }
 
 p {
@@ -22,12 +46,7 @@ p {
   <slot></slot>
 </p>
 `;
-    }
   }
-
-  return Text;
 }
+customElements.define('x-text', Text);
 
-customElements.define('large-text',  createTextElement('22px'));
-customElements.define('medium-text', createTextElement('18px'));
-customElements.define('small-text',  createTextElement('14px'));

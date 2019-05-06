@@ -20,18 +20,22 @@ class Article extends HTMLElement {
 div {
   padding: 8px;
 }
+
+footer x-text {
+  text-align: right;
+}
 </style>
 <article>
   <header>
-    <medium-title>${title}</medium-title>
+    <x-title size="medium">${title}</x-title>
   </header>
  
   <div>
-    <medium-text>${text}</medium-text>
+    <x-text size="medium">${text}</x-text>
   </div>
 
   <footer>
-    <small-text style="text-align: right">(share button)</small-text>
+    <x-text size="small">(share button)</x-text>
   </footer>
 </article>
 `;

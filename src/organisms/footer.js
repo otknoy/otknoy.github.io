@@ -11,21 +11,17 @@ class Footer extends HTMLElement {
   html() {
     return `
     <style>
-      :host {
-        text-align: center;
-      }
-
-      .footer {
-        background-color: grey;
-      }
-
       div {
+        background-color: black;
+        text-align: center;
         padding: 4px;
       }
     </style>
     <footer class="footer">
       <div>
-        <small-text>(C) 1988-2019 Naoya Otsuka</small-text>
+        <x-text size="small" color="white">
+          (C) 1988-2019 Naoya Otsuka
+        </x-text>
       </div>
     </footer>
 `;
