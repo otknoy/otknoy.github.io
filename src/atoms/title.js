@@ -1,47 +1,60 @@
-function createTitle(name, level, color) {
-  class Title extends HTMLElement {
-    constructor() {
-      super();
+class Title extends HTMLElement {
+  constructor() {
+    super();
 
-      this.attachShadow({mode: 'open'});
-      this.shadowRoot.innerHTML = this.html(level);
-    }
+    this.attachShadow({mode: 'open'});
+    this.shadowRoot.innerHTML = this.html(
+      this.fontSize(),
+      this.fontColor(),
+      this.backgroundColor()
+    );
+  }
 
-    html(level) {
-      return `
+  fontSize() {
+    const fontSize = {
+      small: '16px',
+      medium: '22px',
+      large: '28px'
+    };
+    
+    const type = this.getAttribute('size');
+
+    return type in fontSize ? fontSize[type] : fontSize['medium'];
+  }
+
+  fontColor() {
+    const color = this.getAttribute('color');
+
+    return [
+      'white',
+      'black'
+    ].includes(color) ? color : 'white';
+  }
+
+  backgroundColor() {
+    const color = this.getAttribute('bgColor');
+
+    return [
+      'white',
+      'grey',
+      'black'
+    ].includes(color) ? color : 'grey';
+  }
+
+  html(fontSize, fontColor, backgroundColor) {
+    return `
 <style>
-* {
+h1 {
   margin: 0px;
-  padding: 8px;
-  color: white;
-  background-color: ${color};
+  padding: 4px;
+  font-size: ${fontSize};
+  color: ${fontColor};
+  background-color: ${backgroundColor};
 }
 </style>
-<h${level}><slot></slot></h${level}>
+<h1><slot></slot></h1>
 `;
-      
-    }
   }
-
-  customElements.define(name, Title);
 }
 
-[
-  {
-    name: 'large-title',
-    level: 1,
-    color: 'black',
-  },
-  {
-    name: 'medium-title',
-    level: 2,
-    color: 'grey',
-  },
-  {
-    name: 'small-title',
-    level: 3,
-    color: 'grey',
-  }
-].forEach((e, i, a) => {
-  createTitle(e.name,  e.level, e.color);
-});
+customElements.define('x-title', Title);

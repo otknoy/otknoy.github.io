@@ -49,7 +49,7 @@ h1 {
   ${this.css()}
 </style>
 <section>
-  <medium-title>Profile</medium-title>
+  <x-title size="medium">Profile</x-title>
 
   <div class="profile">
     <img src="${profile.icon}">
@@ -67,7 +67,6 @@ h1 {
     </ul>
   </div>
 
-  <my-skill-and-interest></my-skill-and-interest>
   <my-skill></my-skill>
   <my-interest></my-interest>
 </section>
