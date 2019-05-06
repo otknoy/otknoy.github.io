@@ -67,7 +67,6 @@ h1 {
     </ul>
   </div>
 
-  <my-skill-and-interest></my-skill-and-interest>
   <my-skill></my-skill>
   <my-interest></my-interest>
 </section>
