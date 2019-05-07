@@ -3,36 +3,24 @@ class Title extends HTMLElement {
     super();
 
     this.attachShadow({mode: 'open'});
-    this.shadowRoot.innerHTML = this.html(
+    this.shadowRoot.innerHTML = this.html([
       this.fontSize(),
-      this.fontColor(),
-      this.backgroundColor()
-    );
+      this.color()
+    ]);
   }
 
   fontSize() {
-    const fontSize = {
-      small: '16px',
-      medium: '22px',
-      large: '28px'
-    };
-    
-    const type = this.getAttribute('size');
-
-    return type in fontSize ? fontSize[type] : fontSize['medium'];
-  }
-
-  fontColor() {
-    const color = this.getAttribute('color');
+    const size = this.getAttribute('size');
 
     return [
-      'white',
-      'black'
-    ].includes(color) ? color : 'white';
+      'small',
+      'medium',
+      'large'
+    ].includes(size) ? size : 'medium';
   }
 
-  backgroundColor() {
-    const color = this.getAttribute('bgColor');
+  color() {
+    const color = this.getAttribute('color');
 
     return [
       'white',
@@ -41,18 +29,43 @@ class Title extends HTMLElement {
     ].includes(color) ? color : 'grey';
   }
 
-  html(fontSize, fontColor, backgroundColor) {
+  html(classes) {
     return `
 <style>
+.small {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 22px;
+}
+
+.large {
+  font-size: 28px;
+}
+
+.white {
+  color: black;
+}
+
+.grey {
+  color: white;
+  background-color: grey;
+}
+
+.black {
+  color: white;
+  background-color: black;
+}
+
 h1 {
   margin: 0px;
   padding: 4px;
-  font-size: ${fontSize};
-  color: ${fontColor};
-  background-color: ${backgroundColor};
 }
 </style>
-<h1><slot></slot></h1>
+<h1 class="${classes.join(' ')}">
+  <slot></slot>
+</h1>
 `;
   }
 }
