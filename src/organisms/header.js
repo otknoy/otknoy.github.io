@@ -16,7 +16,7 @@ class Header extends HTMLElement {
       }
     </style>
     <header>
-      <x-title size="large" bgColor="black">
+      <x-title size="large" color="black">
         otknoy's blog
       </x-title>
     </header>

@@ -4,49 +4,45 @@ class Text extends HTMLElement {
 
     this.attachShadow({mode: 'open'});
     this.shadowRoot.innerHTML = this.html(
-      this.fontSize(),
-      this.fontColor()
+      this.fontSize()
     );
   }
 
   fontSize() {
-    const fontSize = {
-      small: '14px',
-      medium: '18px',
-      large: '22px'
-    };
-
-    const type = this.getAttribute('size');
-
-    return type in fontSize ? fontSize[type] : fontSize['medium'];
-  }
-
-  fontColor() {
-    const color = this.getAttribute('color');
+    const size = this.getAttribute('size');
 
     return [
-      'white',
-      'black'
-    ].includes(color) ? color : 'black';
+      'small',
+      'medium',
+      'large'
+    ].includes(size) ? size : 'medium';
   }
 
-  html(fontSize, fontColor) {
+  html(fontSize) {
     return `
 <style>
-:host {
-  font-size: ${fontSize};
-  color: ${fontColor};
+.small {
+  font-size: 14px;
+}
+
+.medium {
+  font-size: 18px;
+}
+
+.large {
+  font-size: 22px;
 }
 
 p {
   margin: 0px;
 }
 </style>
-<p>
+<p class="${fontSize}">
   <slot></slot>
 </p>
 `;
   }
 }
+
 customElements.define('x-text', Text);
 
