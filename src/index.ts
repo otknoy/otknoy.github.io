@@ -13,7 +13,8 @@ const state = {
     },
     {
       title: 'This is title',
-      text: 'This is text ああああああああああああああああああああああああああああああああああああああああああ',
+      text:
+        'This is text ああああああああああああああああああああああああああああああああああああああああああ',
       created_at: '2019/05/07 20:48'
     }
   ]
@@ -23,8 +24,8 @@ class Page extends HTMLElement {
   constructor() {
     super();
 
-    this.attachShadow({mode: 'open'});
-    this.shadowRoot.innerHTML = this.html();
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+    shadowRoot.innerHTML = this.html();
   }
 
   html() {

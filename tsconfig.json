@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ESNEXT",                    /* ｔｓを書くときにどのversionのESが対象か: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
+    "module": "ESNext",                    /* どのversionのESを生成するか: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "jsx": "preserve",                     /* reactを書くときに必要, 'react-native', or 'react'. */
+    // "outFile": "./",                    /* 出力するファイル(ファイル出力はwebpackで行うので不要) */
+    // "outDir": "./",                     /* 出力するディレクトリ(ファイル出力はwebpackで行うので不要) */
+    // "rootDir": "./",                    /* ビルド時のルートディレクトリ(ビルド対象のパス設定はwebpackで行うので不要) */
+    // "noEmit": "true",                   /* ビルド時に型ファイルを生成しない(これがあるとts-loaderでエラーが出るので外しています */
+
+    /* Strict Type-Checking Options */
+    "strict": true,                        /* すべての strict タイプ・オプション(noImplicitAny, strictNullChecks, noImplicitThis(thisの型チェック), alwaysStrict(strictモードのjs出力)) を 有効化する */
+    "noImplicitAny": true,                 /* any型の使用不可 */
+    "strictNullChecks": true,              /* nullable型以外でnullを許容しない */
+
+    /* Additional Checks */
+    "noUnusedLocals": true,                /* 未使用の変数を許容しない */
+    "noUnusedParameters": true,            /* 未使用の変数を許容しない */
+    "noImplicitReturns": true,             /* メソッド内で返り値の型があっているかをチェック */
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",            /* http://js.studio-kingdom.com/typescript/handbook/module_resolution 参照 */
+    "esModuleInterop": true                /* ESModuleと同じ動作をする. */
+  }
+}
