@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack --watch -d & browser-sync start --server --files='index.html,dist/**/*'",
-    "build": "webpack --mode=production",
+    "build": "webpack",
+    "build:prod": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src"
   },
@@ -18,6 +19,9 @@
   },
   "homepage": "https://otknoy.github.io",
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "eslint": "^5.16.0",
     "webpack": "^4.37.0",
