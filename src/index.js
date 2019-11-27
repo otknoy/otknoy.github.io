@@ -1,52 +1,50 @@
-import './components/profile.js';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './organisms/header.js';
-import './organisms/article.js';
-import './organisms/footer.js';
+import Header from './Header.jsx';
+import Profile from './Profile.jsx';
+import Article from './Article.jsx';
+import Footer from './Footer.jsx';
 
-const state = {
-  blog: [
-    {
-      title: 'これはタイトルです',
-      text: 'これはテキストです',
-      created_at: '2019/05/07 20:49'
-    },
-    {
-      title: 'This is title',
-      text: 'This is text ああああああああああああああああああああああああああああああああああああああああああ',
-      created_at: '2019/05/07 20:48'
-    }
-  ]
+const App = (props) => {
+  const profile = {
+    name: 'Naoya Otsuka',
+    email: 'otknoy@gmail.com',
+    twitter: 'otknoy',
+    github: 'otknoy',
+    skills: [
+      'Java, SpringBoot',
+      'Node.js, express',
+      'Golang, Python',
+      'Docker, Kubernetes',
+      'HTML, CSS, Javascript, React'
+    ],
+    interests: [
+      'Information Retrieval',
+      'Human Computer Interaction',
+      'Natural Language Processing',
+      'Machine Learning'
+    ]
+  };
+  
+  const articles = [
+    {title: 'hoge', text: 'foo', createdAt: '2019/11/27 22:34:44'},
+    {title: 'hoge', text: 'foo'},
+    {title: 'hoge', text: 'foo'}
+  ];
+
+  return (
+    <div className="App">
+      <Header />
+
+      <Profile data={profile} />
+      {
+	articles.map((e, i) => <Article key={i} title={e.title} text={e.text} createdAt={e.createdAt} />)
+      }
+
+      <Footer />
+    </div>
+  );
 };
 
-class Page extends HTMLElement {
-  constructor() {
-    super();
-
-    this.attachShadow({mode: 'open'});
-    this.shadowRoot.innerHTML = this.html();
-  }
-
-  html() {
-    return `
-<my-header></my-header>
-
-<my-profile></my-profile>
-
-<div style="padding: 8px">
-<my-article
-  title="${state.blog[0].title}"
-  text="${state.blog[0].text}"
-></my-article>
-<my-article
-  title="${state.blog[1].title}"
-  text="${state.blog[1].text}"
-></my-article>
-</div>
-
-<my-footer></my-footer>
-`;
-  }
-}
-
-customElements.define('my-page', Page);
+ReactDOM.render(<App />, document.getElementById("root"));
