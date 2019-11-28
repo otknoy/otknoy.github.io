@@ -14,40 +14,53 @@ const ProfileCard = styled.div`
   align-items: center;
 `;
 
-const Icon = styled.img`
+const ProfileImage = styled.img`
   width: 64px;
   height: 64px;
 `;
 
-const List = (props) => {
-  return (
-    <section>
-      <Title>{props.title}</Title>
-      <ul>
-	{props.elems.map((e, i) => <li key={i}>{e}</li>)}
-    </ul>
-      </section>
-  );
-};
+const Profile = () => {
+  const profile = {
+    name: 'Naoya Otsuka',
+    email: 'otknoy@gmail.com',
+    twitter: 'otknoy',
+    github: 'otknoy',
+    skills: [
+      'Java, SpringBoot',
+      'Node.js, express',
+      'Golang, Python',
+      'Docker, Kubernetes',
+      'HTML, CSS, Javascript, React'
+    ],
+    interests: [
+      'Information Retrieval',
+      'Human Computer Interaction',
+      'Natural Language Processing',
+      'Machine Learning'
+    ]
+  };
 
-const Profile = (props) => {
   return (
     <Wrapper>
       <Title>Profile</Title>
       <ProfileCard>
-	<Icon src="https://pbs.twimg.com/profile_images/538376795251146753/aNwx731b_400x400.png"></Icon>
-
+	<ProfileImage src="https://pbs.twimg.com/profile_images/538376795251146753/aNwx731b_400x400.png" />
 	<ul>
-	  <li>{props.data.name}</li>
-	  <li>{props.data.email}</li>
-	  <li><a href={'https://github.com/' + props.data.github}>GitHub</a></li>
-	  <li><a href={'https://twitter.com/' + props.data.twitter}>Twitter</a></li>
+	  <li>{profile.name}</li>
+	  <li>{profile.email}</li>
+	  <li><a href={'https://github.com/' + profile.github}>GitHub</a></li>
+	  <li><a href={'https://twitter.com/' + profile.twitter}>Twitter</a></li>
 	</ul>
-	
       </ProfileCard>
       <Wrapper>
-        <List title="Skills" elems={props.data.skills} />
-        <List title="Interests" elems={props.data.interests} />
+	<section>
+	  <Title>Skills</Title>
+	  <ul>{profile.skills.map((e, i) => <li key={i}>{e}</li>)}</ul>
+	</section>
+	<section>
+	  <Title>Interests</Title>
+	  <ul>{profile.interests.map((e, i) => <li key={i}>{e}</li>)}</ul>
+	</section>
       </Wrapper>
     </Wrapper>
   );

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.footer`
   text-align: center;
+  margin-top: auto;
 `;
 
 const Title = styled.h1`
