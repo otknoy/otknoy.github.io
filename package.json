@@ -2,8 +2,8 @@
   "name": "otknoy.github.io",
   "version": "1.0.0",
   "engines": {
-    "node": "~10.17.0",
-    "npm": "~6.11.3"
+    "node": "~12.13.1",
+    "npm": "~6.12.1"
   },
   "scripts": {
     "start": "webpack --watch -d & browser-sync start --server --files='index.html,dist/**/*'",
