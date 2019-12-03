@@ -6,7 +6,7 @@ import Profile from './Profile.jsx';
 import Articles from './Articles.jsx';
 import Footer from './Footer.jsx';
 
-const App = (props) => {
+const App = () => {
   return (
     <>
       <Header />
