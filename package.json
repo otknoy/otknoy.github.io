@@ -1,6 +1,10 @@
 {
   "name": "otknoy.github.io",
   "version": "1.0.0",
+  "engines": {
+    "node": "~10.17.0",
+    "npm": "~6.11.3"
+  },
   "scripts": {
     "start": "webpack --watch -d & browser-sync start --server --files='index.html,dist/**/*'",
     "build": "webpack",
