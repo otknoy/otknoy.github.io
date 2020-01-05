@@ -1,23 +1,30 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import {html, render} from 'lit-html';
 
-import Header from './Header.jsx';
-import Profile from './Profile.jsx';
-import Articles from './Articles.jsx';
-import Footer from './Footer.jsx';
+import Header from './Header.js';
+import Footer from './Footer.js';
 
-const App = () => {
-  return (
-    <>
-      <Header />
+customElements.define('my-header', Header);
+customElements.define('my-footer', Footer);
 
-      <Profile />
+import Profile from './Profile.js';
+customElements.define('my-profile', Profile);
 
-      <Articles />
+class MyPage extends HTMLElement {
+  constructor() {
+    super();
 
-      <Footer />
-    </>
-  );
-};
+    render(this.html(), this.attachShadow({mode: 'open'}));
+  }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+  html() {
+    return html`
+<my-header></my-header>
+
+<my-profile></my-profile>
+
+<my-footer></my-footer>
+`;
+  }
+}
+
+customElements.define('my-page', MyPage);
