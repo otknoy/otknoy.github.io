@@ -67,12 +67,12 @@ h1 {
   margin: 0px;
 }
 </style>
-<div>
+<section>
   <h1>Skills</h1>
   <ul>
     ${skills.map((e) => html`<li>${e}</li>`)}
   </ul>
-</div>
+</section>
 `;
   }
 }
@@ -91,12 +91,12 @@ h1 {
   margin: 0px;
 }
 </style>
-<div>
+<section>
   <h1>Interests</h1>
   <ul>
     ${interests.map((e) => html`<li>${e}</li>`)}
   </ul>
-</div>
+</section>
 `;
   }
 }

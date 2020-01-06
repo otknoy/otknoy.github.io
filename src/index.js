@@ -1,13 +1,12 @@
 import {html, render} from 'lit-html';
 
 import Header from './Header.js';
+import Profile from './Profile.js';
 import Footer from './Footer.js';
 
 customElements.define('my-header', Header);
-customElements.define('my-footer', Footer);
-
-import Profile from './Profile.js';
 customElements.define('my-profile', Profile);
+customElements.define('my-footer', Footer);
 
 class MyPage extends HTMLElement {
   constructor() {
