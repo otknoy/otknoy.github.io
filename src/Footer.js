@@ -1,32 +1,21 @@
-import {html, render} from 'lit-html';
+import React from "react"
+import styled from 'styled-components'
 
-class Footer extends HTMLElement {
-  constructor() {
-    super();
+const Wrapper = styled.footer`
+text-align: center;
+margin-top: auth;
+`
 
-    render(this.html(), this.attachShadow({mode: 'open'}));
-  }
-
-  html() {
-    return html`
-<style>
-:host {
-  text-align: center;
-  margin-top: auto;
-}
-
-h1 {
+const Text = styled.h1`
   margin: 0px;
   padding: 4px;
   font-size: 16px;
-}
+`
 
-</style>
-<footer>
-  <h1>(C) 1988-2020 Naoya Otsuka</h1>
-</footer>
-`;
-  }
+export default function Footer() {
+  return (
+      <Wrapper>
+        <Text>(C) 1988-2020 Naoya Otsuka</Text>
+      </Wrapper>
+  )
 }
-
-export default Footer;

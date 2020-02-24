@@ -1,30 +1,20 @@
-import {html, render} from 'lit-html';
+import React from "react"
+import styled from 'styled-components'
 
-class Header extends HTMLElement {
-  constructor() {
-    super();
+const Wrapper = styled.header`
+text-align: center;
+`
 
-    render(this.html(), this.attachShadow({mode: 'open'}));
-  }
+const Title = styled.h1`
+margin: 0px;
+padding: 4px;
+font-size: 24px;
+`
 
-  html() {
-    return html`
-<style>
-:host {
-  text-align: center;
+export default function Header() {
+  return (
+      <Wrapper>
+        <Title>Naoya Otsuka</Title>
+      </Wrapper>
+  )
 }
-
-h1 {
-  margin: 0px;
-  padding: 4px;
-  font-size: 24px;
-}
-</style>
-<header>
-  <h1>Naoya Otsuka</h1>
-</header>
-`;
-  }
-}
-
-export default Header;

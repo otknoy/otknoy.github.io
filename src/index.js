@@ -1,29 +1,6 @@
-import {html, render} from 'lit-html';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import Header from './Header.js';
-import Profile from './Profile.js';
-import Footer from './Footer.js';
+import App from './App';
 
-customElements.define('my-header', Header);
-customElements.define('my-profile', Profile);
-customElements.define('my-footer', Footer);
-
-class MyPage extends HTMLElement {
-  constructor() {
-    super();
-
-    render(this.html(), this.attachShadow({mode: 'open'}));
-  }
-
-  html() {
-    return html`
-<my-header></my-header>
-
-<my-profile></my-profile>
-
-<my-footer></my-footer>
-`;
-  }
-}
-
-customElements.define('my-page', MyPage);
+ReactDOM.render(<App />, document.getElementById("root"));
