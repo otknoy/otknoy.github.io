@@ -5,7 +5,7 @@ import Profile from './Profile'
 import Articles from './Articles'
 import Footer from './Footer'
 
-export default function App() {
+export default function Page() {
   return (
       <>
       <Header />
