@@ -34,7 +34,7 @@ margin: 0px;
       <section>
       <Title>Skills</Title>
       <ul>
-      { props.skills.map((e) => <li>{e}</li> )}
+      { props.skills.map((e, i) => <li key={i}>{e}</li> )}
     </ul>
       </section>
   )
@@ -49,7 +49,7 @@ margin: 0px;
       <section>
       <Title>Interests</Title>
       <ul>
-      { props.interests.map((e) => <li>{e}</li> )}
+      { props.interests.map((e, i) => <li key={i}>{e}</li> )}
     </ul>
       </section>
   )
