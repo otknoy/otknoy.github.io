@@ -55,7 +55,7 @@ margin: 0px;
   )
 }
 
-export default function Profile() {
+export default function Profile(props) {
   const Section = styled.section`
 padding: 8px;
 `
@@ -63,33 +63,16 @@ padding: 8px;
   const Title = styled.h1`
 margin: 0px;
 `
-
-  const profile = {
-    name: 'Naoya Otsuka',
-    email: 'otknoy@gmail.com',
-    twitter: 'otknoy',
-    github: 'otknoy',
-    skills: [
-      'Java, SpringBoot',
-      'Node.js, express',
-      'Golang, Python',
-      'Docker, Kubernetes',
-      'HTML, CSS, Javascript, React'
-    ],
-    interests: [
-      'Information Retrieval',
-      'Human Computer Interaction',
-      'Natural Language Processing',
-      'Machine Learning'
-    ]
-  }
-
   return (
       <Section>
-      <Title>Profile</Title>
-      <ProfileCard {...profile} />
-      <Skills {...profile} />
-      <Interests {...profile} />
+        <Title>Profile</Title>
+        <ProfileCard
+          name={props.name}
+          email={props.email}
+          github={props.github}
+          twitter={props.twitter} />
+        <Skills skills={props.skills} />
+        <Interests interests={props.interests} />
       </Section>
   )
 }

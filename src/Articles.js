@@ -32,28 +32,12 @@ const Article = (props) => {
   );
 };
 
-const Articles = () => {
-  const articles = [
-    {
-      title: 'hoge',
-      text: 'foo',
-      createdAt: '2019/11/29 01:23:50'
-    },
-    {
-      title: 'hoge',
-      text: 'foo',
-      createdAt: '2019/11/27 22:34:44'
-    },
-    {
-      title: 'hoge',
-      text: 'foo'
-    }
-  ];
-
+const Articles = (props) => {
   return (
     <Section>
+      <h1>Articles</h1>
       {
-	articles.map((article, i) => <Article key={i} {...article} />)
+	props.articles.map((article, i) => <Article key={i} {...article} />)
       }
     </Section>
   );
