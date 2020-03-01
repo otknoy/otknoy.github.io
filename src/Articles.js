@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { SmallText, MediumText, LargeText } from './atoms/Text'
+
 const Section = styled.section`
   padding: 8px;
 `;
@@ -17,15 +19,15 @@ const Article = (props) => {
   return (
     <article>
       <Header>
-	<h1>{props.title}</h1>
+	<h1><MediumText>{props.title}</MediumText></h1>
       </Header>
 
       <div>
-	{props.text}
+	<MediumText>{props.text}</MediumText>
       </div>
 
       <Footer>
-	{props.createdAt}
+	<SmallText>{props.createdAt}</SmallText>
       </Footer>
 
     </article>
@@ -35,7 +37,7 @@ const Article = (props) => {
 const Articles = (props) => {
   return (
     <Section>
-      <h1>Articles</h1>
+      <h1><LargeText>Articles</LargeText></h1>
       {
 	props.articles.map((article, i) => <Article key={i} {...article} />)
       }

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { SmallText, MediumText, LargeText } from './atoms/Text'
+
 const Wrapper = styled.div`
 display: flex;
 align-items: center;
@@ -23,28 +25,28 @@ const ProfileCard = (props) => (
     <Wrapper>
     <Image src="https://pbs.twimg.com/profile_images/538376795251146753/aNwx731b_400x400.png" />
     <ul>
-    <li>{props.name}</li>
-    <li>{props.email}</li>
-    <li><a href={'https://github.com/' + props.github}>GitHub</a></li>
-    <li><a href={'https://twitter.com/' + props.twitter}>Twitter</a></li>
+    <li><MediumText>{props.name}</MediumText></li>
+    <li><MediumText>{props.email}</MediumText></li>
+    <li><a href={'https://github.com/' + props.github}><MediumText>GitHub</MediumText></a></li>
+    <li><a href={'https://twitter.com/' + props.twitter}><MediumText>Twitter</MediumText></a></li>
     </ul>
     </Wrapper>
 )
 
 const Skills = (props) => (
     <section>
-    <Title>Skills</Title>
+    <Title><MediumText>Skills</MediumText></Title>
     <ul>
-    { props.skills.map((e, i) => <li key={i}>{e}</li> )}
+    { props.skills.map((e, i) => <li key={i}><MediumText>{e}</MediumText></li> )}
     </ul>
     </section>
 )
 
 const Interests = (props) => (
     <section>
-    <Title>Interests</Title>
+    <Title><MediumText>Interests</MediumText></Title>
     <ul>
-    { props.interests.map((e, i) => <li key={i}>{e}</li> )}
+    { props.interests.map((e, i) => <li key={i}><MediumText>{e}</MediumText></li> )}
     </ul>
     </section>
 )
@@ -52,7 +54,7 @@ const Interests = (props) => (
 export default function Profile(props) {
   return (
       <Section>
-        <Title>Profile</Title>
+        <Title><LargeText>Profile</LargeText></Title>
         <ProfileCard
           name={props.name}
           email={props.email}
