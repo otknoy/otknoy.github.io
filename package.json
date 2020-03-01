@@ -9,6 +9,7 @@
     "start": "webpack --watch -d & browser-sync start --server --files='index.html,dist/**/*'",
     "build": "webpack",
     "build:prod": "webpack --mode=production",
+    "deploy": "npm run build:prod && gh-pages -b master -d . -s '{index.html,dist/bundle.js}'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src"
   },
@@ -30,6 +31,7 @@
     "browser-sync": "^2.26.7",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.18.3",
+    "gh-pages": "^2.2.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   },
