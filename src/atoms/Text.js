@@ -10,9 +10,9 @@ export const MediumText = styled.span`
 `
 
 export const LargeText = styled.span`
-  font-size: 20px;
+  font-size: 22px;
 `
 
 export const HugeText = styled.span`
-  font-size: 24px;
+  font-size: 28px;
 `
