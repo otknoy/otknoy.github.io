@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { SmallText, MediumText, LargeText } from './atoms/Text'
+import { MediumText, LargeText } from './atoms/Text'
 
 const Wrapper = styled.div`
 display: flex;
