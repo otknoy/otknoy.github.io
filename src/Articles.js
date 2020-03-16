@@ -43,7 +43,6 @@ const Articles = (props) => {
       }
     </Section>
   );
-
 };
 
 export default Articles;
