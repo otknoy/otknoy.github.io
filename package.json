@@ -9,7 +9,7 @@
     "start": "webpack --watch -d & browser-sync start --server --files='index.html,dist/**/*'",
     "build": "webpack",
     "build:prod": "webpack --mode=production",
-    "deploy": "npm run build:prod && gh-pages -b master -d . -s '{index.html,dist/bundle.js}'",
+    "deploy": "npm run build:prod && gh-pages -b master -d . -s '{index.html,dist/bundle.js,CNAME}'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src"
   },
