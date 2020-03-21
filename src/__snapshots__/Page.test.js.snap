@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render <Page /> snapshot 1`] = `
+Array [
+  <header
+    className="sc-AxhUy bsWMyc"
+  >
+    <h1
+      className="sc-AxgMl JnhRk"
+    >
+      <span
+        className="sc-AxhCb hHeuYy"
+      >
+        Naoya Otsuka
+      </span>
+    </h1>
+  </header>,
+  <section
+    className="sc-fzozJi dHePfU"
+  >
+    <h1
+      className="sc-AxmLO bPxkVm"
+    >
+      <span
+        className="sc-AxiKw hXlEVQ"
+      >
+        Profile
+      </span>
+    </h1>
+    <div
+      className="sc-AxheI eNAXnR"
+    >
+      <img
+        className="sc-Axmtr RHgCz"
+        src="https://pbs.twimg.com/profile_images/538376795251146753/aNwx731b_400x400.png"
+      />
+      <ul>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Naoya Otsuka
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            otknoy@gmail.com
+          </span>
+        </li>
+        <li>
+          <a
+            href="https://github.com/otknoy"
+          >
+            <span
+              className="sc-AxirZ jvzABj"
+            >
+              GitHub
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/otknoy"
+          >
+            <span
+              className="sc-AxirZ jvzABj"
+            >
+              Twitter
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <h1
+        className="sc-AxmLO bPxkVm"
+      >
+        <span
+          className="sc-AxirZ jvzABj"
+        >
+          Skills
+        </span>
+      </h1>
+      <ul>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Java, SpringBoot
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Node.js, express
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Golang, Python
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Docker, Kubernetes
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            HTML, CSS, Javascript, React
+          </span>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h1
+        className="sc-AxmLO bPxkVm"
+      >
+        <span
+          className="sc-AxirZ jvzABj"
+        >
+          Interests
+        </span>
+      </h1>
+      <ul>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Information Retrieval
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Human Computer Interaction
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Natural Language Processing
+          </span>
+        </li>
+        <li>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            Machine Learning
+          </span>
+        </li>
+      </ul>
+    </section>
+  </section>,
+  <section
+    className="sc-fzoLsD fVjaWa"
+  >
+    <h1>
+      <span
+        className="sc-AxiKw hXlEVQ"
+      >
+        Articles
+      </span>
+    </h1>
+    <article>
+      <header
+        className="sc-fzpans dXvvve"
+      >
+        <h1>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            hoge
+          </span>
+        </h1>
+      </header>
+      <div>
+        <span
+          className="sc-AxirZ jvzABj"
+        >
+          foo
+        </span>
+      </div>
+      <footer
+        className="sc-fzplWN bYVwsL"
+      >
+        <span
+          className="sc-AxjAm gwYCyM"
+        >
+          2019/11/29 01:23:50
+        </span>
+      </footer>
+    </article>
+    <article>
+      <header
+        className="sc-fzpans dXvvve"
+      >
+        <h1>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            hoge
+          </span>
+        </h1>
+      </header>
+      <div>
+        <span
+          className="sc-AxirZ jvzABj"
+        >
+          foo
+        </span>
+      </div>
+      <footer
+        className="sc-fzplWN bYVwsL"
+      >
+        <span
+          className="sc-AxjAm gwYCyM"
+        >
+          2019/11/27 22:34:44
+        </span>
+      </footer>
+    </article>
+    <article>
+      <header
+        className="sc-fzpans dXvvve"
+      >
+        <h1>
+          <span
+            className="sc-AxirZ jvzABj"
+          >
+            hoge
+          </span>
+        </h1>
+      </header>
+      <div>
+        <span
+          className="sc-AxirZ jvzABj"
+        >
+          foo
+        </span>
+      </div>
+      <footer
+        className="sc-fzplWN bYVwsL"
+      >
+        <span
+          className="sc-AxjAm gwYCyM"
+        />
+      </footer>
+    </article>
+  </section>,
+  <footer
+    className="sc-fznyAO hhyhqr"
+  >
+    <h1
+      className="sc-fznKkj dvVUdv"
+    >
+      <span
+        className="sc-AxirZ jvzABj"
+      >
+        (C) 1988-2020 Naoya Otsuka
+      </span>
+    </h1>
+  </footer>,
+]
+`;
