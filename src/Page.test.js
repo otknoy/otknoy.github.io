@@ -6,8 +6,8 @@ import Page from './Page'
 describe('render <Page />', () => {
   test('snapshot', () => {
     const tree = renderer
-	  .create(<Page />)
-	  .toJSON()
+          .create(<Page />)
+          .toJSON()
 
     expect(tree).toMatchSnapshot()
   })
