@@ -11,9 +11,9 @@ COPY src/ src/
 COPY babel.config.js .
 COPY webpack.config.js .
 COPY .eslintrc.js .
+RUN npm run build
 RUN npm run lint
 RUN npm run test
-RUN npm run build
 
 
 FROM nginx:alpine
