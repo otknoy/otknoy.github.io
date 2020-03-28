@@ -8,7 +8,6 @@ import Footer from './Footer'
 const Container = styled.div`
 display: flex;
 flex-direction: column;
-padding: 8px;
 `
 
 const Page = () => (
@@ -16,9 +15,9 @@ const Page = () => (
       <Header />
     
       <Container>
-        <Tile href="https://twitter.com/otknoy">twitter</Tile>
-        <Tile href="https://github.com/otknoy/">github</Tile>
-        <Tile href="https://otknoy.hatenablog.com/">blog</Tile>
+        <Tile link="https://twitter.com/otknoy">twitter</Tile>
+        <Tile link="https://github.com/otknoy/">github</Tile>
+        <Tile link="https://otknoy.hatenablog.com/">blog</Tile>
       </Container>
 
       <Footer />

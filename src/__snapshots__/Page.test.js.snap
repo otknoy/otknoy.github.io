@@ -16,53 +16,65 @@ Array [
     </h1>
   </header>,
   <div
-    className="sc-fzoLsD bYMFHa"
+    className="sc-fzpans bOlyns"
   >
-    <article
-      className="sc-AxheI gKgxcH"
+    <div
+      className="sc-AxheI iZgeyi"
     >
-      <a
-        href="https://twitter.com/otknoy"
+      <div
+        className="sc-Axmtr kkEISa"
       >
-        <div
-          className="sc-Axmtr dAuNFl"
+        <a
+          href="https://twitter.com/otknoy"
         >
-          twitter
-        </div>
-      </a>
-    </article>
-    <article
-      className="sc-AxheI gKgxcH"
+          <p
+            className="sc-AxmLO SXmqK"
+          >
+            twitter
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      className="sc-AxheI iZgeyi"
     >
-      <a
-        href="https://github.com/otknoy/"
+      <div
+        className="sc-Axmtr kkEISa"
       >
-        <div
-          className="sc-Axmtr dAuNFl"
+        <a
+          href="https://github.com/otknoy/"
         >
-          github
-        </div>
-      </a>
-    </article>
-    <article
-      className="sc-AxheI gKgxcH"
+          <p
+            className="sc-AxmLO SXmqK"
+          >
+            github
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      className="sc-AxheI iZgeyi"
     >
-      <a
-        href="https://otknoy.hatenablog.com/"
+      <div
+        className="sc-Axmtr kkEISa"
       >
-        <div
-          className="sc-Axmtr dAuNFl"
+        <a
+          href="https://otknoy.hatenablog.com/"
         >
-          blog
-        </div>
-      </a>
-    </article>
+          <p
+            className="sc-AxmLO SXmqK"
+          >
+            blog
+          </p>
+        </a>
+      </div>
+    </div>
   </div>,
   <footer
-    className="sc-AxmLO gFtwfp"
+    className="sc-fzozJi fgLSDk"
   >
     <h1
-      className="sc-fzozJi gsbVTV"
+      className="sc-fzoLsD icemJL"
     >
       <span
         className="sc-AxirZ jvzABj"

@@ -1,23 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper = styled.article`
+const Wrapper = styled.div`
+display: flex;
+width: auto;
 height: 192px;
 background-color: #efefef;
-padding: auto;
 `
 
-const Text = styled.div`
-background-color: #9f9f9f;
-text-align: center;
+const Container = styled.div`
 margin: auto;
 width: 128px;
-height: 128px;
+line-height: 128px;
 `
 
-const Tile = ({href, children}) => (
+const Text = styled.p`
+margin: 0;
+text-align: center;
+background-color: #9f9f9f;
+`
+
+const Tile = ({link, children}) => (
     <Wrapper>
-      <a href={href}><Text>{children}</Text></a>
+      <Container>
+        <a href={link}>
+          <Text>{children}</Text>
+        </a>
+      </Container>
     </Wrapper>
 )
 
