@@ -1,57 +1,21 @@
-import React from "react"
+import React from 'react'
 
 import Header from './Header'
-import Profile from './Profile'
-import Articles from './Articles'
+import Tile from './Tile'
 import Footer from './Footer'
 
-const state = {
-  ui: {
-  },
-  profiles: {
-    name: 'Naoya Otsuka',
-    email: 'otknoy@gmail.com',
-    twitter: 'otknoy',
-    github: 'otknoy',
-    skills: [
-      'Java, SpringBoot',
-      'Node.js, express',
-      'Golang, Python',
-      'Docker, Kubernetes',
-      'HTML, CSS, Javascript, React'
-    ],
-    interests: [
-      'Information Retrieval',
-      'Human Computer Interaction',
-      'Natural Language Processing',
-      'Machine Learning'
-    ]
-  },
-  articles: [
-    {
-      title: 'hoge',
-      text: 'foo',
-      createdAt: '2019/11/29 01:23:50'
-    },
-    {
-      title: 'hoge',
-      text: 'foo',
-      createdAt: '2019/11/27 22:34:44'
-    },
-    {
-      title: 'hoge',
-      text: 'foo'
-    }
-  ]
-};
-
-export default function Page() {
-  return (
-      <>
+const Page = () => (
+    <>
       <Header />
-      <Profile {...state.profiles} />
-      <Articles articles={state.articles} />
+    
+      <div>
+        <Tile link="https://twitter.com/otknoy">twitter</Tile>
+        <Tile link="https://github.com/otknoy/">github</Tile>
+        <Tile link="https://otknoy.hatenablog.com/">blog</Tile>
+      </div>
+
       <Footer />
-      </>
-  )
-}
+    </>
+)
+
+export default Page
