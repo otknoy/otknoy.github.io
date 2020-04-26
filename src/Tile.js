@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper = styled.div`
+const Section = styled.section`
 display: flex;
 width: auto;
 height: 192px;
@@ -21,13 +21,13 @@ background-color: #9f9f9f;
 `
 
 const Tile = ({link, children}) => (
-    <Wrapper>
+    <Section>
       <Container>
         <a href={link}>
           <Text>{children}</Text>
         </a>
       </Container>
-    </Wrapper>
+    </Section>
 )
 
 export default Tile
