@@ -3,18 +3,17 @@ import styled from 'styled-components'
 
 const Section = styled.section`
 display: flex;
+justify-content: center;
+align-items: center;
+
 width: auto;
 height: 192px;
 background-color: #efefef;
 `
 
-const Container = styled.div`
-margin: auto;
+const Text = styled.p`
 width: 128px;
 line-height: 128px;
-`
-
-const Text = styled.p`
 margin: 0;
 text-align: center;
 background-color: #9f9f9f;
@@ -22,11 +21,9 @@ background-color: #9f9f9f;
 
 const Tile = ({link, children}) => (
     <Section>
-      <Container>
-        <a href={link}>
-          <Text>{children}</Text>
-        </a>
-      </Container>
+      <a href={link}>
+        <Text>{children}</Text>
+      </a>
     </Section>
 )
 
