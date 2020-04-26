@@ -11,19 +11,28 @@ height: 192px;
 background-color: #efefef;
 `
 
-const Text = styled.p`
+const Title = styled.h1`
 width: 128px;
 line-height: 128px;
-margin: 0;
+
 text-align: center;
 background-color: #9f9f9f;
 `
 
+const Link = styled.a`
+display: inline-block;
+width: 100%;
+text-decoration: none;
+background-color: inherit;
+`
+
 const Tile = ({link, children}) => (
     <Section>
-      <a href={link}>
-        <Text>{children}</Text>
-      </a>
+      <Title>
+        <Link href={link}>
+          {children}
+        </Link>
+      </Title>
     </Section>
 )
 
