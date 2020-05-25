@@ -16,57 +16,48 @@ Array [
     </h1>
   </header>,
   <div>
-    <div
-      className="sc-AxheI iZgeyi"
+    <section
+      className="sc-AxheI etUejA"
     >
-      <div
-        className="sc-Axmtr kkEISa"
+      <h1
+        className="sc-Axmtr gNLSTW"
       >
         <a
+          className="sc-AxmLO iKoxmt"
           href="https://twitter.com/otknoy"
         >
-          <p
-            className="sc-AxmLO SXmqK"
-          >
-            twitter
-          </p>
+          twitter
         </a>
-      </div>
-    </div>
-    <div
-      className="sc-AxheI iZgeyi"
+      </h1>
+    </section>
+    <section
+      className="sc-AxheI etUejA"
     >
-      <div
-        className="sc-Axmtr kkEISa"
+      <h1
+        className="sc-Axmtr gNLSTW"
       >
         <a
+          className="sc-AxmLO iKoxmt"
           href="https://github.com/otknoy/"
         >
-          <p
-            className="sc-AxmLO SXmqK"
-          >
-            github
-          </p>
+          github
         </a>
-      </div>
-    </div>
-    <div
-      className="sc-AxheI iZgeyi"
+      </h1>
+    </section>
+    <section
+      className="sc-AxheI etUejA"
     >
-      <div
-        className="sc-Axmtr kkEISa"
+      <h1
+        className="sc-Axmtr gNLSTW"
       >
         <a
+          className="sc-AxmLO iKoxmt"
           href="https://otknoy.hatenablog.com/"
         >
-          <p
-            className="sc-AxmLO SXmqK"
-          >
-            blog
-          </p>
+          blog
         </a>
-      </div>
-    </div>
+      </h1>
+    </section>
   </div>,
   <footer
     className="sc-fzozJi fgLSDk"
