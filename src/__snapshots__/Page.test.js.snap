@@ -17,53 +17,65 @@ Array [
   </header>,
   <div>
     <section
-      className="sc-AxheI etUejA"
+      className="sc-AxheI ghZiWj"
     >
-      <h1
-        className="sc-Axmtr gNLSTW"
+      <a
+        className="sc-Axmtr fFrzCd"
+        href="https://twitter.com/otknoy"
       >
-        <a
-          className="sc-AxmLO iKoxmt"
-          href="https://twitter.com/otknoy"
+        <div
+          className="sc-AxmLO jUgwkq"
         >
-          twitter
-        </a>
-      </h1>
+          <h1
+            className="sc-fzozJi jPCoxr"
+          >
+            twitter
+          </h1>
+        </div>
+      </a>
     </section>
     <section
-      className="sc-AxheI etUejA"
+      className="sc-AxheI ghZiWj"
     >
-      <h1
-        className="sc-Axmtr gNLSTW"
+      <a
+        className="sc-Axmtr fFrzCd"
+        href="https://github.com/otknoy/"
       >
-        <a
-          className="sc-AxmLO iKoxmt"
-          href="https://github.com/otknoy/"
+        <div
+          className="sc-AxmLO jUgwkq"
         >
-          github
-        </a>
-      </h1>
+          <h1
+            className="sc-fzozJi jPCoxr"
+          >
+            github
+          </h1>
+        </div>
+      </a>
     </section>
     <section
-      className="sc-AxheI etUejA"
+      className="sc-AxheI ghZiWj"
     >
-      <h1
-        className="sc-Axmtr gNLSTW"
+      <a
+        className="sc-Axmtr fFrzCd"
+        href="https://otknoy.hatenablog.com/"
       >
-        <a
-          className="sc-AxmLO iKoxmt"
-          href="https://otknoy.hatenablog.com/"
+        <div
+          className="sc-AxmLO jUgwkq"
         >
-          blog
-        </a>
-      </h1>
+          <h1
+            className="sc-fzozJi jPCoxr"
+          >
+            blog
+          </h1>
+        </div>
+      </a>
     </section>
   </div>,
   <footer
-    className="sc-fzozJi fgLSDk"
+    className="sc-fzoLsD dVzNoK"
   >
     <h1
-      className="sc-fzoLsD icemJL"
+      className="sc-fzpans ePhuXL"
     >
       <span
         className="sc-AxirZ jvzABj"
