@@ -6,33 +6,37 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-width: auto;
-height: 192px;
 background-color: #efefef;
-`
-
-const Title = styled.h1`
-width: 128px;
-line-height: 128px;
-
-text-align: center;
-background-color: #9f9f9f;
+padding: 32px 0;
 `
 
 const Link = styled.a`
-display: inline-block;
-width: 100%;
 text-decoration: none;
+`
+
+const Square = styled.div`
+width: 128px;
+height: 128px;
+background-color: #9f9f9f;
+text-align: center;
+`
+
+const Title = styled.h1`
+display: inline-block;
+word-break: break-word;
 background-color: inherit;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
 `
 
 const Tile = ({link, children}) => (
     <Section>
-      <Title>
-        <Link href={link}>
-          {children}
-        </Link>
-      </Title>
+      <Link href={link}>
+        <Square>
+          <Title>{children}</Title>
+        </Square>
+      </Link>
     </Section>
 )
 
