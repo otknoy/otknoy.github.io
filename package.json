@@ -8,7 +8,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack --mode=production",
-    "deploy": "npm run lint && npm run build && gh-pages -b master -d dist/ ",
+    "deploy": "npm run lint && npm run build && gh-pages -b prod -d dist/ ",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint ./src"
