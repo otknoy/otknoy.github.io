@@ -15,55 +15,80 @@ Array [
       </span>
     </h1>
   </header>,
-  <div>
-    <section
-      className="sc-AxheI etUejA"
-    >
-      <h1
-        className="sc-Axmtr gNLSTW"
-      >
-        <a
-          className="sc-AxmLO iKoxmt"
-          href="https://twitter.com/otknoy"
-        >
-          twitter
-        </a>
-      </h1>
-    </section>
-    <section
-      className="sc-AxheI etUejA"
-    >
-      <h1
-        className="sc-Axmtr gNLSTW"
-      >
-        <a
-          className="sc-AxmLO iKoxmt"
-          href="https://github.com/otknoy/"
-        >
+  <section>
+    <h1>
+      Profile
+    </h1>
+    <div>
+      <p>
+        Naoya Otsuka
+      </p>
+      <p>
+        web engineer
+      </p>
+    </div>
+    <ul>
+      <li>
+        <a>
           github
         </a>
-      </h1>
-    </section>
-    <section
-      className="sc-AxheI etUejA"
-    >
-      <h1
-        className="sc-Axmtr gNLSTW"
-      >
-        <a
-          className="sc-AxmLO iKoxmt"
-          href="https://otknoy.hatenablog.com/"
-        >
-          blog
+      </li>
+      <li>
+        <a>
+          Twitter
         </a>
-      </h1>
-    </section>
-  </div>,
+      </li>
+      <li>
+        <a>
+          Blog
+        </a>
+      </li>
+    </ul>
+  </section>,
+  <section>
+    <h1>
+      Interest
+    </h1>
+    <ul>
+      <li>
+        Java, Kotlin, SpringBoot
+      </li>
+      <li>
+        Python, Node.js, Go
+      </li>
+      <li>
+        Docker, Kubernetes
+      </li>
+      <li>
+        Microservices, Test-driven Development
+      </li>
+      <li>
+        Information Retrieval
+      </li>
+      <li>
+        Human Computer Interaction
+      </li>
+    </ul>
+  </section>,
+  <section>
+    <h1>
+      Portfolio
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          under construction
+        </a>
+      </li>
+    </ul>
+  </section>,
   <footer
-    className="sc-fzozJi fgLSDk"
+    className="sc-AxheI hFTVxD"
   >
     <h1
-      className="sc-fzoLsD icemJL"
+      className="sc-Axmtr kDILWR"
     >
       <span
         className="sc-AxirZ jvzABj"
