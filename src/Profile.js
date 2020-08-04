@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Profile({name, description, links}) {
+export default function Profile({name, description, link}) {
   return (
       <section>
         <h1>Profile</h1>
@@ -10,7 +10,7 @@ export default function Profile({name, description, links}) {
           <p>{description}</p>
         </div>
 
-        <Links {...links}></Links>
+        <Links {...link}></Links>
       </section>
   )
 }
@@ -20,8 +20,8 @@ const Links = ({github, twitter, blog}) => (
     <>
       <ul>
         <li><a href={github}>github</a></li>
-        <li><a href={twitter}>Twitter</a></li>
-        <li><a href={blog}>Blog</a></li>
+        <li><a href={twitter}>twitter</a></li>
+        <li><a href={blog}>blog</a></li>
       </ul>
     </>
 )
