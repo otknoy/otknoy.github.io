@@ -29,18 +29,24 @@ Array [
     </div>
     <ul>
       <li>
-        <a>
+        <a
+          href="https://github.com/otknoy"
+        >
           github
         </a>
       </li>
       <li>
-        <a>
-          Twitter
+        <a
+          href="https://twitter.com/otknoy"
+        >
+          twitter
         </a>
       </li>
       <li>
-        <a>
-          Blog
+        <a
+          href="https://otknoy.hatenablog.com"
+        >
+          blog
         </a>
       </li>
     </ul>
