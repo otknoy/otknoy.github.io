@@ -28,16 +28,19 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.20.6",
     "gh-pages": "^2.2.0",
     "jest": "^25.5.4",
     "react-test-renderer": "^16.13.1",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
