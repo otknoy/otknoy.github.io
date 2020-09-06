@@ -3,13 +3,26 @@
 exports[`render <App /> snapshot 1`] = `
 Array [
   <header
-    className="sc-eCApGN dyORaM"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
   >
     <h1
-      className="sc-jSFkmK jPCUDi"
+      style={
+        Object {
+          "margin": "0px",
+          "padding": "4px",
+        }
+      }
     >
       <span
-        className="sc-hKFyIo eCqoGD"
+        style={
+          Object {
+            "fontSize": "28px",
+          }
+        }
       >
         Naoya Otsuka
       </span>
@@ -91,13 +104,26 @@ Array [
     </ul>
   </section>,
   <footer
-    className="sc-gKAblj iDszLg"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
   >
     <h1
-      className="sc-iCoHVE AscQy"
+      style={
+        Object {
+          "margin": "0px",
+          "padding": "4px",
+        }
+      }
     >
       <span
-        className="sc-gtssRu fBCpkM"
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
       >
         (C) 1988-2020 Naoya Otsuka
       </span>
