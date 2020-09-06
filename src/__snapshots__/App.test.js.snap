@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render <Page /> snapshot 1`] = `
+exports[`render <App /> snapshot 1`] = `
 Array [
   <header
     className="sc-eCApGN dyORaM"

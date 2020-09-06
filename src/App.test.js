@@ -1,12 +1,12 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Page from './Page'
+import App from './App'
 
-describe('render <Page />', () => {
+describe('render <App />', () => {
   test('snapshot', () => {
     const tree = renderer
-          .create(<Page />)
+          .create(<App />)
           .toJSON()
 
     expect(tree).toMatchSnapshot()
