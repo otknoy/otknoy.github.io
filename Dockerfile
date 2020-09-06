@@ -6,7 +6,7 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install
 
-COPY dist/index.html dist/
+COPY public/index.html public/
 COPY src/ src/
 COPY babel.config.js .
 COPY webpack.config.js .
@@ -18,7 +18,7 @@ RUN npm run test
 
 FROM nginx:alpine
 
-COPY --from=builder /app/dist/ /usr/share/nginx/html/
+COPY --from=builder /app/public/ /usr/share/nginx/html/
 
 RUN ls -ltra /usr/share/nginx/html/
 

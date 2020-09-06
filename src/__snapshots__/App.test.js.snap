@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render <Page /> snapshot 1`] = `
+exports[`render <App /> snapshot 1`] = `
 Array [
   <header
-    className="sc-AxhUy bsWMyc"
+    className="sc-eCApGN dyORaM"
   >
     <h1
-      className="sc-AxgMl JnhRk"
+      className="sc-jSFkmK jPCUDi"
     >
       <span
-        className="sc-AxhCb hHeuYy"
+        className="sc-hKFyIo eCqoGD"
       >
         Naoya Otsuka
       </span>
@@ -91,13 +91,13 @@ Array [
     </ul>
   </section>,
   <footer
-    className="sc-AxheI hFTVxD"
+    className="sc-gKAblj iDszLg"
   >
     <h1
-      className="sc-Axmtr kDILWR"
+      className="sc-iCoHVE AscQy"
     >
       <span
-        className="sc-AxirZ jvzABj"
+        className="sc-gtssRu fBCpkM"
       >
         (C) 1988-2020 Naoya Otsuka
       </span>

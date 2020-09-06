@@ -3,6 +3,6 @@ import ReactDOM from "react-dom";
 
 import 'normalize.css';
 
-import Page from './Page';
+import App from './App';
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
