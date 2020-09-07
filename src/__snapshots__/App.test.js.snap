@@ -12,32 +12,45 @@ Array [
     <h1
       style={
         Object {
-          "margin": "0px",
-          "padding": "4px",
+          "fontSize": "28px",
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "28px",
-          }
-        }
-      >
-        Naoya Otsuka
-      </span>
+      Naoya Otsuka
     </h1>
   </header>,
   <section>
-    <h1>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Profile
     </h1>
     <div>
       <p>
-        Naoya Otsuka
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Naoya Otsuka
+        </span>
       </p>
       <p>
-        web engineer
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          web engineer
+        </span>
       </p>
     </div>
     <ul>
@@ -45,27 +58,57 @@ Array [
         <a
           href="https://github.com/otknoy"
         >
-          github
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            github
+          </span>
         </a>
       </li>
       <li>
         <a
           href="https://twitter.com/otknoy"
         >
-          twitter
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            twitter
+          </span>
         </a>
       </li>
       <li>
         <a
           href="https://otknoy.hatenablog.com"
         >
-          blog
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            blog
+          </span>
         </a>
       </li>
     </ul>
   </section>,
   <section>
-    <h1>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Interest
     </h1>
     <ul>
@@ -90,7 +133,13 @@ Array [
     </ul>
   </section>,
   <section>
-    <h1>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Portfolio
     </h1>
     <ul>
