@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { SectionTitle } from './atoms/Title'
+
 export default function Interest({interest}) {
   return (
       <section>
-        <h1>Interest</h1>
+        <SectionTitle>Interest</SectionTitle>
 
         <ul>
         {

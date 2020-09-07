@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { SectionTitle } from './atoms/Title'
+
 export default function Profile({name, description, link}) {
   return (
       <section>
-        <h1>Profile</h1>
+        <SectionTitle>Profile</SectionTitle>
 
         <div>
           <p>{name}</p>
@@ -14,7 +16,6 @@ export default function Profile({name, description, link}) {
       </section>
   )
 }
-
 
 const Links = ({github, twitter, blog}) => (
     <>

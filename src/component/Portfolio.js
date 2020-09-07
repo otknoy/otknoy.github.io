@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { SectionTitle } from './atoms/Title'
+
 export default function Portfolio({portfolio}) {
   return (
       <section>
-        <h1>Portfolio</h1>
+        <SectionTitle>Portfolio</SectionTitle>
 
         <ul>
         {
