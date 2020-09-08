@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SectionTitle } from './atoms/Title'
-import { MediumText } from './atoms/Text'
+import { Text } from './atoms/Text'
 
 export default function Profile({name, description, link}) {
   return (
@@ -9,8 +9,8 @@ export default function Profile({name, description, link}) {
         <SectionTitle>Profile</SectionTitle>
 
         <div>
-          <p><MediumText>{name}</MediumText></p>
-          <p><MediumText>{description}</MediumText></p>
+          <p><Text>{name}</Text></p>
+          <p><Text>{description}</Text></p>
         </div>
 
         <Links {...link}></Links>
@@ -18,7 +18,7 @@ export default function Profile({name, description, link}) {
   )
 }
 
-const LinkText = ({href, children}) => <a href={href}><MediumText>{children}</MediumText></a>
+const LinkText = ({href, children}) => <a href={href}><Text>{children}</Text></a>
 
 const Links = ({github, twitter, blog}) => (
     <>
