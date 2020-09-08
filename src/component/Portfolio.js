@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { SectionTitle } from './atoms/Title'
-import { LinkText } from './atoms/Text'
+import { SectionTitle } from './atom/Title'
+import { LinkText } from './atom/Text'
 
 export default function Portfolio({portfolio}) {
   return (

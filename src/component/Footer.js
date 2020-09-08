@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Text } from './atoms/Text'
+import { Text } from './atom/Text'
 
 export default function Footer() {
   return (

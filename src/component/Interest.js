@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { SectionTitle } from './atoms/Title'
-import { Text } from './atoms/Text'
+import { SectionTitle } from './atom/Title'
+import { Text } from './atom/Text'
 
 export default function Interest({interest}) {
   return (

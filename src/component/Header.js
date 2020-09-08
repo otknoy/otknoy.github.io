@@ -1,6 +1,6 @@
 import React from "react"
 
-import { PageTitle } from './atoms/Title'
+import { PageTitle } from './atom/Title'
 
 export default function Header() {
   return (
