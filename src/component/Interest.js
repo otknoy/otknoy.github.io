@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { SectionTitle } from './atoms/Title'
+import { Text } from './atoms/Text'
 
 export default function Interest({interest}) {
   return (
@@ -9,7 +10,7 @@ export default function Interest({interest}) {
 
         <ul>
         {
-          interest.map((e, i) => (<li key={i}>{e}</li>))
+          interest.map((e, i) => (<li key={i}><Text>{e}</Text></li>))
         }
         </ul>
       </section>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SectionTitle } from './atoms/Title'
-import { Text } from './atoms/Text'
+import { Text, LinkText } from './atoms/Text'
 
 export default function Profile({name, description, link}) {
   return (
@@ -18,7 +18,7 @@ export default function Profile({name, description, link}) {
   )
 }
 
-const LinkText = ({href, children}) => <a href={href}><Text>{children}</Text></a>
+
 
 const Links = ({github, twitter, blog}) => (
     <>

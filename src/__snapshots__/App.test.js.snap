@@ -113,22 +113,70 @@ Array [
     </h1>
     <ul>
       <li>
-        Java, Kotlin, SpringBoot
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Java, Kotlin, SpringBoot
+        </span>
       </li>
       <li>
-        Python, Node.js, Go
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Python, Node.js, Go
+        </span>
       </li>
       <li>
-        Docker, Kubernetes
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Docker, Kubernetes
+        </span>
       </li>
       <li>
-        Microservices, Test-driven Development
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Microservices, Test-driven Development
+        </span>
       </li>
       <li>
-        Information Retrieval
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Information Retrieval
+        </span>
       </li>
       <li>
-        Human Computer Interaction
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Human Computer Interaction
+        </span>
       </li>
     </ul>
   </section>,
@@ -147,7 +195,15 @@ Array [
         <a
           href="/"
         >
-          under construction
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            under construction
+          </span>
         </a>
       </li>
     </ul>
