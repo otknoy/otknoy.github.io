@@ -12,32 +12,45 @@ Array [
     <h1
       style={
         Object {
-          "margin": "0px",
-          "padding": "4px",
+          "fontSize": "28px",
         }
       }
     >
-      <span
-        style={
-          Object {
-            "fontSize": "28px",
-          }
-        }
-      >
-        Naoya Otsuka
-      </span>
+      Naoya Otsuka
     </h1>
   </header>,
   <section>
-    <h1>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Profile
     </h1>
     <div>
       <p>
-        Naoya Otsuka
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Naoya Otsuka
+        </span>
       </p>
       <p>
-        web engineer
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          web engineer
+        </span>
       </p>
     </div>
     <ul>
@@ -45,52 +58,136 @@ Array [
         <a
           href="https://github.com/otknoy"
         >
-          github
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            github
+          </span>
         </a>
       </li>
       <li>
         <a
           href="https://twitter.com/otknoy"
         >
-          twitter
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            twitter
+          </span>
         </a>
       </li>
       <li>
         <a
           href="https://otknoy.hatenablog.com"
         >
-          blog
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            blog
+          </span>
         </a>
       </li>
     </ul>
   </section>,
   <section>
-    <h1>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Interest
     </h1>
     <ul>
       <li>
-        Java, Kotlin, SpringBoot
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Java, Kotlin, SpringBoot
+        </span>
       </li>
       <li>
-        Python, Node.js, Go
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Python, Node.js, Go
+        </span>
       </li>
       <li>
-        Docker, Kubernetes
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Docker, Kubernetes
+        </span>
       </li>
       <li>
-        Microservices, Test-driven Development
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Microservices, Test-driven Development
+        </span>
       </li>
       <li>
-        Information Retrieval
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Information Retrieval
+        </span>
       </li>
       <li>
-        Human Computer Interaction
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Human Computer Interaction
+        </span>
       </li>
     </ul>
   </section>,
   <section>
-    <h1>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Portfolio
     </h1>
     <ul>
@@ -98,7 +195,15 @@ Array [
         <a
           href="/"
         >
-          under construction
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
+              }
+            }
+          >
+            under construction
+          </span>
         </a>
       </li>
     </ul>

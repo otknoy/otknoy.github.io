@@ -1,13 +1,16 @@
 import React from 'react'
 
+import { SectionTitle } from './atom/Title'
+import { LinkText } from './atom/Text'
+
 export default function Portfolio({portfolio}) {
   return (
       <section>
-        <h1>Portfolio</h1>
+        <SectionTitle>Portfolio</SectionTitle>
 
         <ul>
         {
-          portfolio.map((e, i) => (<li key={i}><a href={e.link}>{e.name}</a></li>))
+          portfolio.map((e, i) => (<li key={i}><LinkText href={e.link}>{e.name}</LinkText></li>))
         }
         </ul>
       </section>

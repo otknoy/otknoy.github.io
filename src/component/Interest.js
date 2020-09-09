@@ -1,13 +1,16 @@
 import React from 'react'
 
+import { SectionTitle } from './atom/Title'
+import { Text } from './atom/Text'
+
 export default function Interest({interest}) {
   return (
       <section>
-        <h1>Interest</h1>
+        <SectionTitle>Interest</SectionTitle>
 
         <ul>
         {
-          interest.map((e, i) => (<li key={i}>{e}</li>))
+          interest.map((e, i) => (<li key={i}><Text>{e}</Text></li>))
         }
         </ul>
       </section>
