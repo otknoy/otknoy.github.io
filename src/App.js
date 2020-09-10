@@ -32,7 +32,7 @@ const state = {
   ]
 }
 
-const Page = () => (
+const App = () => (
     <>
       <Header />
 
@@ -44,4 +44,4 @@ const Page = () => (
     </>
 )
 
-export default Page
+export default App
