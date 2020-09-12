@@ -1,7 +1,7 @@
 const path = require('path');
 const outputPath = path.resolve(__dirname, 'build');
 
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -35,10 +35,8 @@ module.exports = {
     path: outputPath
   },
   plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-	{from: './public/index.html'}
-      ]
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
     })
   ],
   devServer: {
