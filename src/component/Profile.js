@@ -6,6 +6,9 @@ import { Text, LinkText } from './atom/Text'
 export default function Profile({name, description, link}) {
   return (
       <section>
+
+        <Image />
+
         <SectionTitle>Profile</SectionTitle>
 
         <div>
@@ -18,7 +21,11 @@ export default function Profile({name, description, link}) {
   )
 }
 
-
+const Image = () => (
+    <>
+    <img src='https://pbs.twimg.com/profile_banners/43682408/1417191879/1500x500' width='100%' height='160px' loading='lazy' />
+    </>
+)
 
 const Links = ({github, twitter, blog}) => (
     <>
