@@ -11,7 +11,8 @@
     "deploy": "npm run lint && npm run build && gh-pages -b prod -d build/ ",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,13 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
     "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.2",
     "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.4.1",
     "jest": "^25.5.4",
+    "prettier": "^2.1.2",
     "react-test-renderer": "^16.13.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
