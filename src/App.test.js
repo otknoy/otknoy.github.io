@@ -5,9 +5,7 @@ import App from './App'
 
 describe('render <App />', () => {
   test('snapshot', () => {
-    const tree = renderer
-          .create(<App />)
-          .toJSON()
+    const tree = renderer.create(<App />).toJSON()
 
     expect(tree).toMatchSnapshot()
   })

@@ -13,35 +13,35 @@ const state = {
     link: {
       github: 'https://github.com/otknoy',
       twitter: 'https://twitter.com/otknoy',
-      blog: 'https://otknoy.hatenablog.com'
-    }
+      blog: 'https://otknoy.hatenablog.com',
+    },
   },
   interest: [
     'Java, Kotlin, SpringBoot',
     'Python, Node.js, Go',
     'Docker, Kubernetes',
     'Microservices, Test-driven Development',
-    'Information Retrieval', 
-    'Human Computer Interaction'
+    'Information Retrieval',
+    'Human Computer Interaction',
   ],
   portfolio: [
     {
       name: 'under construction',
-      link: '/'
-    }
-  ]
+      link: '/',
+    },
+  ],
 }
 
 const App = () => (
-    <>
-      <Header />
+  <>
+    <Header />
 
-      <Profile {...state.profile}/>
-      <Interest interest={state.interest}/>
-      <Portfolio portfolio={state.portfolio}/>
-    
-      <Footer />
-    </>
+    <Profile {...state.profile} />
+    <Interest interest={state.interest} />
+    <Portfolio portfolio={state.portfolio} />
+
+    <Footer />
+  </>
 )
 
 export default App
