@@ -18,9 +18,7 @@ RUN npm run test
 
 FROM nginx:alpine
 
-COPY --from=builder /app/public/ /usr/share/nginx/html/
-
-RUN ls -ltra /usr/share/nginx/html/
+COPY --from=builder /app/build /usr/share/nginx/html/
 
 EXPOSE 80
 
