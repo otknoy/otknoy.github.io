@@ -40,6 +40,7 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: outputPath
+    contentBase: outputPath,
+    open: true
   }
 }
