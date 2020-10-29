@@ -1,7 +1,10 @@
 # otknoy.github.io
 
 ```
-$ docker run --rm -it -v $(pwd):/app node:12.13.1-alpine sh
+$ npm start
+```
 
-$ cd /app && npm install && npm run build:prod
+```
+$ docker image build -t otknoy.github.io .
+$ docker container run -it --rm -p 80:80 otknoy.github.io
 ```
