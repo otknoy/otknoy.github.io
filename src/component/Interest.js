@@ -3,7 +3,7 @@ import React from 'react'
 import { SectionTitle } from './atom/Title'
 import { Text } from './atom/Text'
 
-export default function Interest({ interest }) {
+const Interest = ({ interest }) => {
   return (
     <section>
       <SectionTitle>Interest</SectionTitle>
@@ -18,3 +18,5 @@ export default function Interest({ interest }) {
     </section>
   )
 }
+
+export default Interest

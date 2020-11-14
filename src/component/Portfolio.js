@@ -3,7 +3,7 @@ import React from 'react'
 import { SectionTitle } from './atom/Title'
 import { LinkText } from './atom/Text'
 
-export default function Portfolio({ portfolio }) {
+const Portfolio = ({ portfolio }) => {
   return (
     <section>
       <SectionTitle>Portfolio</SectionTitle>
@@ -18,3 +18,5 @@ export default function Portfolio({ portfolio }) {
     </section>
   )
 }
+
+export default Portfolio

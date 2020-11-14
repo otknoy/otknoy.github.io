@@ -2,10 +2,12 @@ import React from 'react'
 
 import { PageTitle } from './atom/Title'
 
-export default function Header() {
+const Header = () => {
   return (
     <header style={{ textAlign: 'center' }}>
       <PageTitle>Naoya Otsuka</PageTitle>
     </header>
   )
 }
+
+export default Header

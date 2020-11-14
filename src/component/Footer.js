@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Text } from './atom/Text'
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer style={{ textAlign: 'center' }}>
       <h1 style={{ margin: '0px', padding: '4px' }}>
@@ -11,3 +11,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer

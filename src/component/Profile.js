@@ -3,7 +3,7 @@ import React from 'react'
 import { SectionTitle } from './atom/Title'
 import { Text, LinkText } from './atom/Text'
 
-export default function Profile({ name, description, link }) {
+const Profile = ({ name, description, link }) => {
   return (
     <section>
       <Image />
@@ -50,3 +50,5 @@ const Links = ({ github, twitter, blog }) => (
     </ul>
   </>
 )
+
+export default Profile
