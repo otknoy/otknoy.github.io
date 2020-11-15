@@ -3,26 +3,24 @@ import React from 'react'
 import { SectionTitle } from './atom/Title'
 import { Text, LinkText } from './atom/Text'
 
-const Profile = ({ name, description, link }) => {
-  return (
-    <section>
-      <Image />
+const Profile = ({ name, description, link }) => (
+  <section>
+    <Image />
 
-      <SectionTitle>Profile</SectionTitle>
+    <SectionTitle>Profile</SectionTitle>
 
-      <div>
-        <p>
-          <Text>{name}</Text>
-        </p>
-        <p>
-          <Text>{description}</Text>
-        </p>
-      </div>
+    <div>
+      <p>
+        <Text>{name}</Text>
+      </p>
+      <p>
+        <Text>{description}</Text>
+      </p>
+    </div>
 
-      <Links {...link}></Links>
-    </section>
-  )
-}
+    <Links {...link}></Links>
+  </section>
+)
 
 const Image = () => (
   <>
