@@ -5,8 +5,6 @@ import { Text, LinkText } from './atom/Text'
 
 const Profile = ({ name, description, link }) => (
   <section>
-    <Image />
-
     <SectionTitle>Profile</SectionTitle>
 
     <div>
@@ -20,17 +18,6 @@ const Profile = ({ name, description, link }) => (
 
     <Links {...link}></Links>
   </section>
-)
-
-const Image = () => (
-  <>
-    <img
-      src="https://pbs.twimg.com/profile_banners/43682408/1417191879/1500x500"
-      width="100%"
-      height="160px"
-      loading="lazy"
-    />
-  </>
 )
 
 const Links = ({ github, twitter, blog }) => (
