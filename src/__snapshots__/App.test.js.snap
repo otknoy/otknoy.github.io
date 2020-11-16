@@ -18,14 +18,14 @@ Array [
     >
       Naoya Otsuka
     </h1>
-  </header>,
-  <section>
     <img
       height="160px"
       loading="lazy"
       src="https://pbs.twimg.com/profile_banners/43682408/1417191879/1500x500"
       width="100%"
     />
+  </header>,
+  <section>
     <h1
       style={
         Object {
