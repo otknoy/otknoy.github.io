@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { PageTitle } from './atom/Title'
+import { PageTitle } from './atoms/Title'
 
 const Header = () => (
   <header style={{ textAlign: 'center' }}>

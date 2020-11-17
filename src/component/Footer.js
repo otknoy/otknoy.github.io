@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Text } from './atom/Text'
+import { Text } from './atoms/Text'
 
 const Footer = () => (
   <footer style={{ textAlign: 'center' }}>

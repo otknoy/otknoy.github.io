@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { SectionTitle } from './atom/Title'
-import { Text, LinkText } from './atom/Text'
+import { SectionTitle } from './atoms/Title'
+import { Text, LinkText } from './atoms/Text'
 
 const Profile = ({ name, description, link }) => (
   <section>
