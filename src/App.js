@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Header from './component/Header'
-import Profile from './component/Profile'
-import Portfolio from './component/Portfolio'
-import Interest from './component/Interest'
-import Footer from './component/Footer'
+import Header from './component/organisms/Header'
+import Profile from './component/organisms/Profile'
+import Portfolio from './component/organisms/Portfolio'
+import Interest from './component/organisms/Interest'
+import Footer from './component/organisms/Footer'
 
 const state = {
   profile: {
