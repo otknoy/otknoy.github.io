@@ -1,9 +1,16 @@
 import React from 'react'
 
-import { SectionTitle } from './atom/Title'
-import { LinkText } from './atom/Text'
+import { SectionTitle } from '../atoms/Title'
+import { LinkText } from '../atoms/Text'
 
-const Portfolio = ({ portfolio }) => (
+const portfolio = [
+  {
+    name: 'under construction',
+    link: '/',
+  },
+]
+
+const Portfolio = () => (
   <section>
     <SectionTitle>Portfolio</SectionTitle>
 
