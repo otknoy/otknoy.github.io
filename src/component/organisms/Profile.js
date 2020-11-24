@@ -3,37 +3,31 @@ import React from 'react'
 import { SectionTitle } from '../atoms/Title'
 import { Text, LinkText } from '../atoms/Text'
 
-const Profile = ({ name, description, link }) => (
+const Profile = () => (
   <section>
     <SectionTitle>Profile</SectionTitle>
 
     <div>
       <p>
-        <Text>{name}</Text>
+        <Text>Naoya Otsuka</Text>
       </p>
       <p>
-        <Text>{description}</Text>
+        <Text>web engineer</Text>
       </p>
     </div>
 
-    <Links {...link}></Links>
-  </section>
-)
-
-const Links = ({ github, twitter, blog }) => (
-  <>
     <ul>
       <li>
-        <LinkText href={github}>github</LinkText>
+        <LinkText href="https://github.com/otknoy">github</LinkText>
       </li>
       <li>
-        <LinkText href={twitter}>twitter</LinkText>
+        <LinkText href="https://twitter.com/otknoy">twitter</LinkText>
       </li>
       <li>
-        <LinkText href={blog}>blog</LinkText>
+        <LinkText href="https://otknoy.hatenablog.com">blog</LinkText>
       </li>
     </ul>
-  </>
+  </section>
 )
 
 export default Profile
