@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "module": "esnext",
+    "allowJs": true, // TODO: js 脱却したら消す
+    "jsx": "react",
+    // "sourceMap": true,
+    // "strict": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noImplicitReturns": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "forceConsistentCasingInFileNames": true
+
+    "moduleResolution": "node"
+  }
+}

@@ -10,6 +10,8 @@ COPY public/index.html public/
 COPY src/ src/
 COPY babel.config.js .
 COPY webpack.config.js .
+COPY tsconfig.json .
+COPY jest.config.js .
 COPY .eslintrc.js .
 RUN npm run build
 RUN npm run lint
