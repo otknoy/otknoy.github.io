@@ -1,8 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 
 import { PageTitle } from '../atoms/Title'
 
-const Header = () => (
+const Header: React.FC = () => (
   <header style={{ textAlign: 'center' }}>
     <PageTitle>Naoya Otsuka</PageTitle>
 

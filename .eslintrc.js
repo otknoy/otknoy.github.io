@@ -8,13 +8,17 @@ module.exports = {
   },
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": [],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "rules": {
     "react/prop-types": 0,
     "prettier/prettier": [

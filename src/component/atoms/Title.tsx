@@ -1,13 +1,13 @@
-import React from 'react'
+import * as React from 'react'
 
-const PageTitle = ({ children }) => {
+const PageTitle: React.FC = ({ children }) => {
   const style = {
     fontSize: '28px',
   }
   return <h1 style={style}>{children}</h1>
 }
 
-const SectionTitle = ({ children }) => {
+const SectionTitle: React.FC = ({ children }) => {
   const style = {
     fontSize: '22px',
   }

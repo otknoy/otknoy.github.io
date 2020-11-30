@@ -9,7 +9,7 @@
     "allowJs": true, // TODO: js 脱却したら消す
     "jsx": "react",
     // "sourceMap": true,
-    // "strict": true,
+    "strict": true,
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
     // "noImplicitReturns": true,

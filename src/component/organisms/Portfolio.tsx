@@ -1,16 +1,23 @@
-import React from 'react'
+import * as React from 'react'
 
 import { SectionTitle } from '../atoms/Title'
 import { LinkText } from '../atoms/Text'
 
-const portfolio = [
+type link = {
+  name: string
+  link: string
+}
+
+type links = Array<link>
+
+const portfolio: links = [
   {
     name: 'under construction',
     link: '/',
   },
 ]
 
-const Portfolio = () => (
+const Portfolio: React.FC = () => (
   <section>
     <SectionTitle>Portfolio</SectionTitle>
 

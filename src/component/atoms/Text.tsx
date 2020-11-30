@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const Text: React.FC<{}> = ({ children }) => (
+const Text: React.FC = ({ children }) => (
   <span style={{ fontSize: '16px' }}>{children}</span>
 )
 
