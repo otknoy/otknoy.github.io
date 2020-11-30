@@ -5,7 +5,7 @@ import { Text } from '../atoms/Text'
 const Footer = () => (
   <footer style={{ textAlign: 'center' }}>
     <h1 style={{ margin: '0px', padding: '4px' }}>
-      <Text>(C) 1988-2020 Naoya Otsuka</Text>
+      <Text>(C) 1988-{new Date().getFullYear()} Naoya Otsuka</Text>
     </h1>
   </footer>
 )
