@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import Head from 'next/head'
 
 import Header from '../component/organisms/Header'
@@ -6,22 +8,22 @@ import Portfolio from '../component/organisms/Portfolio'
 import Interest from '../component/organisms/Interest'
 import Footer from '../component/organisms/Footer'
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-	<title>otknoy</title>
-	<meta name="description" content="Naoya Otsuka, web engineer" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-      </Head>
+const Home: React.SFC = () => (
+  <>
+    <Head>
+      <title>otknoy</title>
+      <meta name="description" content="Naoya Otsuka, web engineer" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </Head>
 
-      <Header />
+    <Header />
 
-      <Profile />
-      <Interest />
-      <Portfolio />
+    <Profile />
+    <Interest />
+    <Portfolio />
 
-      <Footer />
-    </>
-  )
-}
+    <Footer />
+  </>
+)
+
+export default Home

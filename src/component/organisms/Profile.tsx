@@ -1,9 +1,9 @@
-import React from 'react'
+import * as React from 'react'
 
 import { SectionTitle } from '../atoms/Title'
 import { Text, LinkText } from '../atoms/Text'
 
-const Profile = () => (
+const Profile: React.SFC = () => (
   <section>
     <SectionTitle>Profile</SectionTitle>
 
