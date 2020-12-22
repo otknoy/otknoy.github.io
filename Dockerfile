@@ -11,8 +11,6 @@ COPY next.config.js .
 COPY tsconfig.json .
 
 COPY src/ src/
-COPY pages/ pages/
-
 RUN npm run build
 # RUN npm run lint
 # RUN npm run test
