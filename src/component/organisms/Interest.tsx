@@ -1,9 +1,9 @@
-import React from 'react'
+import * as React from 'react'
 
 import { SectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const interest = [
+const interest: string[] = [
   'Java, Kotlin, SpringBoot',
   'Python, Node.js, Go',
   'Docker, Kubernetes',
@@ -12,7 +12,7 @@ const interest = [
   'Human Computer Interaction',
 ]
 
-const Interest = () => (
+const Interest: React.SFC = () => (
   <section>
     <SectionTitle>Interest</SectionTitle>
 

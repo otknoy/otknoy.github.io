@@ -6,19 +6,18 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install
 
-COPY public/index.html public/
-COPY src/ src/
-COPY babel.config.js .
-COPY webpack.config.js .
-COPY .eslintrc.js .
-RUN npm run build
-RUN npm run lint
-RUN npm run test
+COPY next-env.d.ts .
+COPY next.config.js .
+COPY tsconfig.json .
 
+COPY src/ src/
+RUN npm run build
+# RUN npm run lint
+# RUN npm run test
 
 FROM nginx:alpine
 
-COPY --from=builder /app/build /usr/share/nginx/html/
+COPY --from=builder /app/out /usr/share/nginx/html/
 
 EXPOSE 80
 

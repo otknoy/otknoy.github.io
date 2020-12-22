@@ -1,16 +1,16 @@
-import React from 'react'
+import * as React from 'react'
 
 import { SectionTitle } from '../atoms/Title'
 import { LinkText } from '../atoms/Text'
 
-const portfolio = [
+const portfolio: {name: string, link: string}[] = [
   {
     name: 'under construction',
     link: '/',
   },
 ]
 
-const Portfolio = () => (
+const Portfolio: React.SFC = () => (
   <section>
     <SectionTitle>Portfolio</SectionTitle>
 
