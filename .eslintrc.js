@@ -21,6 +21,12 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-      "react/prop-types": "off"
+      "react/prop-types": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "settings": {
+      "react": {
+	"version": "detect"
+      }
     }
 };
