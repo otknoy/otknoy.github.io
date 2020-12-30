@@ -1,11 +1,15 @@
 import * as React from 'react'
 
+import Layout from '../components/layout'
+
+import { SectionTitle } from '../components/atoms/Title'
+
 const Portfolio: React.SFC = () => (
-  <>
-    <h1>Portfolio</h1>
+  <Layout>
+    <SectionTitle>Portfolio</SectionTitle>
 
     under construction
-  </>
+  </Layout>
 )
 
 export default Portfolio

@@ -3,7 +3,6 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { SectionTitle } from '../atoms/Title'
-import { LinkText } from '../atoms/Text'
 
 const Portfolio: React.SFC = () => (
   <section>
