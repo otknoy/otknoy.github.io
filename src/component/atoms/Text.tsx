@@ -8,7 +8,6 @@ type LinkProps = {
   href: string,
 }
 
-
 const LinkText: React.SFC<LinkProps> = ({ href, children }) => (
   <a href={href}>
     <Text>{children}</Text>
