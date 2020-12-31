@@ -1,5 +1,5 @@
-body {
+.container {
     max-width: 410px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 8px;
 }
