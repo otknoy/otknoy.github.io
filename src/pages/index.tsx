@@ -2,13 +2,13 @@ import * as React from 'react'
 
 import Head from 'next/head'
 
-import Layout from '../components/layout'
+import Template from '../components/templates'
 import Profile from '../components/organisms/Profile'
 import Portfolio from '../components/organisms/Portfolio'
 import Interest from '../components/organisms/Interest'
 
 const Home: React.SFC = () => (
-  <Layout>
+  <Template>
     <Head>
       <title>otknoy</title>
       <meta name="description" content="Naoya Otsuka, web engineer" />
@@ -18,7 +18,7 @@ const Home: React.SFC = () => (
     <Profile />
     <Interest />
     <Portfolio />
-  </Layout>
+  </Template>
 )
 
 export default Home

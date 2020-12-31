@@ -3,7 +3,7 @@ import * as React from 'react'
 import Header from './organisms/Header'
 import Footer from './organisms/Footer'
 
-const Layout: React.SFC = ({ children }) =>  (
+const Template: React.SFC = ({ children }) =>  (
   <>
     <Header />
 
@@ -13,4 +13,4 @@ const Layout: React.SFC = ({ children }) =>  (
   </>
 )
 
-export default Layout
+export default Template

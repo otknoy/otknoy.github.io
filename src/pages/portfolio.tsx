@@ -1,15 +1,16 @@
 import * as React from 'react'
 
-import Layout from '../components/layout'
+import Template from '../components/templates'
 
 import { SectionTitle } from '../components/atoms/Title'
+import { Text } from '../components/atoms/Text'
 
 const Portfolio: React.SFC = () => (
-  <Layout>
+  <Template>
     <SectionTitle>Portfolio</SectionTitle>
 
-    under construction
-  </Layout>
+    <Text>under construction</Text>
+  </Template>
 )
 
 export default Portfolio
