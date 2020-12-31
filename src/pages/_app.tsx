@@ -7,9 +7,8 @@ import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 
 import 'normalize.css'
-import './style.css'
 
-const App: React.SFC<AppProps> = ({ Component, pageProps }: AppProps) => {
+export default function App( { Component, pageProps }: AppProps) {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url: string) => gtag.pageview(url)
@@ -20,4 +19,3 @@ const App: React.SFC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />
 }
 
-export default App
