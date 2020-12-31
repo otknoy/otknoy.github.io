@@ -14,7 +14,7 @@ COPY .eslintrc.js .
 COPY src/ src/
 RUN npm run build
 RUN npm run lint
-# RUN npm run test
+RUN npm run test
 
 FROM nginx:alpine
 
