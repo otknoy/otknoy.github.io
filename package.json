@@ -9,7 +9,7 @@
     "dev": "next dev -p 3001",
     "build": "next build && next export",
     "start": "next start",
-    "test": "echo no test",
+    "test": "jest",
     "lint": "eslint ./src"
   },
   "repository": {
