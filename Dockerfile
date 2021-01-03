@@ -9,12 +9,14 @@ RUN npm install
 COPY next-env.d.ts .
 COPY next.config.js .
 COPY tsconfig.json .
+COPY jest.config.js .
+COPY tsconfig.jest.json .
 COPY .eslintrc.js .
 
 COPY src/ src/
-RUN npm run build
 RUN npm run lint
-# RUN npm run test
+RUN npm run test
+RUN npm run build
 
 FROM nginx:alpine
 
