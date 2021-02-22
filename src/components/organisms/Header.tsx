@@ -4,7 +4,7 @@ import { PageTitle } from '../atoms/Title'
 
 const Header: React.SFC = () => (
   <header style={{ textAlign: 'center' }}>
-    <PageTitle>Naoya Otsuka</PageTitle>
+    <PageTitle>otknoy.github.io</PageTitle>
   </header>
 )
 

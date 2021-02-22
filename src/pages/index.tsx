@@ -10,7 +10,7 @@ import Interest from '../components/organisms/Interest'
 const Home: React.SFC = () => (
   <Template>
     <Head>
-      <title>otknoy</title>
+      <title>otknoy.github.com</title>
       <meta name="description" content="Naoya Otsuka, web engineer" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
     </Head>

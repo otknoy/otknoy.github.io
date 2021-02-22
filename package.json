@@ -10,6 +10,7 @@
     "build": "next build && next export",
     "start": "next start",
     "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint ./src"
   },
   "repository": {
