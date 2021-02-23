@@ -12,7 +12,7 @@ const Profile: React.SFC = () => (
         <Text>Naoya Otsuka</Text>
       </p>
       <p>
-        <Text>web engineer</Text>
+        <Text>web engineer, architect</Text>
       </p>
     </div>
 

@@ -49,7 +49,7 @@ exports[`render <Home /> snapshot 1`] = `
             }
           }
         >
-          web engineer
+          web engineer, architect
         </span>
       </p>
     </div>
