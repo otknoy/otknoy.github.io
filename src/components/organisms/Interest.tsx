@@ -5,8 +5,7 @@ import { Text } from '../atoms/Text'
 
 const interest: string[] = [
   'Java, Kotlin, SpringBoot',
-  'Python, Node.js, Go',
-  'Docker, Kubernetes',
+  'Go, Docker, Kubernetes',
   'Microservices, Test-driven Development',
   'Information Retrieval',
   'Human Computer Interaction',

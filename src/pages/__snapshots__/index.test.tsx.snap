@@ -131,18 +131,7 @@ exports[`render <Home /> snapshot 1`] = `
             }
           }
         >
-          Python, Node.js, Go
-        </span>
-      </li>
-      <li>
-        <span
-          style={
-            Object {
-              "fontSize": "16px",
-            }
-          }
-        >
-          Docker, Kubernetes
+          Go, Docker, Kubernetes
         </span>
       </li>
       <li>
