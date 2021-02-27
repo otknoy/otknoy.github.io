@@ -17,7 +17,6 @@ const Home: React.SFC = () => (
 
     <Profile />
     <Interest />
-    <Portfolio />
   </Template>
 )
 

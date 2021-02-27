@@ -169,28 +169,6 @@ exports[`render <Home /> snapshot 1`] = `
       </li>
     </ul>
   </section>
-  <section>
-    <h1
-      style={
-        Object {
-          "fontSize": "22px",
-        }
-      }
-    >
-      Portfolio
-    </h1>
-    <ul>
-      <li>
-        <a
-          href="/portfolio"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-        >
-          under construction
-        </a>
-      </li>
-    </ul>
-  </section>
   <footer
     style={
       Object {
