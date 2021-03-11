@@ -25,20 +25,20 @@
   "homepage": "https://otknoy.github.io",
   "devDependencies": {
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.31",
-    "@types/react-dom": "^17.0.1",
+    "@types/node": "^14.14.33",
+    "@types/react-dom": "^17.0.2",
     "@types/react-test-renderer": "^17.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "@typescript-eslint/parser": "^4.15.2",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
     "eslint": "^7.21.0",
     "eslint-plugin-react": "^7.22.0",
     "jest": "^26.6.3",
     "react-test-renderer": "^17.0.1",
-    "ts-jest": "^26.5.2",
-    "typescript": "^4.2.2"
+    "ts-jest": "^26.5.3",
+    "typescript": "^4.2.3"
   },
   "dependencies": {
-    "next": "^10.0.7",
+    "next": "^10.0.8",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
