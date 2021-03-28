@@ -1,12 +1,5 @@
 import * as React from 'react'
 
-const PageTitle: React.SFC = ({ children }) => {
-  const style = {
-    fontSize: '28px',
-  }
-  return <h1 style={style}>{children}</h1>
-}
-
 const SectionTitle: React.SFC = ({ children }) => {
   const style = {
     fontSize: '22px',
@@ -14,4 +7,4 @@ const SectionTitle: React.SFC = ({ children }) => {
   return <h1 style={style}>{children}</h1>
 }
 
-export { PageTitle, SectionTitle }
+export { SectionTitle }
