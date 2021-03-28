@@ -5,19 +5,69 @@ exports[`render <Home /> snapshot 1`] = `
   <header
     style={
       Object {
-        "textAlign": "center",
+        "display": "flex",
+        "justifyContent": "space-between",
       }
     }
   >
     <h1
       style={
         Object {
-          "fontSize": "28px",
+          "fontSize": "24px",
         }
       }
     >
-      otknoy.github.io
+      Naoya Otsuka
     </h1>
+    <div>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/otknoy"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "16px",
+                }
+              }
+            >
+              github
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/otknoy"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "16px",
+                }
+              }
+            >
+              twitter
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://otknoy.hatenablog.com"
+          >
+            <span
+              style={
+                Object {
+                  "fontSize": "16px",
+                }
+              }
+            >
+              blog
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
   <section>
     <h1
@@ -53,53 +103,6 @@ exports[`render <Home /> snapshot 1`] = `
         </span>
       </p>
     </div>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/otknoy"
-        >
-          <span
-            style={
-              Object {
-                "fontSize": "16px",
-              }
-            }
-          >
-            github
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/otknoy"
-        >
-          <span
-            style={
-              Object {
-                "fontSize": "16px",
-              }
-            }
-          >
-            twitter
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://otknoy.hatenablog.com"
-        >
-          <span
-            style={
-              Object {
-                "fontSize": "16px",
-              }
-            }
-          >
-            blog
-          </span>
-        </a>
-      </li>
-    </ul>
   </section>
   <section>
     <h1
