@@ -8,16 +8,25 @@ const style = {
   justifyContent: 'space-between'
 }
 
+const navStyle = {
+  listStyle: 'none'
+}
+
+const listStyle = {
+  padding: '4px',
+  display: 'inline-block'
+}
+
 const Menu: React.SFC = () => (
   <div>
-    <ul>
-      <li>
+    <ul style={navStyle}>
+      <li style={listStyle}>
         <LinkText href="https://github.com/otknoy">github</LinkText>
       </li>
-      <li>
+      <li style={listStyle}>
         <LinkText href="https://twitter.com/otknoy">twitter</LinkText>
       </li>
-      <li>
+      <li style={listStyle}>
         <LinkText href="https://otknoy.hatenablog.com">blog</LinkText>
       </li>
     </ul>
