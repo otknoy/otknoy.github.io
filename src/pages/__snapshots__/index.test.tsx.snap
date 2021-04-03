@@ -115,17 +115,6 @@ exports[`render <Home /> snapshot 1`] = `
             }
           }
         >
-          Naoya Otsuka
-        </span>
-      </p>
-      <p>
-        <span
-          style={
-            Object {
-              "fontSize": "16px",
-            }
-          }
-        >
           web engineer, architect
         </span>
       </p>
