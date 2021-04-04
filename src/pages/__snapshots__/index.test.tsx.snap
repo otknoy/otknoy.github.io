@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render <Home /> snapshot 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "margin": "0 auto",
+      "maxWidth": "410px",
+      "padding": "0 8px",
+    }
+  }
+>
   <header
     style={
       Object {
@@ -216,16 +224,5 @@ exports[`render <Home /> snapshot 1`] = `
       </span>
     </h1>
   </footer>
-  <style
-    jsx={true}
-  >
-    
-      div {
-        max-width: 410px;
-        margin: 0 auto;
-        padding: 0 8px;
-      }
-      
-  </style>
 </div>
 `;
