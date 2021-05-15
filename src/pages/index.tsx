@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Header from '../components/organisms/Header'
 import Footer from '../components/organisms/Footer'
 import Profile from '../components/organisms/Profile'
+import Background from '../components/organisms/Background'
 import Interest from '../components/organisms/Interest'
 
 const Template: React.SFC = ({ children }) => (
@@ -34,6 +35,7 @@ const Home: React.SFC = () => (
 
     <Profile />
     <Interest />
+    <Background />
   </Template>
 )
 
