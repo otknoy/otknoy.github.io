@@ -188,6 +188,57 @@ exports[`render <Home /> snapshot 1`] = `
       </li>
     </ul>
   </section>
+  <section>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
+      Background
+    </h1>
+    <section>
+      <h1
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        Master's Degree
+      </h1>
+      <span
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Graduate School of Informatics, Kansai University, 2013-2015
+      </span>
+    </section>
+    <section>
+      <h1
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        Bachelor's Degree
+      </h1>
+      <span
+        style={
+          Object {
+            "fontSize": "16px",
+          }
+        }
+      >
+        Faculty of Informatics, Kansai University, 2010-2013
+      </span>
+    </section>
+  </section>
   <footer
     style={
       Object {
