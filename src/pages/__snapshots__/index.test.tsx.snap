@@ -128,6 +128,96 @@ exports[`render <Home /> snapshot 1`] = `
         }
       }
     >
+      Skills
+    </h1>
+    <ul>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Java, Kotlin, SpringBoot
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Go, Python
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Docker, Kubernetes, Microservices
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Solr
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Information Retrieval
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Human Computer Interaction
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Exploratory Search
+        </span>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h1
+      style={
+        Object {
+          "fontSize": "22px",
+        }
+      }
+    >
       Interest
     </h1>
     <ul>
