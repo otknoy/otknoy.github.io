@@ -128,7 +128,7 @@ exports[`render <Home /> snapshot 1`] = `
         }
       }
     >
-      Interest
+      Skills
     </h1>
     <ul>
       <li>
@@ -150,7 +150,7 @@ exports[`render <Home /> snapshot 1`] = `
             }
           }
         >
-          Go, Docker, Kubernetes
+          Go, Python
         </span>
       </li>
       <li>
@@ -161,7 +161,18 @@ exports[`render <Home /> snapshot 1`] = `
             }
           }
         >
-          Microservices, Test-driven Development
+          Docker, Kubernetes, Microservices
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Solr
         </span>
       </li>
       <li>
@@ -184,6 +195,17 @@ exports[`render <Home /> snapshot 1`] = `
           }
         >
           Human Computer Interaction
+        </span>
+      </li>
+      <li>
+        <span
+          style={
+            Object {
+              "fontSize": "16px",
+            }
+          }
+        >
+          Exploratory Search
         </span>
       </li>
     </ul>

@@ -3,20 +3,22 @@ import * as React from 'react'
 import { SectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const interest: string[] = [
+const skills: string[] = [
   'Java, Kotlin, SpringBoot',
-  'Go, Docker, Kubernetes',
-  'Microservices, Test-driven Development',
+  'Go, Python',
+  'Docker, Kubernetes, Microservices',
+  'Solr',
   'Information Retrieval',
   'Human Computer Interaction',
+  'Exploratory Search',
 ]
 
-const Interest: React.SFC = () => (
+const Skills: React.SFC = () => (
   <section>
-    <SectionTitle>Interest</SectionTitle>
+    <SectionTitle>Skills</SectionTitle>
 
     <ul>
-      {interest.map((e, i) => (
+      {skills.map((e, i) => (
         <li key={i}>
           <Text>{e}</Text>
         </li>
@@ -25,4 +27,4 @@ const Interest: React.SFC = () => (
   </section>
 )
 
-export default Interest
+export default Skills
