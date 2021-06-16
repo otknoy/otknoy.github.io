@@ -1,5 +1,4 @@
 module.exports = {
-  webpack5: false,
   trailingSlash: true,
   exportPathMap: function() {
     return {
