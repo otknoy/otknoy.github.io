@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[7],{"8VvG":function(n,o,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/index.test",function(){return _(!function(){var n=new Error("Cannot find module 'private-next-pages/index.test.tsx'");throw n.code="MODULE_NOT_FOUND",n}())}])}},[["8VvG",0]]]);
