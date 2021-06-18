@@ -5,9 +5,5 @@ module.exports = {
       '/': { page: '/' }
     }
   },
-  webpack: (config, { buildId, dev, isServer, defalutLoaders, webpack  }) => {
-    config.plugins.push(new webpack.IgnorePlugin(/.*\.test.tsx$/))
-
-    return config
-  }
+  pageExtensions: ["page.tsx"],
 }
