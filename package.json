@@ -9,9 +9,10 @@
     "dev": "next dev -p 3001",
     "build": "next build && next export",
     "start": "next start",
+    "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "eslint ./src"
+    "test:watch": "jest --watch"
+
   },
   "repository": {
     "type": "git",
