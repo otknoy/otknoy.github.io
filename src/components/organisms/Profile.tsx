@@ -3,7 +3,7 @@ import * as React from 'react'
 import { SectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const Profile: React.SFC = () => (
+const Profile: React.FC = () => (
   <section>
     <SectionTitle>Profile</SectionTitle>
 

@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const Logo: React.SFC = () => {
+const Logo: React.FC = () => {
   const style = {
     fontSize: '24px',
   }
