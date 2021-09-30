@@ -13,7 +13,7 @@ const skills: string[] = [
   'Exploratory Search',
 ]
 
-const Skills: React.SFC = () => (
+const Skills: React.FC = () => (
   <section>
     <SectionTitle>Skills</SectionTitle>
 

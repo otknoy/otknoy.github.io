@@ -17,7 +17,7 @@ const listStyle = {
   display: 'inline-block'
 }
 
-const Menu: React.SFC = () => (
+const Menu: React.FC = () => (
   <div>
     <ul style={navStyle}>
       <li style={listStyle}>
@@ -33,7 +33,7 @@ const Menu: React.SFC = () => (
   </div>
 )
 
-const Header: React.SFC = () => (
+const Header: React.FC = () => (
   <header style={style}>
     <Logo></Logo>
     <Menu></Menu>

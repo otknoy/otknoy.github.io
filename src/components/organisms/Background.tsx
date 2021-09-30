@@ -3,7 +3,7 @@ import * as React from 'react'
 import { SectionTitle, SubSectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const Background: React.SFC = () => (
+const Background: React.FC = () => (
   <section>
     <SectionTitle>Background</SectionTitle>
 

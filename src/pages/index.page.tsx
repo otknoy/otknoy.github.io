@@ -8,7 +8,7 @@ import Profile from '../components/organisms/Profile'
 import Skills from '../components/organisms/Skills'
 import Background from '../components/organisms/Background'
 
-const Template: React.SFC = ({ children }) => (
+const Template: React.FC = ({ children }) => (
   <div>
     <Header />
 
@@ -25,7 +25,7 @@ const Template: React.SFC = ({ children }) => (
   </div>
 )
 
-const Home: React.SFC = () => (
+const Home: React.FC = () => (
   <Template>
     <Head>
       <title>Naoya Otsuka</title>
