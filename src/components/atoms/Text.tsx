@@ -4,11 +4,11 @@ const Text: React.FC = ({ children }) => (
   <span style={{ fontSize: '16px' }}>{children}</span>
 )
 
-type LinkProps = {
+type Props = {
   href: string,
 }
 
-const LinkText: React.FC<LinkProps> = ({ href, children }) => (
+const LinkText: React.FC<Props> = ({ href, children }) => (
   <a href={href}>
     <Text>{children}</Text>
   </a>
