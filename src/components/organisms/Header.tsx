@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 import { Logo } from '../atoms/Logo'
 import { LinkText } from '../atoms/Text'
