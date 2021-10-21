@@ -25,18 +25,32 @@ const Template: React.FC = ({ children }) => (
   </div>
 )
 
-const Home: React.FC = () => (
-  <Template>
-    <Head>
-      <title>Naoya Otsuka</title>
-      <meta name="description" content="Naoya Otsuka, web engineer" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-    </Head>
+const Home: React.FC = () => {
+  const data = {
+    skills: [
+      'Java, Kotlin, SpringBoot',
+      'Go, Python',
+      'Docker, Kubernetes, Microservices',
+      'Solr',
+      'Information Retrieval',
+      'Human Computer Interaction',
+      'Exploratory Search',
+    ]
+  }
 
-    <Profile />
-    <Skills />
-    <Background />
-  </Template>
-)
+  return (
+    <Template>
+      <Head>
+	<title>Naoya Otsuka</title>
+	<meta name="description" content="Naoya Otsuka, web engineer" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+      </Head>
+
+      <Profile />
+      <Skills skills={data.skills} />
+      <Background />
+    </Template >
+  )
+}
 
 export default Home
