@@ -3,30 +3,22 @@ import React from 'react'
 import { SectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const Skills: React.FC = () => {
-  const skills: string[] = [
-    'Java, Kotlin, SpringBoot',
-    'Go, Python',
-    'Docker, Kubernetes, Microservices',
-    'Solr',
-    'Information Retrieval',
-    'Human Computer Interaction',
-    'Exploratory Search',
-  ]
+type Props = {
+  skills: string[]
+}
 
-  return (
-    <section>
-      <SectionTitle>Skills</SectionTitle>
+const Skills: React.FC<Props> = ({ skills }) => (
+  <section>
+    <SectionTitle>Skills</SectionTitle>
 
-      <ul>
+    <ul>
       {skills.map((e, i) => (
 	<li key={i}>
           <Text>{e}</Text>
         </li>
       ))}
-      </ul>
-    </section>
-  )
-}
+    </ul>
+  </section>
+)
 
 export default Skills
