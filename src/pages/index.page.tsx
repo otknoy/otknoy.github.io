@@ -35,7 +35,17 @@ const Home: React.FC = () => {
       'Information Retrieval',
       'Human Computer Interaction',
       'Exploratory Search',
-    ]
+    ],
+    background: [
+      {
+	title: "Master's Degree",
+	text: "Graduate School of Informatics, Kansai University, 2013-2015",
+      },
+      {
+	title: "Bachelor's Degree",
+	text: "Faculty of Informatics, Kansai University, 2010-2013",
+      },
+    ],
   }
 
   return (
@@ -48,7 +58,7 @@ const Home: React.FC = () => {
 
       <Profile />
       <Skills skills={data.skills} />
-      <Background />
+      <Background list={data.background}/>
     </Template >
   )
 }
