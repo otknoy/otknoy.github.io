@@ -3,19 +3,26 @@ import  React from 'react'
 import { SectionTitle, SubSectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const Background: React.FC = () => (
+type background = {
+  title: string,
+  text: string,
+}
+
+type Props = {
+  list: background[],
+}
+
+const Background: React.FC<Props> = ({ list }) => (
   <section>
     <SectionTitle>Background</SectionTitle>
-
-    <section>
-      <SubSectionTitle>Master&apos;s Degree</SubSectionTitle>
-      <Text>Graduate School of Informatics, Kansai University, 2013-2015</Text>
-    </section>
-
-    <section>
-      <SubSectionTitle>Bachelor&apos;s Degree</SubSectionTitle>
-      <Text>Faculty of Informatics, Kansai University, 2010-2013</Text>
-    </section>
+    {
+      list.map((e, i) => (
+	<section key={i}>
+          <SubSectionTitle>{e.title}</SubSectionTitle>
+          <Text>{e.text}</Text>
+	</section>
+      ))
+    }
   </section>
 )
 
