@@ -3,13 +3,11 @@ import  React from 'react'
 import { SectionTitle, SubSectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-type background = {
-  title: string,
-  text: string,
-}
-
 type Props = {
-  list: background[],
+  list: {
+    title: string,
+    text: string,
+  }[],
 }
 
 const Background: React.FC<Props> = ({ list }) => (
