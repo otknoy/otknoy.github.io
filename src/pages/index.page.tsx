@@ -58,7 +58,7 @@ const Home: React.FC = () => {
 
       <Profile />
       <Skills skills={data.skills} />
-      <Background list={data.background}/>
+      {/* <Background list={data.background}/> */}
     </Template >
   )
 }
