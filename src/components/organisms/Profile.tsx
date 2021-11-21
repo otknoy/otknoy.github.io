@@ -3,13 +3,17 @@ import React from 'react'
 import { SectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-const Profile: React.FC = () => (
+type Props = {
+  jobTitle: string
+}
+
+const Profile: React.FC<Props> = ({ jobTitle }) => (
   <section>
     <SectionTitle>Profile</SectionTitle>
 
     <div>
       <p>
-        <Text>web engineer, architect</Text>
+        <Text>{jobTitle}</Text>
       </p>
     </div>
   </section>
