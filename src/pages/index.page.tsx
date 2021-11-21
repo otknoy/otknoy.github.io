@@ -27,6 +27,7 @@ const Template: React.FC = ({ children }) => (
 
 const Home: React.FC = () => {
   const data = {
+    jobTitle: 'web engineer, architect',
     skills: [
       'Java, Kotlin, SpringBoot',
       'Go, Python',
@@ -56,7 +57,7 @@ const Home: React.FC = () => {
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
-      <Profile />
+      <Profile jobTitle={data.jobTitle}/>
       <Skills skills={data.skills} />
       {/* <Background list={data.background}/> */}
     </Template >
