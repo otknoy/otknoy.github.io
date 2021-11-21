@@ -35,7 +35,7 @@ const Menu: React.FC = () => (
 
 const Header: React.FC = () => (
   <header style={style}>
-    <Logo></Logo>
+    <Logo>Naoya Otsuka</Logo>
     <Menu></Menu>
   </header>
 )
