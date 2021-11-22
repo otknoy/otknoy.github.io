@@ -12,6 +12,7 @@ COPY tsconfig.json .
 COPY jest.config.js .
 COPY tsconfig.jest.json .
 COPY .eslintrc.js .
+COPY .prettierrc .
 
 COPY src/ src/
 RUN npm run lint
