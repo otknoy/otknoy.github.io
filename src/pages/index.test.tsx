@@ -15,4 +15,3 @@ describe('render <Home />', () => {
     expect(tree).toMatchSnapshot()
   })
 })
-

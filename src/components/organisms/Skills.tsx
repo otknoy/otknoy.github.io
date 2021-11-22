@@ -13,7 +13,7 @@ const Skills: React.FC<Props> = ({ skills }) => (
 
     <ul>
       {skills.map((e, i) => (
-	<li key={i}>
+        <li key={i}>
           <Text>{e}</Text>
         </li>
       ))}
