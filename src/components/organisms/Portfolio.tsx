@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => (
 
     <ul>
       <li>
-	<Link href="/portfolio">under construction</Link>
+        <Link href="/portfolio">under construction</Link>
       </li>
     </ul>
   </section>

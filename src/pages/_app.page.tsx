@@ -8,7 +8,7 @@ import * as gtag from '../lib/gtag'
 
 import 'normalize.css'
 
-export default function App( { Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url: string) => gtag.pageview(url)
@@ -18,4 +18,3 @@ export default function App( { Component, pageProps }: AppProps) {
 
   return <Component {...pageProps} />
 }
-

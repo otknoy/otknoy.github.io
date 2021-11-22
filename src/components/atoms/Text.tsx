@@ -5,7 +5,7 @@ const Text: React.FC = ({ children }) => (
 )
 
 type Props = {
-  href: string,
+  href: string
 }
 
 const LinkText: React.FC<Props> = ({ href, children }) => (

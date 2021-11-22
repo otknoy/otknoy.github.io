@@ -21,7 +21,7 @@ const Template: React.FC = ({ children }) => (
         margin: 0 auto;
         padding: 0 8px;
       }
-      `}</style>
+    `}</style>
   </div>
 )
 
@@ -35,32 +35,32 @@ const Home: React.FC = () => {
       'Solr',
       'Information Retrieval',
       'Human Computer Interaction',
-      'Exploratory Search',
+      'Exploratory Search'
     ],
     background: [
       {
-	title: "Master's Degree",
-	text: "Graduate School of Informatics, Kansai University, 2013-2015",
+        title: "Master's Degree",
+        text: 'Graduate School of Informatics, Kansai University, 2013-2015'
       },
       {
-	title: "Bachelor's Degree",
-	text: "Faculty of Informatics, Kansai University, 2010-2013",
-      },
-    ],
+        title: "Bachelor's Degree",
+        text: 'Faculty of Informatics, Kansai University, 2010-2013'
+      }
+    ]
   }
 
   return (
     <Template>
       <Head>
-	<title>Naoya Otsuka</title>
-	<meta name="description" content="Naoya Otsuka, web engineer" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Naoya Otsuka</title>
+        <meta name="description" content="Naoya Otsuka, web engineer" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
-      <Profile jobTitle={data.jobTitle}/>
+      <Profile jobTitle={data.jobTitle} />
       <Skills skills={data.skills} />
       {/* <Background list={data.background}/> */}
-    </Template >
+    </Template>
   )
 }
 
