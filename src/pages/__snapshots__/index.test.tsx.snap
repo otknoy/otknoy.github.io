@@ -242,12 +242,12 @@ exports[`render <Home /> snapshot 1`] = `
     jsx={true}
   >
     
-      div {
-        max-width: 410px;
-        margin: 0 auto;
-        padding: 0 8px;
-      }
-    
+        div {
+          max-width: 410px;
+          margin: 0 auto;
+          padding: 0 8px;
+        }
+      
   </style>
 </div>
 `;
