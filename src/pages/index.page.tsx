@@ -8,24 +8,7 @@ import Profile from '../components/organisms/Profile'
 import Skills from '../components/organisms/Skills'
 import Background from '../components/organisms/Background'
 
-const Template: React.FC = ({ children }) => (
-  <div>
-    <Header />
-
-    {children}
-
-    <Footer />
-    <style jsx>{`
-      div {
-        max-width: 410px;
-        margin: 0 auto;
-        padding: 0 8px;
-      }
-    `}</style>
-  </div>
-)
-
-const Home: React.FC = () => {
+const Home = () => {
   const data = {
     jobTitle: 'web engineer, architect',
     skills: [
@@ -50,17 +33,28 @@ const Home: React.FC = () => {
   }
 
   return (
-    <Template>
+    <div>
       <Head>
         <title>Naoya Otsuka</title>
         <meta name="description" content="Naoya Otsuka, web engineer" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
+      <Header />
+
       <Profile jobTitle={data.jobTitle} />
       <Skills skills={data.skills} />
       {/* <Background list={data.background}/> */}
-    </Template>
+
+      <Footer />
+      <style jsx>{`
+        div {
+          max-width: 410px;
+          margin: 0 auto;
+          padding: 0 8px;
+        }
+      `}</style>
+    </div>
   )
 }
 
