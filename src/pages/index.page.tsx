@@ -8,7 +8,7 @@ import Profile from '../components/organisms/Profile'
 import Skills from '../components/organisms/Skills'
 import Background from '../components/organisms/Background'
 
-const Template: React.FC = ({ children }) => (
+const Template = ({ children }: {children: React.ReactNode}) => (
   <div>
     <Header />
 
@@ -25,7 +25,7 @@ const Template: React.FC = ({ children }) => (
   </div>
 )
 
-const Home: React.FC = () => {
+const Home = () => {
   const data = {
     jobTitle: 'web engineer, architect',
     skills: [
