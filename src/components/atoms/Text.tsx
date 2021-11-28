@@ -6,9 +6,10 @@ const Text: React.FC = ({ children }) => (
 
 type Props = {
   href: string
+  children: React.ReactNode
 }
 
-const LinkText: React.FC<Props> = ({ href, children }) => (
+const LinkText = ({ href, children }: Props) => (
   <a href={href}>
     <Text>{children}</Text>
   </a>

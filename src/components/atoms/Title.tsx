@@ -1,19 +1,15 @@
 import React from 'react'
 
 type Props = {
-  fontSize: string
+  children: React.ReactNode
 }
 
-const Title: React.FC<Props> = ({ fontSize, children }) => {
-  const style = { fontSize }
-  return <h1 style={style}>{children}</h1>
-}
-
-const SectionTitle: React.FC = ({ children }) => (
-  <Title fontSize="22px">{children}</Title>
+const SectionTitle = ({ children }: Props) => (
+  <h1 style={{ fontSize: '22px' }}>{children}</h1>
 )
-const SubSectionTitle: React.FC = ({ children }) => (
-  <Title fontSize="18px">{children}</Title>
+
+const SubSectionTitle = ({ children }: Props) => (
+  <h1 style={{ fontSize: '28px' }}>{children}</h1>
 )
 
 export { SectionTitle, SubSectionTitle }
