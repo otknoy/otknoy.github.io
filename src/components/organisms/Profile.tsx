@@ -7,7 +7,7 @@ type Props = {
   jobTitle: string
 }
 
-const Profile: React.FC<Props> = ({ jobTitle }) => (
+const Profile = ({ jobTitle }: Props) => (
   <section>
     <SectionTitle>Profile</SectionTitle>
 

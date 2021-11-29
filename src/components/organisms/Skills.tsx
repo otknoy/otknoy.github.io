@@ -7,7 +7,7 @@ type Props = {
   skills: string[]
 }
 
-const Skills: React.FC<Props> = ({ skills }) => (
+const Skills = ({ skills }: Props) => (
   <section>
     <SectionTitle>Skills</SectionTitle>
 
