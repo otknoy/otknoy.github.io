@@ -10,7 +10,7 @@ type Props = {
   }[]
 }
 
-const Background: React.FC<Props> = ({ list }) => (
+const Background = ({ list }: Props) => (
   <section>
     <SectionTitle>Background</SectionTitle>
     {list.map((e, i) => (

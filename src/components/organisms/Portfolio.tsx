@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { SectionTitle } from '../atoms/Title'
 
-const Portfolio: React.FC = () => (
+const Portfolio = () => (
   <section>
     <SectionTitle>Portfolio</SectionTitle>
 

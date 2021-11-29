@@ -17,7 +17,7 @@ const listStyle = {
   display: 'inline-block'
 }
 
-const Menu: React.FC = () => (
+const Menu = () => (
   <div>
     <ul style={navStyle}>
       <li style={listStyle}>
@@ -33,7 +33,7 @@ const Menu: React.FC = () => (
   </div>
 )
 
-const Header: React.FC = () => (
+const Header = () => (
   <header style={style}>
     <Logo>Naoya Otsuka</Logo>
     <Menu></Menu>
