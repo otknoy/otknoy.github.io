@@ -17,26 +17,23 @@ const listStyle = {
   display: 'inline-block'
 }
 
-const Menu = () => (
-  <div>
-    <ul style={navStyle}>
-      <li style={listStyle}>
-        <LinkText href="https://github.com/otknoy">github</LinkText>
-      </li>
-      <li style={listStyle}>
-        <LinkText href="https://twitter.com/otknoy">twitter</LinkText>
-      </li>
-      <li style={listStyle}>
-        <LinkText href="https://otknoy.hatenablog.com">blog</LinkText>
-      </li>
-    </ul>
-  </div>
-)
-
 const Header = () => (
   <header style={style}>
     <Logo>Naoya Otsuka</Logo>
-    <Menu></Menu>
+
+    <div>
+      <ul style={navStyle}>
+        <li style={listStyle}>
+          <LinkText href="https://github.com/otknoy">github</LinkText>
+        </li>
+        <li style={listStyle}>
+          <LinkText href="https://twitter.com/otknoy">twitter</LinkText>
+        </li>
+        <li style={listStyle}>
+          <LinkText href="https://otknoy.hatenablog.com">blog</LinkText>
+        </li>
+      </ul>
+    </div>
   </header>
 )
 
