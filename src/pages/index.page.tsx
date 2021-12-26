@@ -10,6 +10,7 @@ import Background from '../components/organisms/Background'
 
 const Home = () => {
   const data = {
+    name: 'Naoya Otsuka',
     jobTitle: 'web engineer, architect',
     skills: [
       'Java, Kotlin, SpringBoot',
@@ -35,8 +36,8 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Naoya Otsuka</title>
-        <meta name="description" content="Naoya Otsuka, web engineer" />
+        <title>{data.name}</title>
+        <meta name="description" content={`${data.name}'s profile`} />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
