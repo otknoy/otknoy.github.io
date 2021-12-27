@@ -17,21 +17,22 @@ const listStyle = {
   display: 'inline-block'
 }
 
-const Header = () => (
+type Props = {
+  title: string
+  links: Array<{ title: string; url: string }>
+}
+
+const Header = ({ title, links }: Props) => (
   <header style={style}>
-    <Logo>Naoya Otsuka</Logo>
+    <Logo>{title}</Logo>
 
     <div>
       <ul style={navStyle}>
-        <li style={listStyle}>
-          <LinkText href="https://github.com/otknoy">github</LinkText>
-        </li>
-        <li style={listStyle}>
-          <LinkText href="https://twitter.com/otknoy">twitter</LinkText>
-        </li>
-        <li style={listStyle}>
-          <LinkText href="https://otknoy.hatenablog.com">blog</LinkText>
-        </li>
+        {links.map((link, i) => (
+          <li key={i} style={listStyle}>
+            <LinkText href={link.url}>{link.title}</LinkText>
+          </li>
+        ))}
       </ul>
     </div>
   </header>
