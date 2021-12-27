@@ -11,6 +11,20 @@ import Background from '../components/organisms/Background'
 const Home = () => {
   const data = {
     name: 'Naoya Otsuka',
+    links: [
+      {
+        title: 'github',
+        url: 'https://github.com/otknoy'
+      },
+      {
+        title: 'twitter',
+        url: 'https://twitter.com/otknoy'
+      },
+      {
+        title: 'blog',
+        url: 'https://otknoy.hatenablog.com'
+      }
+    ],
     jobTitle: 'web engineer, architect',
     skills: [
       'Java, Kotlin, SpringBoot',
@@ -41,7 +55,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
-      <Header />
+      <Header title={data.name} links={data.links}></Header>
 
       <Profile jobTitle={data.jobTitle} />
       <Skills skills={data.skills} />
