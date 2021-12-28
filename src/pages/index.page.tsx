@@ -62,7 +62,7 @@ const Home = () => {
       {/* <Background list={data.background}/> */}
 
       <Footer />
-      <style jsx>{`
+      <style>{`
         div {
           max-width: 410px;
           margin: 0 auto;

@@ -238,9 +238,7 @@ exports[`render <Home /> snapshot 1`] = `
       </span>
     </h1>
   </footer>
-  <style
-    jsx={true}
-  >
+  <style>
     
         div {
           max-width: 410px;
