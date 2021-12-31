@@ -232,9 +232,7 @@ exports[`render <Home /> snapshot 1`] = `
           }
         }
       >
-        (C) 1988-
-        2025
-         Naoya Otsuka
+        (C) 1988-2025 Naoya Otsuka
       </span>
     </h1>
   </footer>
