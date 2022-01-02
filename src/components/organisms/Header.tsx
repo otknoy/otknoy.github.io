@@ -26,15 +26,13 @@ const Header = ({ title, links }: Props) => (
   <header style={style}>
     <Logo>{title}</Logo>
 
-    <div>
-      <ul style={navStyle}>
-        {links.map((link, i) => (
-          <li key={i} style={listStyle}>
-            <LinkText href={link.url}>{link.title}</LinkText>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul style={navStyle}>
+      {links.map((link, i) => (
+        <li key={i} style={listStyle}>
+          <LinkText href={link.url}>{link.title}</LinkText>
+        </li>
+      ))}
+    </ul>
   </header>
 )
 
