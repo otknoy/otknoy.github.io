@@ -19,82 +19,80 @@ exports[`render <Home /> snapshot 1`] = `
     >
       Naoya Otsuka
     </h1>
-    <div>
-      <ul
+    <ul
+      style={
+        Object {
+          "listStyle": "none",
+        }
+      }
+    >
+      <li
         style={
           Object {
-            "listStyle": "none",
+            "display": "inline-block",
+            "padding": "4px",
           }
         }
       >
-        <li
-          style={
-            Object {
-              "display": "inline-block",
-              "padding": "4px",
-            }
-          }
+        <a
+          href="https://github.com/otknoy"
         >
-          <a
-            href="https://github.com/otknoy"
-          >
-            <span
-              style={
-                Object {
-                  "fontSize": "16px",
-                }
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
               }
-            >
-              github
-            </span>
-          </a>
-        </li>
-        <li
-          style={
-            Object {
-              "display": "inline-block",
-              "padding": "4px",
             }
-          }
-        >
-          <a
-            href="https://twitter.com/otknoy"
           >
-            <span
-              style={
-                Object {
-                  "fontSize": "16px",
-                }
+            github
+          </span>
+        </a>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "padding": "4px",
+          }
+        }
+      >
+        <a
+          href="https://twitter.com/otknoy"
+        >
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
               }
-            >
-              twitter
-            </span>
-          </a>
-        </li>
-        <li
-          style={
-            Object {
-              "display": "inline-block",
-              "padding": "4px",
             }
-          }
-        >
-          <a
-            href="https://otknoy.hatenablog.com"
           >
-            <span
-              style={
-                Object {
-                  "fontSize": "16px",
-                }
+            twitter
+          </span>
+        </a>
+      </li>
+      <li
+        style={
+          Object {
+            "display": "inline-block",
+            "padding": "4px",
+          }
+        }
+      >
+        <a
+          href="https://otknoy.hatenablog.com"
+        >
+          <span
+            style={
+              Object {
+                "fontSize": "16px",
               }
-            >
-              blog
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
+            }
+          >
+            blog
+          </span>
+        </a>
+      </li>
+    </ul>
   </header>
   <section>
     <h1

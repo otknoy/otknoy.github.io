@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import { Logo } from '../atoms/Logo'
 import { LinkText } from '../atoms/LinkText'
@@ -26,15 +26,13 @@ const Header = ({ title, links }: Props) => (
   <header style={style}>
     <Logo>{title}</Logo>
 
-    <div>
-      <ul style={navStyle}>
-        {links.map((link, i) => (
-          <li key={i} style={listStyle}>
-            <LinkText href={link.url}>{link.title}</LinkText>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul style={navStyle}>
+      {links.map((link, i) => (
+        <li key={i} style={listStyle}>
+          <LinkText href={link.url}>{link.title}</LinkText>
+        </li>
+      ))}
+    </ul>
   </header>
 )
 
