@@ -9,7 +9,7 @@ import Skills from '../components/organisms/Skills'
 import Background from '../components/organisms/Background'
 
 const Home = () => {
-  const data = {
+  const profile = {
     name: 'Naoya Otsuka',
     links: [
       {
@@ -24,42 +24,43 @@ const Home = () => {
         title: 'blog',
         url: 'https://otknoy.hatenablog.com'
       }
-    ],
-    jobTitle: 'web engineer, architect',
-    skills: [
-      'Java, Kotlin, SpringBoot',
-      'Go, Python',
-      'Docker, Kubernetes, Microservices',
-      'Solr',
-      'Information Retrieval',
-      'Human Computer Interaction',
-      'Exploratory Search'
-    ],
-    background: [
-      {
-        title: "Master's Degree",
-        text: 'Graduate School of Informatics, Kansai University, 2013-2015'
-      },
-      {
-        title: "Bachelor's Degree",
-        text: 'Faculty of Informatics, Kansai University, 2010-2013'
-      }
     ]
   }
+
+  const skills = [
+    'Java, Kotlin, SpringBoot',
+    'Go, Python',
+    'Docker, Kubernetes, Microservices',
+    'Solr',
+    'Information Retrieval',
+    'Human Computer Interaction',
+    'Exploratory Search'
+  ]
+
+  const background = [
+    {
+      title: "Master's Degree",
+      text: 'Graduate School of Informatics, Kansai University, 2013-2015'
+    },
+    {
+      title: "Bachelor's Degree",
+      text: 'Faculty of Informatics, Kansai University, 2010-2013'
+    }
+  ]
 
   return (
     <div>
       <Head>
-        <title>{data.name}</title>
-        <meta name="description" content={`${data.name}'s profile`} />
+        <title>{profile.name}</title>
+        <meta name="description" content={`${profile.name}'s profile`} />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
-      <Header title={data.name} links={data.links}></Header>
+      <Header title={profile.name} links={profile.links}></Header>
 
-      <Profile jobTitle={data.jobTitle} />
-      <Skills skills={data.skills} />
-      {/* <Background list={data.background}/> */}
+      <Profile jobTitle="web engineer, architect" />
+      <Skills skills={skills} />
+      {/* <Background list={background}/> */}
 
       <Footer />
       <style>{`
@@ -68,7 +69,7 @@ const Home = () => {
           margin: 0 auto;
           padding: 0 8px;
         }
-      `}</style>
+	  `}</style>
     </div>
   )
 }
