@@ -241,7 +241,7 @@ exports[`render <Home /> snapshot 1`] = `
           margin: 0 auto;
           padding: 0 8px;
         }
-      
+	  
   </style>
 </div>
 `;
