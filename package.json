@@ -31,7 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^8.7.0",
-    "eslint-config-next": "^12.0.9",
+    "eslint-config-next": "^12.0.10",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@testing-library/react": "^12.1.2",
-    "next": "^12.0.9",
+    "next": "^12.0.10",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
