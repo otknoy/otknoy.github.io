@@ -5,7 +5,7 @@ import { jest, test, expect, describe } from '@jest/globals'
 
 import Home from './index.page'
 
-jest.useFakeTimers('modern')
+jest.useFakeTimers()
 jest.setSystemTime(new Date('2025-01-01'))
 
 describe('render <Home />', () => {
