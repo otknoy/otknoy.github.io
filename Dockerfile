@@ -14,7 +14,11 @@ COPY tsconfig.jest.json .
 COPY .eslintrc.js .
 COPY .prettierrc .
 
-COPY src/ src/
+COPY pages/ pages/
+COPY components/ components/
+COPY hooks/ hooks/
+COPY lib/ lib/
+
 RUN npm run lint
 RUN npm run test
 RUN npm run build
