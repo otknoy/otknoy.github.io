@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { SectionTitle } from '../components/atoms/Title'
-import { Text } from '../components/atoms/Text'
+import { SectionTitle } from '../../components/atoms/Title'
+import { Text } from '../../components/atoms/Text'
 
 const Portfolio = () => (
   <>

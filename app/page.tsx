@@ -1,7 +1,5 @@
 import * as React from 'react'
 
-import Head from 'next/head'
-
 import Header from '../components/organisms/Header'
 import Footer from '../components/organisms/Footer'
 import Profile from '../components/organisms/Profile'
@@ -50,26 +48,23 @@ const Home = () => {
 
   return (
     <div>
-      <Head>
-        <title>{profile.name}</title>
-        <meta name="description" content={`${profile.name}'s profile`} />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-      </Head>
+      <div>
+        <Header title={profile.name} links={profile.links}></Header>
 
-      <Header title={profile.name} links={profile.links}></Header>
+        <Profile jobTitle="web engineer, architect" />
+        <Skills skills={skills} />
+        {/* <Background list={background}/> */}
 
-      <Profile jobTitle="web engineer, architect" />
-      <Skills skills={skills} />
-      {/* <Background list={background}/> */}
+        <Footer />
 
-      <Footer />
-      <style>{`
+        <style>{`
         div {
           max-width: 410px;
           margin: 0 auto;
           padding: 0 8px;
         }
-	  `}</style>
+      `}</style>
+      </div>
     </div>
   )
 }

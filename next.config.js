@@ -1,9 +1,8 @@
-module.exports = {
-  trailingSlash: true,
-  exportPathMap: function() {
-    return {
-      '/': { page: '/' }
-    }
-  },
-  pageExtensions: ["page.tsx"],
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: 'export',
 }
+
+module.exports = nextConfig

@@ -14,7 +14,7 @@ COPY tsconfig.jest.json .
 COPY .eslintrc.js .
 COPY .prettierrc .
 
-COPY pages/ pages/
+COPY app/ app/
 COPY components/ components/
 COPY hooks/ hooks/
 COPY lib/ lib/
