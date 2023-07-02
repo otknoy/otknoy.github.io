@@ -24,9 +24,8 @@ export default function RootLayout({
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         />
-        <script>
-          dangerouslySetInnerHTML=
-          {{
+        <script
+          dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -36,7 +35,7 @@ export default function RootLayout({
             });
           `
           }}
-        </script>
+        />
       </head>
       <body>{children}</body>
     </html>
