@@ -3,12 +3,12 @@ import * as React from 'react'
 import { SectionTitle } from '../../components/atoms/Title'
 import { Text } from '../../components/atoms/Text'
 
-const Portfolio = () => (
-  <>
-    <SectionTitle>Portfolio</SectionTitle>
+export default function Portfolio() {
+  return (
+    <>
+      <SectionTitle>Portfolio</SectionTitle>
 
-    <Text>under construction</Text>
-  </>
-)
-
-export default Portfolio
+      <Text>under construction</Text>
+    </>
+  )
+}
