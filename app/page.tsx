@@ -4,7 +4,7 @@ import Header from '../components/organisms/Header'
 import Footer from '../components/organisms/Footer'
 import Profile from '../components/organisms/Profile'
 import Skills from '../components/organisms/Skills'
-import Background from '../components/organisms/Background'
+// import Background from '../components/organisms/Background'
 
 export default function Home() {
   const profile = {
@@ -35,6 +35,7 @@ export default function Home() {
     'Exploratory Search',
   ]
 
+  /*
   const background = [
     {
       title: "Master's Degree",
@@ -45,6 +46,7 @@ export default function Home() {
       text: 'Faculty of Informatics, Kansai University, 2010-2013',
     },
   ]
+  **/
 
   return (
     <div>
