@@ -5,16 +5,16 @@ import { LinkText } from '../atoms/LinkText'
 
 const style = {
   display: 'flex',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
 }
 
 const navStyle = {
-  listStyle: 'none'
+  listStyle: 'none',
 }
 
 const listStyle = {
   padding: '4px',
-  display: 'inline-block'
+  display: 'inline-block',
 }
 
 type Props = {

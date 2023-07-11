@@ -12,17 +12,17 @@ export default function Home() {
     links: [
       {
         title: 'github',
-        url: 'https://github.com/otknoy'
+        url: 'https://github.com/otknoy',
       },
       {
         title: 'twitter',
-        url: 'https://twitter.com/otknoy'
+        url: 'https://twitter.com/otknoy',
       },
       {
         title: 'blog',
-        url: 'https://otknoy.hatenablog.com'
-      }
-    ]
+        url: 'https://otknoy.hatenablog.com',
+      },
+    ],
   }
 
   const skills = [
@@ -32,18 +32,18 @@ export default function Home() {
     'Solr',
     'Information Retrieval',
     'Human Computer Interaction',
-    'Exploratory Search'
+    'Exploratory Search',
   ]
 
   const background = [
     {
       title: "Master's Degree",
-      text: 'Graduate School of Informatics, Kansai University, 2013-2015'
+      text: 'Graduate School of Informatics, Kansai University, 2013-2015',
     },
     {
       title: "Bachelor's Degree",
-      text: 'Faculty of Informatics, Kansai University, 2010-2013'
-    }
+      text: 'Faculty of Informatics, Kansai University, 2010-2013',
+    },
   ]
 
   return (

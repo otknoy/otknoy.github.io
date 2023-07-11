@@ -7,12 +7,12 @@ export const metadata = {
   description: "Naoya Otsuka's profile",
   viewport: {
     width: 'device-width',
-    initialScale: 1
-  }
+    initialScale: 1,
+  },
 }
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode
 }) {
@@ -33,7 +33,7 @@ export default function RootLayout({
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
-          `
+          `,
           }}
         />
       </head>
