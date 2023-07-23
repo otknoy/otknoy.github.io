@@ -3,7 +3,7 @@ import React from 'react'
 import { SectionTitle, SubSectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-type Props = {
+interface Props {
   list: {
     title: string
     text: string

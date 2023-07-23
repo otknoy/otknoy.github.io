@@ -17,9 +17,9 @@ const listStyle = {
   display: 'inline-block',
 }
 
-type Props = {
+interface Props {
   title: string
-  links: Array<{ title: string; url: string }>
+  links: { title: string; url: string }[]
 }
 
 const Header = ({ title, links }: Props) => (

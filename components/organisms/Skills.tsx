@@ -3,7 +3,7 @@ import React from 'react'
 import { SectionTitle } from '../atoms/Title'
 import { Text } from '../atoms/Text'
 
-type Props = {
+interface Props {
   skills: string[]
 }
 
