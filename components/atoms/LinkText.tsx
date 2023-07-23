@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Text } from './Text'
 
-type Props = {
+interface Props {
   href: string
   children: React.ReactNode
 }
