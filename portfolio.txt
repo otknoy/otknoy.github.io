@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/0bc0cde260d08b97.css","style",{"crossOrigin":""}]
-0:["Q12LOYO8-f8aj5fa4zkq2",[[["",{"children":["portfolio",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0bc0cde260d08b97.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["FsOO8DIePJvizskGu7-54",[[["",{"children":["portfolio",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0bc0cde260d08b97.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I{"id":1443,"chunks":["272:static/chunks/webpack-abe610a11c7df3d7.js","971:static/chunks/fd9d1056-bdbc21787612b876.js","864:static/chunks/864-5b2a0e4b041824d8.js"],"name":"","async":false}
 5:I{"id":8639,"chunks":["272:static/chunks/webpack-abe610a11c7df3d7.js","971:static/chunks/fd9d1056-bdbc21787612b876.js","864:static/chunks/864-5b2a0e4b041824d8.js"],"name":"","async":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Naoya Otsuka"}],["$","meta","2",{"name":"description","content":"Naoya Otsuka's profile"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
