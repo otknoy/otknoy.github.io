@@ -11,7 +11,7 @@ export default function Home() {
     name: 'Naoya Otsuka',
     links: [
       {
-        title: 'github',
+        title: 'GitHub',
         url: 'https://github.com/otknoy',
       },
       {
