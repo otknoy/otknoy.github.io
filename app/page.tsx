@@ -15,7 +15,7 @@ export default function Home() {
         url: 'https://github.com/otknoy',
       },
       {
-        title: 'twitter',
+        title: 'X',
         url: 'https://twitter.com/otknoy',
       },
       {
