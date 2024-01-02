@@ -45,7 +45,7 @@ exports[`render <Home /> snapshot 1`] = `
                 }
               }
             >
-              github
+              GitHub
             </span>
           </a>
         </li>
@@ -67,7 +67,7 @@ exports[`render <Home /> snapshot 1`] = `
                 }
               }
             >
-              twitter
+              X
             </span>
           </a>
         </li>
