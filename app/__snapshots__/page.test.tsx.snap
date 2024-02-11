@@ -80,6 +80,28 @@ exports[`render <Home /> snapshot 1`] = `
           }
         >
           <a
+            href="https://bsky.app/profile/otknoy.bsky.social"
+          >
+            <span
+              style={
+                {
+                  "fontSize": "16px",
+                }
+              }
+            >
+              bsky
+            </span>
+          </a>
+        </li>
+        <li
+          style={
+            {
+              "display": "inline-block",
+              "padding": "4px",
+            }
+          }
+        >
+          <a
             href="https://otknoy.hatenablog.com"
           >
             <span
