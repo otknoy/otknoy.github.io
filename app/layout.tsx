@@ -1,3 +1,5 @@
+import type { Viewport } from 'next'
+
 import 'normalize.css'
 
 import { GA_TRACKING_ID } from '../lib/gtag'
@@ -5,10 +7,11 @@ import { GA_TRACKING_ID } from '../lib/gtag'
 export const metadata = {
   title: 'Naoya Otsuka',
   description: "Naoya Otsuka's profile",
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
