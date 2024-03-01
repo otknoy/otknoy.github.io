@@ -5,13 +5,12 @@ import Footer from './Footer'
 
 const { useDateNowMock } = vi.hoisted(() => {
   return {
-    useDateNowMock: vi.fn()
+    useDateNowMock: vi.fn(),
   }
 })
 vi.mock('../../hooks/date', () => ({
-  useDateNow: useDateNowMock
+  useDateNow: useDateNowMock,
 }))
-
 
 describe('render <Footer />', () => {
   test.each([
@@ -31,4 +30,3 @@ describe('render <Footer />', () => {
     expect(document.querySelector('footer h1').textContent).toContain(expected)
   })
 })
-
