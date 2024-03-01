@@ -1,17 +1,16 @@
+import { test, describe, expect, vi } from 'vitest'
+import { render } from '@testing-library/react'
 import * as React from 'react'
-
-import * as renderer from 'react-test-renderer'
-import { jest, test, expect, describe } from '@jest/globals'
 
 import Home from './page'
 
-jest.useFakeTimers()
-jest.setSystemTime(new Date('2025-01-01'))
+vi.useFakeTimers()
+vi.setSystemTime(new Date('2025-01-01'))
 
 describe('render <Home />', () => {
   test('snapshot', () => {
-    const tree = renderer.create(<Home />).toJSON()
+    const { container } = render(<Home />)
 
-    expect(tree).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
   })
 })
