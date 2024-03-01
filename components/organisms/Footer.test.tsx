@@ -1,10 +1,16 @@
-import * as React from 'react'
-import { render, screen } from '@testing-library/react'
+import { describe, test, expect, vi } from 'vitest'
+import { render } from '@testing-library/react'
 
 import Footer from './Footer'
-import { useDateNow } from '../../hooks/date'
 
-jest.mock('../../hooks/date')
+const { useDateNowMock } = vi.hoisted(() => {
+  return {
+    useDateNowMock: vi.fn(),
+  }
+})
+vi.mock('../../hooks/date', () => ({
+  useDateNow: useDateNowMock,
+}))
 
 describe('render <Footer />', () => {
   test.each([
@@ -17,10 +23,10 @@ describe('render <Footer />', () => {
       expected: '1988-2025',
     },
   ])('valid year $now $expected', ({ now, expected }) => {
-    ;(useDateNow as jest.Mock).mockImplementation(() => now)
+    useDateNowMock.mockReturnValue(now)
 
     render(<Footer />)
 
-    screen.getByText(new RegExp(expected))
+    expect(document.querySelector('footer h1').textContent).toContain(expected)
   })
 })
