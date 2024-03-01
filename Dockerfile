@@ -9,8 +9,6 @@ RUN npm install
 COPY next-env.d.ts .
 COPY next.config.js .
 COPY tsconfig.json .
-COPY jest.config.js .
-COPY tsconfig.jest.json .
 COPY .eslintrc.js .
 COPY .prettierrc .
 
