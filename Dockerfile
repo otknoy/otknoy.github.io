@@ -28,6 +28,4 @@ COPY --from=builder /app/out /usr/share/nginx/html/
 
 EXPOSE 80
 
-RUN date 102200122016
-
 CMD ["nginx", "-g", "daemon off;"]
