@@ -8,7 +8,7 @@ RUN npm ci
 COPY next-env.d.ts .
 COPY next.config.js .
 COPY tsconfig.json .
-COPY vitest.config.ts .
+COPY vitest.config.mts .
 COPY .eslintrc.js .
 COPY .prettierrc .
 COPY app/ app/
