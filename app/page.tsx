@@ -19,10 +19,6 @@ export default function Home() {
         url: 'https://twitter.com/otknoy',
       },
       {
-        title: 'bsky',
-        url: 'https://bsky.app/profile/otknoy.bsky.social',
-      },
-      {
         title: 'blog',
         url: 'https://otknoy.hatenablog.com',
       },
