@@ -1,6 +1,7 @@
 import type { Viewport } from 'next'
 
 import 'normalize.css'
+import './globals.css'
 
 import { GA_TRACKING_ID } from '../lib/gtag'
 
@@ -22,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
           async

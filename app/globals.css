@@ -1,0 +1,61 @@
+body {
+  background-color: #000020; /* Dark blue */
+  color: #00f0f0; /* Cyan / Aqua */
+  text-shadow: 0 0 5px #00f0f0, 0 0 10px #00f0f0, 0 0 15px #00f0f0; /* Glowing effect */
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: #00f0f0; /* Cyan / Aqua */
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s; /* Added transition */
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; /* Keep existing glow for general links */
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 2rem auto; /* Added more margin to top/bottom */
+  padding: 2rem;
+  border: 1px solid #00f0f0; /* Cyan border */
+  box-shadow: 0 0 15px rgba(0, 240, 240, 0.3); /* Cyan glow effect */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+section {
+  margin-bottom: 2rem; /* Add space between sections */
+}
+
+/* Add some basic styling for headings to fit the theme */
+h1, h2, h3, h4, h5, h6 {
+  color: #00f0f0; /* Cyan / Aqua */
+  text-shadow: 0 0 3px #00f0f0; /* Subtle glow */
+}
+
+/* Header link styles */
+header a {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 1px solid #00f0f0;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+header a:hover {
+  background-color: #00f0f0;
+  color: #000020; /* Dark blue, to contrast with cyan background */
+  box-shadow: 0 0 10px #00f0f0;
+  text-shadow: none; /* Remove text glow when background is glowing */
+}
+
+/* Skills list item styles */
+section ul li { /* This might be too generic, ideally Skills component would have its own classes */
+  border: 1px dashed rgba(0, 240, 240, 0.5); /* Dashed cyan border */
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+  list-style-type: none; /* Remove default bullet points */
+}

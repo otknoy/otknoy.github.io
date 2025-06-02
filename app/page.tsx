@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>
+      <div className="content-wrapper">
         <Header title={profile.name} links={profile.links}></Header>
 
         <Profile jobTitle="web engineer, architect" />
@@ -58,14 +58,6 @@ export default function Home() {
         {/* <Background list={background}/> */}
 
         <Footer />
-
-        <style>{`
-        div {
-          max-width: 410px;
-          margin: 0 auto;
-          padding: 0 8px;
-        }
-      `}</style>
       </div>
     </div>
   )
