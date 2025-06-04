@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style: none;
+  padding-left: 0; /* Add this to remove default ul padding */
+  margin: 0; /* Add this to remove default ul margin */
+}
+
+.navItem {
+  padding: 4px;
+  display: inline-block;
+}
