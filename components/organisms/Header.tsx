@@ -1,21 +1,8 @@
 import * as React from 'react'
+import styles from './Header.module.css';
 
 import { Logo } from '../atoms/Logo'
 import { LinkText } from '../atoms/LinkText'
-
-const style = {
-  display: 'flex',
-  justifyContent: 'space-between',
-}
-
-const navStyle = {
-  listStyle: 'none',
-}
-
-const listStyle = {
-  padding: '4px',
-  display: 'inline-block',
-}
 
 interface Props {
   title: string
@@ -23,12 +10,12 @@ interface Props {
 }
 
 const Header = ({ title, links }: Props) => (
-  <header style={style}>
+  <header className={styles.header}>
     <Logo>{title}</Logo>
 
-    <ul style={navStyle}>
+    <ul className={styles.navList}>
       {links.map((link, i) => (
-        <li key={i} style={listStyle}>
+        <li key={i} className={styles.navItem}>
           <LinkText href={link.url}>{link.title}</LinkText>
         </li>
       ))}
