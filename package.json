@@ -9,7 +9,7 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "npx serve out",
-    "lint": "next lint",
+    "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
@@ -31,7 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^8.30.1",
     "@typescript-eslint/parser": "^8.30.1",
     "@vitejs/plugin-react": "^5.0.0",
-    "eslint": "^9.25.0",
+    "eslint": "^9.38.0",
     "eslint-config-next": "^16.0.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
