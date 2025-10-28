@@ -9,7 +9,7 @@ COPY next-env.d.ts .
 COPY next.config.js .
 COPY tsconfig.json .
 COPY vitest.config.mts .
-COPY .eslintrc.js .
+COPY eslint.config.mjs .
 COPY .prettierrc .
 COPY app/ app/
 COPY components/ components/
