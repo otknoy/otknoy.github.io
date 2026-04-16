@@ -10,8 +10,8 @@
     "build": "next build",
     "start": "npx serve out",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test": "vitest --browser.headless",
+    "test:watch": "vitest watch --browser.headless"
   },
   "repository": {
     "type": "git",
@@ -31,16 +31,17 @@
     "@typescript-eslint/eslint-plugin": "^8.57.0",
     "@typescript-eslint/parser": "^8.57.0",
     "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/browser-playwright": "^4.1.4",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.1.6",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "^7.37.5",
-    "jsdom": "^29.0.0",
     "prettier": "^3.8.1",
     "react-test-renderer": "^19.2.4",
     "typescript": "^6.0.0",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.4",
+    "vitest-browser-react": "^2.2.0"
   },
   "dependencies": {
     "next": "^16.1.6",
