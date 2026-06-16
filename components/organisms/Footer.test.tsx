@@ -1,10 +1,10 @@
 import { describe, test, expect, vi } from 'vitest'
-import { render } from '@testing-library/react'
+import { render } from 'vitest-browser-react'
 
 import Footer from './Footer'
 
 const { useDateNowMock } = vi.hoisted(() => {
-  return {
+	return {
     useDateNowMock: vi.fn(),
   }
 })
@@ -22,10 +22,10 @@ describe('render <Footer />', () => {
       now: new Date('2025/12/30 22:51:56'),
       expected: '1988-2025',
     },
-  ])('valid year $now $expected', ({ now, expected }) => {
+  ])('valid year $now $expected', async ({ now, expected }) => {
     useDateNowMock.mockReturnValue(now)
 
-    render(<Footer />)
+    await render(<Footer />)
 
     expect(document.querySelector('footer h1').textContent).toContain(expected)
   })
