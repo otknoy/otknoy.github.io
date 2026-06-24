@@ -1,4 +1,4 @@
-FROM node:24.17.0 as builder
+FROM node:24.18.0 as builder
 
 WORKDIR /app
 COPY package.json .
