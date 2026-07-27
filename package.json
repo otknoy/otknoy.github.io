@@ -2,8 +2,7 @@
   "name": "otknoy.github.io",
   "version": "1.0.0",
   "engines": {
-    "node": ">=22.11.0",
-    "npm": ">=10.9.0"
+    "node": "24.x || 26.x"
   },
   "scripts": {
     "dev": "next dev -p 3001",
