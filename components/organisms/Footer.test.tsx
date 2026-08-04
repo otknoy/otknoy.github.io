@@ -1,5 +1,5 @@
 import { describe, test, expect, vi } from 'vitest'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import Footer from './Footer'
 
@@ -27,6 +27,6 @@ describe('render <Footer />', () => {
 
     render(<Footer />)
 
-    expect(document.querySelector('footer h1').textContent).toContain(expected)
+    expect(screen.getByRole('heading', { level: 1 }).textContent).toContain(expected)
   })
 })
