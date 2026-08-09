@@ -1,9 +1,8 @@
-import * as React from 'react'
-
 import Header from '../components/organisms/Header'
 import Footer from '../components/organisms/Footer'
 import Profile from '../components/organisms/Profile'
 import Skills from '../components/organisms/Skills'
+import styles from './page.module.css'
 // import Background from '../components/organisms/Background'
 
 export default function Home() {
@@ -49,7 +48,7 @@ export default function Home() {
   **/
 
   return (
-    <div>
+    <div className={styles.container}>
       <div>
         <Header title={profile.name} links={profile.links}></Header>
 
@@ -58,14 +57,6 @@ export default function Home() {
         {/* <Background list={background}/> */}
 
         <Footer />
-
-        <style>{`
-        div {
-          max-width: 410px;
-          margin: 0 auto;
-          padding: 0 8px;
-        }
-      `}</style>
       </div>
     </div>
   )

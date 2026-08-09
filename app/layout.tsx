@@ -1,4 +1,5 @@
 import type { Viewport } from 'next'
+import Script from 'next/script'
 
 import 'normalize.css'
 
@@ -23,20 +24,22 @@ export default function RootLayout({
     <html lang="ja">
       <head>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
+        <Script
+          strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         />
-        <script
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
           }}
         />
       </head>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Text } from '../atoms/Text'
 
 import { useDateNow } from '../../hooks/date'
