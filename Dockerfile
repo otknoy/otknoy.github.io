@@ -6,7 +6,7 @@ COPY package-lock.json .
 RUN npm ci
 
 COPY next-env.d.ts .
-COPY next.config.js .
+COPY next.config.ts .
 COPY tsconfig.json .
 COPY vitest.config.mts .
 COPY eslint.config.mjs .
