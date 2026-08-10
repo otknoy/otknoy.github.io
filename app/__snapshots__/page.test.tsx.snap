@@ -2,7 +2,9 @@
 
 exports[`render <Home /> > snapshot 1`] = `
 <div>
-  <div>
+  <div
+    class="_container_00c8fe"
+  >
     <div>
       <header
         style="display: flex; justify-content: space-between;"
@@ -143,15 +145,6 @@ exports[`render <Home /> > snapshot 1`] = `
           </span>
         </h1>
       </footer>
-      <style>
-        
-        div {
-          max-width: 410px;
-          margin: 0 auto;
-          padding: 0 8px;
-        }
-      
-      </style>
     </div>
   </div>
 </div>

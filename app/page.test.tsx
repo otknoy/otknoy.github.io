@@ -1,6 +1,5 @@
 import { test, describe, expect, vi } from 'vitest'
 import { render } from '@testing-library/react'
-import * as React from 'react'
 
 import Home from './page'
 
