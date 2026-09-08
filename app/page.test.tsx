@@ -1,10 +1,16 @@
-import { test, describe, expect, vi } from 'vitest'
+import { afterEach, beforeEach, test, describe, expect, vi } from 'vitest'
 import { render } from '@testing-library/react'
 
 import Home from './page'
 
-vi.useFakeTimers()
-vi.setSystemTime(new Date('2025-01-01'))
+beforeEach(() => {
+  vi.useFakeTimers()
+  vi.setSystemTime(new Date('2025-01-01'))
+})
+
+afterEach(() => {
+  vi.useRealTimers()
+})
 
 describe('render <Home />', () => {
   test('snapshot', () => {
