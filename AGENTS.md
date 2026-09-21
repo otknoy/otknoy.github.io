@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository contains a Next.js 16 personal site built with TypeScript and React. Routes and layouts live in `app/`; for example, the home page is `app/page.tsx` and the portfolio route is `app/portfolio/page.tsx`. Reusable UI is grouped by scope under `components/atoms/` and `components/organisms/`. Shared hooks belong in `hooks/`, while framework-independent helpers belong in `lib/`. Keep CSS modules beside the route or component that uses them. Tests are colocated with their subjects as `*.test.tsx`, and snapshot files live in adjacent `__snapshots__/` directories. The generated static site is written to `out/`; do not edit generated output directly.
+This repository contains a Next.js 16 personal site built with TypeScript and React. Routes and layouts live in `app/`; the home page is `app/page.tsx`, and blog routes are under `app/blog/`. Reusable UI belongs in `components/`, blog content in `content/blog/`, and framework-independent helpers in `lib/`. Keep CSS modules beside the route or component that uses them. Tests are colocated with their subjects as `*.test.tsx`, and snapshot files live in adjacent `__snapshots__/` directories. The generated static site is written to `out/`; do not edit generated output directly.
 
 ## Build, Test, and Development Commands
 
