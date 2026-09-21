@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  min-height: 72px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -37,9 +37,9 @@
 .hero {
   position: relative;
   display: grid;
-  min-height: calc(100vh - 88px);
+  min-height: min(680px, calc(100vh - 72px));
   align-content: center;
-  padding: 80px 0;
+  padding: 56px 0;
 }
 
 .hero::after {
@@ -66,7 +66,7 @@
 
 .intro {
   max-width: 600px;
-  margin: 42px 0 22px;
+  margin: 32px 0 18px;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: clamp(0.9rem, 2vw, 1.1rem);
@@ -95,8 +95,8 @@
 .section {
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) 2fr;
-  gap: 80px;
-  padding: 130px 0;
+  gap: 60px;
+  padding: 84px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -112,7 +112,7 @@
 }
 
 .profileCopy p {
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 2;
@@ -135,8 +135,8 @@
 }
 
 .skillCard {
-  min-height: 270px;
-  padding: 28px;
+  min-height: 230px;
+  padding: 24px;
   background: var(--surface);
 }
 
@@ -147,7 +147,7 @@
 }
 
 .skillCard h3 {
-  margin: 45px 0 22px;
+  margin: 30px 0 18px;
   font-size: 1.1rem;
 }
 
@@ -170,7 +170,7 @@
 .linkList a {
   display: flex;
   justify-content: space-between;
-  padding: 24px 4px;
+  padding: 18px 4px;
   border-bottom: 1px solid var(--line);
   color: var(--foreground);
   font-size: 1.1rem;
@@ -184,7 +184,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0 50px;
+  padding: 24px 0 32px;
   border-top: 1px solid var(--line);
   color: var(--subtle);
   font-family: var(--font-mono);
@@ -203,8 +203,8 @@
 
   .section {
     grid-template-columns: 1fr;
-    gap: 52px;
-    padding: 90px 0;
+    gap: 36px;
+    padding: 64px 0;
   }
 
   .skillGrid {
@@ -222,7 +222,8 @@
   }
 
   .hero {
-    min-height: 760px;
+    min-height: 560px;
+    padding: 48px 0;
   }
 
   .hero h1 {
