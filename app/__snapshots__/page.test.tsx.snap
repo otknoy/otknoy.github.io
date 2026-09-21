@@ -2,150 +2,242 @@
 
 exports[`render <Home /> > snapshot 1`] = `
 <div>
-  <div
-    class="_container_00c8fe"
+  <main
+    class="_page_00c8fe"
   >
-    <div>
-      <header
-        style="display: flex; justify-content: space-between;"
+    <header
+      class="_header_00c8fe"
+    >
+      <a
+        class="_wordmark_00c8fe"
+        href="/"
       >
-        <h1
-          style="font-size: 24px;"
+        NO
+        <span>
+          .
+        </span>
+      </a>
+      <nav
+        aria-label="メインナビゲーション"
+      >
+        <a
+          href="/blog"
         >
-          Naoya Otsuka
-        </h1>
-        <ul
-          style="list-style: none;"
-        >
-          <li
-            style="padding: 4px; display: inline-block;"
-          >
-            <a
-              href="https://github.com/otknoy"
-            >
-              <span
-                style="font-size: 16px;"
-              >
-                GitHub
-              </span>
-            </a>
-          </li>
-          <li
-            style="padding: 4px; display: inline-block;"
-          >
-            <a
-              href="https://twitter.com/otknoy"
-            >
-              <span
-                style="font-size: 16px;"
-              >
-                X
-              </span>
-            </a>
-          </li>
-          <li
-            style="padding: 4px; display: inline-block;"
-          >
-            <a
-              href="https://otknoy.hatenablog.com"
-            >
-              <span
-                style="font-size: 16px;"
-              >
-                blog
-              </span>
-            </a>
-          </li>
-        </ul>
-      </header>
-      <section>
-        <h1
-          style="font-size: 22px;"
+          Blog
+        </a>
+      </nav>
+    </header>
+    <section
+      class="_hero_00c8fe"
+    >
+      <h1>
+        Naoya
+        <br />
+        Otsuka
+        <span>
+          .
+        </span>
+      </h1>
+      <p
+        class="_intro_00c8fe"
+      >
+        Web Engineer / Architect
+      </p>
+      <div
+        class="_status_00c8fe"
+      >
+        <span
+          aria-hidden="true"
+        />
+        Osaka, Japan
+      </div>
+    </section>
+    <section
+      aria-labelledby="profile-title"
+      class="_section_00c8fe"
+    >
+      <div
+        class="_sectionHeading_00c8fe"
+      >
+        <h2
+          id="profile-title"
         >
           Profile
-        </h1>
-        <div>
-          <p>
-            <span
-              style="font-size: 16px;"
-            >
-              web engineer, architect
-            </span>
-          </p>
-        </div>
-      </section>
-      <section>
-        <h1
-          style="font-size: 22px;"
+        </h2>
+      </div>
+      <div
+        class="_profileCopy_00c8fe"
+      >
+        <p>
+          バックエンド開発とアーキテクチャ設計に取り組むWebエンジニアです。
+        </p>
+        <p>
+          情報検索、探索的検索、Human-Computer Interactionにも関心があります。
+        </p>
+      </div>
+    </section>
+    <section
+      aria-labelledby="skills-title"
+      class="_section_00c8fe"
+    >
+      <div
+        class="_sectionHeading_00c8fe"
+      >
+        <h2
+          id="skills-title"
         >
           Skills
-        </h1>
-        <ul>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Java, Kotlin, SpringBoot
-            </span>
-          </li>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Go, Python
-            </span>
-          </li>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Docker, Kubernetes, Microservices
-            </span>
-          </li>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Solr
-            </span>
-          </li>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Information Retrieval
-            </span>
-          </li>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Human Computer Interaction
-            </span>
-          </li>
-          <li>
-            <span
-              style="font-size: 16px;"
-            >
-              Exploratory Search
-            </span>
-          </li>
-        </ul>
-      </section>
-      <footer
-        style="text-align: center;"
+        </h2>
+      </div>
+      <div
+        class="_skillGrid_00c8fe"
       >
-        <h1
-          style="margin: 0px; padding: 4px;"
+        <article
+          class="_skillCard_00c8fe"
         >
-          <span
-            style="font-size: 16px;"
-          >
-            (C) 1988-2025 Naoya Otsuka
+          <span>
+            0
+            1
           </span>
-        </h1>
-      </footer>
-    </div>
-  </div>
+          <h3>
+            Backend
+          </h3>
+          <ul>
+            <li>
+              Java
+            </li>
+            <li>
+              Kotlin
+            </li>
+            <li>
+              Spring Boot
+            </li>
+            <li>
+              Go
+            </li>
+            <li>
+              Python
+            </li>
+          </ul>
+        </article>
+        <article
+          class="_skillCard_00c8fe"
+        >
+          <span>
+            0
+            2
+          </span>
+          <h3>
+            Platform
+          </h3>
+          <ul>
+            <li>
+              Docker
+            </li>
+            <li>
+              Kubernetes
+            </li>
+            <li>
+              Microservices
+            </li>
+          </ul>
+        </article>
+        <article
+          class="_skillCard_00c8fe"
+        >
+          <span>
+            0
+            3
+          </span>
+          <h3>
+            Search & Research
+          </h3>
+          <ul>
+            <li>
+              Solr
+            </li>
+            <li>
+              Information Retrieval
+            </li>
+            <li>
+              Exploratory Search
+            </li>
+            <li>
+              HCI
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section
+      class="_section_00c8fe"
+    >
+      <div
+        class="_sectionHeading_00c8fe"
+      >
+        <h2>
+          Links
+        </h2>
+      </div>
+      <div
+        class="_linkList_00c8fe"
+      >
+        <a
+          href="https://github.com/otknoy"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span>
+            GitHub
+          </span>
+          <span
+            aria-hidden="true"
+          >
+            ↗
+          </span>
+        </a>
+        <a
+          href="https://twitter.com/otknoy"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span>
+            X / Twitter
+          </span>
+          <span
+            aria-hidden="true"
+          >
+            ↗
+          </span>
+        </a>
+        <a
+          href="https://otknoy.hatenablog.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span>
+            Hatena Blog
+          </span>
+          <span
+            aria-hidden="true"
+          >
+            ↗
+          </span>
+        </a>
+      </div>
+    </section>
+    <footer
+      class="_footer_00c8fe"
+    >
+      <span>
+        © 2025 Naoya Otsuka
+      </span>
+      <a
+        href="/blog"
+      >
+        Read the blog →
+      </a>
+    </footer>
+  </main>
 </div>
 `;

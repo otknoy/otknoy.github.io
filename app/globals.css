@@ -1,0 +1,49 @@
+:root {
+  --background: #050403;
+  --surface: #0d0a06;
+  --foreground: #ffc247;
+  --muted: #d9a13d;
+  --subtle: #8f682d;
+  --line: #3b2a12;
+  --accent: #ffad1f;
+  --font-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(rgba(255, 173, 31, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 173, 31, 0.025) 1px, transparent 1px),
+    var(--background);
+  background-size: 64px 64px;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  transition: color 180ms ease, padding 180ms ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}

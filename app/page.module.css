@@ -1,5 +1,282 @@
-.container {
-  max-width: 410px;
+.page {
+  width: min(100% - 40px, 1120px);
   margin: 0 auto;
-  padding: 0 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  border-bottom: 1px solid var(--line);
+}
+
+.header nav a {
+  color: var(--muted);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.header nav a:hover {
+  color: var(--accent);
+}
+
+.wordmark {
+  color: var(--foreground);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+}
+
+.wordmark span,
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  min-height: min(680px, calc(100vh - 72px));
+  align-content: center;
+  padding: 56px 0;
+}
+
+.hero::after {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+  width: 260px;
+  height: 260px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 100px color-mix(in srgb, var(--accent) 10%, transparent);
+  content: '';
+  pointer-events: none;
+}
+
+.hero h1 {
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(4.5rem, 13vw, 10rem);
+  font-weight: 750;
+  letter-spacing: -0.075em;
+  line-height: 0.78;
+  overflow-wrap: anywhere;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 32px 0 18px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  letter-spacing: 0.04em;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--subtle);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 2fr;
+  gap: 60px;
+  padding: 84px 0;
+  border-top: 1px solid var(--line);
+}
+
+.sectionHeading h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.profileCopy {
+  min-width: 0;
+  max-width: 680px;
+}
+
+.profileCopy p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.profileCopy p:first-child {
+  color: var(--foreground);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.7;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--line);
+}
+
+.skillCard {
+  min-height: 230px;
+  padding: 24px;
+  background: var(--surface);
+}
+
+.skillCard > span {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.skillCard h3 {
+  margin: 30px 0 18px;
+  font-size: 1.1rem;
+}
+
+.skillCard ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skillCard li {
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.linkList {
+  border-top: 1px solid var(--line);
+}
+
+.linkList a {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 4px;
+  border-bottom: 1px solid var(--line);
+  color: var(--foreground);
+  font-size: 1.1rem;
+}
+
+.linkList a:hover {
+  padding-right: 10px;
+  color: var(--accent);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 32px;
+  border-top: 1px solid var(--line);
+  color: var(--subtle);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.footer a {
+  color: var(--foreground);
+}
+
+@media (max-width: 900px) {
+  .hero::after {
+    width: clamp(130px, 24vw, 190px);
+    height: clamp(130px, 24vw, 190px);
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 64px 0;
+  }
+
+  .skillGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skillCard {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .header {
+    min-height: 64px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: clamp(64px, 18vw, 96px) 0;
+  }
+
+  .hero::after {
+    top: 40px;
+    right: -18px;
+    width: clamp(104px, 32vw, 150px);
+    height: clamp(104px, 32vw, 150px);
+    opacity: 0.7;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, 19vw, 5.25rem);
+    line-height: 0.84;
+  }
+
+  .intro {
+    margin-top: 28px;
+  }
+
+  .section {
+    gap: 28px;
+    padding: 52px 0;
+  }
+
+  .profileCopy p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .profileCopy p:first-child {
+    font-size: 1.2rem;
+  }
+
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .skillCard {
+    padding: 20px;
+  }
+
+  .skillCard h3 {
+    margin: 22px 0 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 14px;
+  }
 }
