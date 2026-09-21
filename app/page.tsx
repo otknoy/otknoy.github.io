@@ -1,63 +1,104 @@
-import Header from '../components/organisms/Header'
-import Footer from '../components/organisms/Footer'
-import Profile from '../components/organisms/Profile'
-import Skills from '../components/organisms/Skills'
+import Link from 'next/link'
+
 import styles from './page.module.css'
-// import Background from '../components/organisms/Background'
+
+const skills = [
+  {
+    title: 'Backend',
+    items: ['Java', 'Kotlin', 'Spring Boot', 'Go', 'Python'],
+  },
+  {
+    title: 'Platform',
+    items: ['Docker', 'Kubernetes', 'Microservices'],
+  },
+  {
+    title: 'Search & Research',
+    items: ['Solr', 'Information Retrieval', 'Exploratory Search', 'HCI'],
+  },
+]
+
+const links = [
+  { label: 'GitHub', href: 'https://github.com/otknoy' },
+  { label: 'X / Twitter', href: 'https://twitter.com/otknoy' },
+  { label: 'Hatena Blog', href: 'https://otknoy.hatenablog.com' },
+]
 
 export default function Home() {
-  const profile = {
-    name: 'Naoya Otsuka',
-    links: [
-      {
-        title: 'GitHub',
-        url: 'https://github.com/otknoy',
-      },
-      {
-        title: 'X',
-        url: 'https://twitter.com/otknoy',
-      },
-      {
-        title: 'blog',
-        url: 'https://otknoy.hatenablog.com',
-      },
-    ],
-  }
-
-  const skills = [
-    'Java, Kotlin, SpringBoot',
-    'Go, Python',
-    'Docker, Kubernetes, Microservices',
-    'Solr',
-    'Information Retrieval',
-    'Human Computer Interaction',
-    'Exploratory Search',
-  ]
-
-  /*
-  const background = [
-    {
-      title: "Master's Degree",
-      text: 'Graduate School of Informatics, Kansai University, 2013-2015',
-    },
-    {
-      title: "Bachelor's Degree",
-      text: 'Faculty of Informatics, Kansai University, 2010-2013',
-    },
-  ]
-  **/
-
   return (
-    <div className={styles.container}>
-      <div>
-        <Header title={profile.name} links={profile.links}></Header>
+    <main className={styles.page}>
+      <header className={styles.header}>
+        <Link className={styles.wordmark} href="/">
+          NO<span>.</span>
+        </Link>
+        <nav aria-label="メインナビゲーション">
+          <Link href="/blog">Blog</Link>
+        </nav>
+      </header>
 
-        <Profile jobTitle="web engineer, architect" />
-        <Skills skills={skills} />
-        {/* <Background list={background}/> */}
+      <section className={styles.hero}>
+        <h1>
+          Naoya
+          <br />
+          Otsuka<span>.</span>
+        </h1>
+        <p className={styles.intro}>Web Engineer / Architect</p>
+        <div className={styles.status}>
+          <span aria-hidden="true" />
+          Osaka, Japan
+        </div>
+      </section>
 
-        <Footer />
-      </div>
-    </div>
+      <section className={styles.section} aria-labelledby="profile-title">
+        <div className={styles.sectionHeading}>
+          <h2 id="profile-title">Profile</h2>
+        </div>
+        <div className={styles.profileCopy}>
+          <p>
+            バックエンド開発とアーキテクチャ設計に取り組むWebエンジニアです。
+          </p>
+          <p>
+            情報検索、探索的検索、Human-Computer Interactionにも関心があります。
+          </p>
+        </div>
+      </section>
+
+      <section className={styles.section} aria-labelledby="skills-title">
+        <div className={styles.sectionHeading}>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div className={styles.skillGrid}>
+          {skills.map((skill, index) => (
+            <article className={styles.skillCard} key={skill.title}>
+              <span>0{index + 1}</span>
+              <h3>{skill.title}</h3>
+              <ul>
+                {skill.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionHeading}>
+          <h2>Links</h2>
+        </div>
+        <div className={styles.linkList}>
+          {links.map((link) => (
+            <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
+              <span>{link.label}</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <span>{`© ${new Date().getFullYear()} Naoya Otsuka`}</span>
+        <Link href="/blog">Read the blog →</Link>
+      </footer>
+    </main>
   )
 }

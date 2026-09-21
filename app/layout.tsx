@@ -2,12 +2,13 @@ import type { Viewport } from 'next'
 import Script from 'next/script'
 
 import 'normalize.css'
+import './globals.css'
 
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 export const metadata = {
   title: 'Naoya Otsuka',
-  description: "Naoya Otsuka's profile",
+  description: 'Naoya Otsuka — Web Engineer / Architect',
 }
 
 export const viewport: Viewport = {
