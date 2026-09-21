@@ -10,6 +10,7 @@ export interface BlogPost {
 }
 
 const blogDirectory = path.join(process.cwd(), 'content', 'blog')
+const blogFilenamePattern = /^(\d{4})(\d{2})(\d{2})_([a-z0-9]+(?:-[a-z0-9]+)*)\.md$/
 
 const parseFrontMatter = (source: string) => {
   const match = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/.exec(source)
@@ -35,11 +36,24 @@ export const getAllPosts = (): BlogPost[] => {
     .readdirSync(blogDirectory)
     .filter((file) => file.endsWith('.md'))
     .map((file) => {
+      const filename = blogFilenamePattern.exec(file)
+
+      if (!filename) {
+        throw new Error(
+          `${file} must follow the YYYYMMDD_title.md naming convention`
+        )
+      }
+
       const source = fs.readFileSync(path.join(blogDirectory, file), 'utf8')
       const { metadata, content } = parseFrontMatter(source)
 
       if (!metadata.title || !metadata.date || !metadata.description) {
         throw new Error(`${file} is missing required front matter`)
+      }
+
+      const filenameDate = `${filename[1]}-${filename[2]}-${filename[3]}`
+      if (metadata.date !== filenameDate) {
+        throw new Error(`${file} date must match its front matter date`)
       }
 
       return {
