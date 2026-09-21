@@ -43,6 +43,7 @@
   font-size: clamp(3.5rem, 9vw, 7rem);
   letter-spacing: -0.065em;
   line-height: 0.95;
+  overflow-wrap: anywhere;
 }
 
 .title > p:last-child {
@@ -173,7 +174,10 @@
 }
 
 .article table {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
   margin: 36px 0;
   border-collapse: collapse;
   font-size: 0.95rem;
@@ -201,19 +205,53 @@
     width: min(100% - 28px, 920px);
   }
 
+  .header {
+    min-height: 64px;
+  }
+
   .title {
-    padding: 80px 0 60px;
+    padding: 64px 0 48px;
+  }
+
+  .title h1 {
+    font-size: clamp(3rem, 18vw, 4.5rem);
   }
 
   .postList a {
     grid-template-columns: 1fr auto;
+    gap: 14px;
+    padding: 26px 2px;
   }
 
   .postList time {
     grid-column: 1 / -1;
   }
 
+  .articleHeader {
+    padding: 64px 0 48px;
+  }
+
+  .articleHeader h1 {
+    font-size: clamp(2.25rem, 12vw, 3.5rem);
+  }
+
   .article {
-    overflow-x: auto;
+    padding: 48px 0 80px;
+    font-size: 1rem;
+  }
+
+  .article h2 {
+    margin-top: 52px;
+    font-size: 1.55rem;
+  }
+
+  .article pre {
+    padding: 18px;
+  }
+
+  .article th,
+  .article td {
+    min-width: 120px;
+    padding: 10px 12px;
   }
 }
