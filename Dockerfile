@@ -13,7 +13,7 @@ COPY eslint.config.mjs .
 COPY .prettierrc .
 COPY app/ app/
 COPY components/ components/
-COPY hooks/ hooks/
+COPY content/ content/
 COPY lib/ lib/
 RUN npm run lint
 RUN npm run test
