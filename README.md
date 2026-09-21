@@ -31,5 +31,5 @@ date: 2026-09-22
 記事本文
 ```
 
-Level-two and level-three headings, paragraphs, unordered lists, fenced code
-blocks, links, bold text, and inline code are supported.
+GitHub Flavored Markdown is supported, including tables, task lists,
+strikethrough, links, fenced code blocks, and inline code.
