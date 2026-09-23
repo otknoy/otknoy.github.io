@@ -1,5 +1,8 @@
 .page {
-  width: min(100% - 40px, 920px);
+  width: min(
+    100% - var(--page-gutter) - var(--page-gutter),
+    var(--page-max-width)
+  );
   min-height: 100vh;
   margin: 0 auto;
 }
@@ -19,8 +22,7 @@
 }
 
 .header a:hover,
-.postList a:hover h2,
-.article a {
+.postList a:hover h2 {
   color: var(--accent);
 }
 
@@ -120,11 +122,14 @@
 }
 
 .article {
-  max-width: 720px;
   padding: 70px 0 120px;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 2;
+}
+
+.article a {
+  color: var(--accent);
 }
 
 .article h2 {
@@ -201,10 +206,6 @@
 }
 
 @media (max-width: 640px) {
-  .page {
-    width: min(100% - 28px, 920px);
-  }
-
   .header {
     min-height: 64px;
   }

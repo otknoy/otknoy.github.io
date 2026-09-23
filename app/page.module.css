@@ -1,5 +1,8 @@
 .page {
-  width: min(100% - 40px, 1120px);
+  width: min(
+    100% - var(--page-gutter) - var(--page-gutter),
+    var(--page-max-width)
+  );
   margin: 0 auto;
 }
 
@@ -219,10 +222,6 @@
 }
 
 @media (max-width: 600px) {
-  .page {
-    width: min(100% - 28px, 1120px);
-  }
-
   .header {
     min-height: 64px;
   }
