@@ -247,20 +247,6 @@ exports[`render <Home /> > snapshot 1`] = `
             ↗
           </span>
         </a>
-        <a
-          href="https://otknoy.hatenablog.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <span>
-            Hatena Blog
-          </span>
-          <span
-            aria-hidden="true"
-          >
-            ↗
-          </span>
-        </a>
       </div>
     </section>
     <footer

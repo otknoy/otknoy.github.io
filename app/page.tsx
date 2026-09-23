@@ -48,7 +48,6 @@ const skills = [
 const links = [
   { label: 'GitHub', href: 'https://github.com/otknoy' },
   { label: 'X / Twitter', href: 'https://twitter.com/otknoy' },
-  { label: 'Hatena Blog', href: 'https://otknoy.hatenablog.com' },
 ]
 
 export default function Home() {
