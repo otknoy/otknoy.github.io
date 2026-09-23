@@ -100,14 +100,11 @@ exports[`render <Home /> > snapshot 1`] = `
             1
           </span>
           <h3>
-            Backend
+            Backend & Architecture
           </h3>
           <ul>
             <li>
               Java
-            </li>
-            <li>
-              Kotlin
             </li>
             <li>
               Spring Boot
@@ -118,24 +115,8 @@ exports[`render <Home /> > snapshot 1`] = `
             <li>
               Python
             </li>
-          </ul>
-        </article>
-        <article
-          class="_skillCard_00c8fe"
-        >
-          <span>
-            0
-            2
-          </span>
-          <h3>
-            Platform
-          </h3>
-          <ul>
             <li>
-              Docker
-            </li>
-            <li>
-              Kubernetes
+              Kotlin
             </li>
             <li>
               Microservices
@@ -147,15 +128,71 @@ exports[`render <Home /> > snapshot 1`] = `
         >
           <span>
             0
-            3
+            2
           </span>
           <h3>
-            Search & Research
+            Data & Messaging
           </h3>
           <ul>
             <li>
               Solr
             </li>
+            <li>
+              Redis
+            </li>
+            <li>
+              Cassandra
+            </li>
+            <li>
+              Kafka
+            </li>
+            <li>
+              Pulsar
+            </li>
+            <li>
+              MySQL
+            </li>
+          </ul>
+        </article>
+        <article
+          class="_skillCard_00c8fe"
+        >
+          <span>
+            0
+            3
+          </span>
+          <h3>
+            Platform & Observability
+          </h3>
+          <ul>
+            <li>
+              Docker
+            </li>
+            <li>
+              Kubernetes
+            </li>
+            <li>
+              Prometheus
+            </li>
+            <li>
+              Alertmanager
+            </li>
+            <li>
+              Grafana
+            </li>
+          </ul>
+        </article>
+        <article
+          class="_skillCard_00c8fe"
+        >
+          <span>
+            0
+            4
+          </span>
+          <h3>
+            Research Interests
+          </h3>
+          <ul>
             <li>
               Information Retrieval
             </li>
@@ -163,7 +200,7 @@ exports[`render <Home /> > snapshot 1`] = `
               Exploratory Search
             </li>
             <li>
-              HCI
+              Human-Computer Interaction
             </li>
           </ul>
         </article>

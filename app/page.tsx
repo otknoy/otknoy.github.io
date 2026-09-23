@@ -4,16 +4,44 @@ import styles from './page.module.css'
 
 const skills = [
   {
-    title: 'Backend',
-    items: ['Java', 'Kotlin', 'Spring Boot', 'Go', 'Python'],
+    title: 'Backend & Architecture',
+    items: [
+      'Java',
+      'Spring Boot',
+      'Go',
+      'Python',
+      'Kotlin',
+      'Microservices',
+    ],
   },
   {
-    title: 'Platform',
-    items: ['Docker', 'Kubernetes', 'Microservices'],
+    title: 'Data & Messaging',
+    items: [
+      'Solr',
+      'Redis',
+      'Cassandra',
+      'Kafka',
+      'Pulsar',
+      'MySQL',
+    ],
   },
   {
-    title: 'Search & Research',
-    items: ['Solr', 'Information Retrieval', 'Exploratory Search', 'HCI'],
+    title: 'Platform & Observability',
+    items: [
+      'Docker',
+      'Kubernetes',
+      'Prometheus',
+      'Alertmanager',
+      'Grafana',
+    ],
+  },
+  {
+    title: 'Research Interests',
+    items: [
+      'Information Retrieval',
+      'Exploratory Search',
+      'Human-Computer Interaction',
+    ],
   },
 ]
 
