@@ -1,5 +1,5 @@
 .page {
-  width: min(100% - 40px, 920px);
+  width: min(100% - var(--page-inline-space), var(--page-max-width));
   min-height: 100vh;
   margin: 0 auto;
 }
@@ -120,7 +120,6 @@
 }
 
 .article {
-  max-width: 720px;
   padding: 70px 0 120px;
   color: var(--muted);
   font-size: 1.05rem;
@@ -201,10 +200,6 @@
 }
 
 @media (max-width: 640px) {
-  .page {
-    width: min(100% - 28px, 920px);
-  }
-
   .header {
     min-height: 64px;
   }
