@@ -22,8 +22,7 @@
 }
 
 .header a:hover,
-.postList a:hover h2,
-.article a {
+.postList a:hover h2 {
   color: var(--accent);
 }
 
@@ -127,6 +126,10 @@
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 2;
+}
+
+.article a {
+  color: var(--accent);
 }
 
 .article h2 {
