@@ -4,23 +4,50 @@ import styles from './page.module.css'
 
 const skills = [
   {
-    title: 'Backend',
-    items: ['Java', 'Kotlin', 'Spring Boot', 'Go', 'Python'],
+    title: 'Backend & Architecture',
+    items: [
+      'Java',
+      'Spring Boot',
+      'Go',
+      'Python',
+      'Kotlin',
+      'Microservices',
+    ],
   },
   {
-    title: 'Platform',
-    items: ['Docker', 'Kubernetes', 'Microservices'],
+    title: 'Data & Messaging',
+    items: [
+      'Solr',
+      'Redis',
+      'Cassandra',
+      'Kafka',
+      'Pulsar',
+      'MySQL',
+    ],
   },
   {
-    title: 'Search & Research',
-    items: ['Solr', 'Information Retrieval', 'Exploratory Search', 'HCI'],
+    title: 'Platform & Observability',
+    items: [
+      'Docker',
+      'Kubernetes',
+      'Prometheus',
+      'Alertmanager',
+      'Grafana',
+    ],
+  },
+  {
+    title: 'Research Interests',
+    items: [
+      'Information Retrieval',
+      'Exploratory Search',
+      'Human-Computer Interaction',
+    ],
   },
 ]
 
 const links = [
   { label: 'GitHub', href: 'https://github.com/otknoy' },
   { label: 'X / Twitter', href: 'https://twitter.com/otknoy' },
-  { label: 'Hatena Blog', href: 'https://otknoy.hatenablog.com' },
 ]
 
 export default function Home() {
@@ -53,11 +80,9 @@ export default function Home() {
           <h2 id="profile-title">Profile</h2>
         </div>
         <div className={styles.profileCopy}>
+          <p>主にバックエンド開発に従事する Web エンジニア</p>
           <p>
-            バックエンド開発とアーキテクチャ設計に取り組むWebエンジニアです。
-          </p>
-          <p>
-            情報検索、探索的検索、Human-Computer Interactionにも関心があります。
+            アーキテクチャ設計や情報検索、Human-Computer Interaction に興味がある
           </p>
         </div>
       </section>

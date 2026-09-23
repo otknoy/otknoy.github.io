@@ -69,10 +69,10 @@ exports[`render <Home /> > snapshot 1`] = `
         class="_profileCopy_00c8fe"
       >
         <p>
-          バックエンド開発とアーキテクチャ設計に取り組むWebエンジニアです。
+          主にバックエンド開発に従事する Web エンジニア
         </p>
         <p>
-          情報検索、探索的検索、Human-Computer Interactionにも関心があります。
+          アーキテクチャ設計や情報検索、Human-Computer Interaction に興味がある
         </p>
       </div>
     </section>
@@ -100,14 +100,11 @@ exports[`render <Home /> > snapshot 1`] = `
             1
           </span>
           <h3>
-            Backend
+            Backend & Architecture
           </h3>
           <ul>
             <li>
               Java
-            </li>
-            <li>
-              Kotlin
             </li>
             <li>
               Spring Boot
@@ -118,24 +115,8 @@ exports[`render <Home /> > snapshot 1`] = `
             <li>
               Python
             </li>
-          </ul>
-        </article>
-        <article
-          class="_skillCard_00c8fe"
-        >
-          <span>
-            0
-            2
-          </span>
-          <h3>
-            Platform
-          </h3>
-          <ul>
             <li>
-              Docker
-            </li>
-            <li>
-              Kubernetes
+              Kotlin
             </li>
             <li>
               Microservices
@@ -147,15 +128,71 @@ exports[`render <Home /> > snapshot 1`] = `
         >
           <span>
             0
-            3
+            2
           </span>
           <h3>
-            Search & Research
+            Data & Messaging
           </h3>
           <ul>
             <li>
               Solr
             </li>
+            <li>
+              Redis
+            </li>
+            <li>
+              Cassandra
+            </li>
+            <li>
+              Kafka
+            </li>
+            <li>
+              Pulsar
+            </li>
+            <li>
+              MySQL
+            </li>
+          </ul>
+        </article>
+        <article
+          class="_skillCard_00c8fe"
+        >
+          <span>
+            0
+            3
+          </span>
+          <h3>
+            Platform & Observability
+          </h3>
+          <ul>
+            <li>
+              Docker
+            </li>
+            <li>
+              Kubernetes
+            </li>
+            <li>
+              Prometheus
+            </li>
+            <li>
+              Alertmanager
+            </li>
+            <li>
+              Grafana
+            </li>
+          </ul>
+        </article>
+        <article
+          class="_skillCard_00c8fe"
+        >
+          <span>
+            0
+            4
+          </span>
+          <h3>
+            Research Interests
+          </h3>
+          <ul>
             <li>
               Information Retrieval
             </li>
@@ -163,7 +200,7 @@ exports[`render <Home /> > snapshot 1`] = `
               Exploratory Search
             </li>
             <li>
-              HCI
+              Human-Computer Interaction
             </li>
           </ul>
         </article>
@@ -203,20 +240,6 @@ exports[`render <Home /> > snapshot 1`] = `
         >
           <span>
             X / Twitter
-          </span>
-          <span
-            aria-hidden="true"
-          >
-            ↗
-          </span>
-        </a>
-        <a
-          href="https://otknoy.hatenablog.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <span>
-            Hatena Blog
           </span>
           <span
             aria-hidden="true"
