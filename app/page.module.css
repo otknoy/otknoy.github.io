@@ -1,5 +1,8 @@
 .page {
-  width: min(100% - var(--page-inline-space), var(--page-max-width));
+  width: min(
+    100% - var(--page-gutter) - var(--page-gutter),
+    var(--page-max-width)
+  );
   margin: 0 auto;
 }
 
