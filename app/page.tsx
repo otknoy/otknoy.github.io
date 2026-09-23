@@ -53,11 +53,9 @@ export default function Home() {
           <h2 id="profile-title">Profile</h2>
         </div>
         <div className={styles.profileCopy}>
+          <p>主にバックエンド開発に従事する Web エンジニア</p>
           <p>
-            バックエンド開発とアーキテクチャ設計に取り組むWebエンジニアです。
-          </p>
-          <p>
-            情報検索、探索的検索、Human-Computer Interactionにも関心があります。
+            アーキテクチャ設計や情報検索、Human-Computer Interaction に興味がある
           </p>
         </div>
       </section>
