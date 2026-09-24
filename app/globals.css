@@ -49,6 +49,15 @@ a {
   transition: color 180ms ease;
 }
 
+.linkArrow {
+  display: inline-block;
+  transition: transform 180ms ease;
+}
+
+a:is(:hover, :focus-visible) > .linkArrow {
+  transform: translateX(4px);
+}
+
 ::selection {
   background: var(--accent);
   color: var(--background);

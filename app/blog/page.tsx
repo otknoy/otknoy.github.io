@@ -33,7 +33,10 @@ export default function Blog() {
                   <h2>{post.title}</h2>
                   <p>{post.description}</p>
                 </div>
-                <span className={styles.arrow} aria-hidden="true">
+                <span
+                  className={`linkArrow ${styles.arrow}`}
+                  aria-hidden="true"
+                >
                   →
                 </span>
               </Link>
