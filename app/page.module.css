@@ -166,24 +166,36 @@
 }
 
 .linkList {
-  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-content: start;
 }
 
 .linkList a {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 4px;
-  border-bottom: 1px solid var(--line);
+  display: grid;
+  width: 88px;
+  height: 88px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
   color: var(--foreground);
-  font-size: 1.1rem;
   transition:
     color 180ms ease,
-    padding-right 180ms ease;
+    border-color 180ms ease,
+    transform 180ms ease;
 }
 
-.linkList a:hover {
-  padding-right: 10px;
+.linkList a:is(:hover, :focus-visible) {
+  border-color: var(--accent);
   color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.linkList svg {
+  width: 32px;
+  height: 32px;
 }
 
 .footer {
