@@ -21,16 +21,6 @@
   color: var(--accent);
 }
 
-.postList a:is(:hover, :focus-visible) {
-  text-decoration: none;
-}
-
-.postList a:is(:hover, :focus-visible) h2 {
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-underline-offset: 0.2em;
-}
-
 .title {
   padding: 110px 0 80px;
 }
@@ -135,14 +125,10 @@
 
 .article a {
   color: var(--accent);
-  text-decoration: underline;
-  text-decoration-color: var(--subtle);
-  text-underline-offset: 0.2em;
 }
 
 .article a:is(:hover, :focus-visible) {
   color: var(--foreground);
-  text-decoration-color: var(--accent);
 }
 
 .article h2 {

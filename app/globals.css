@@ -49,13 +49,6 @@ a {
   transition: color 180ms ease;
 }
 
-a:hover,
-a:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-underline-offset: 0.2em;
-}
-
 ::selection {
   background: var(--accent);
   color: var(--background);
