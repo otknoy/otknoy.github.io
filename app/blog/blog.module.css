@@ -251,3 +251,9 @@
     padding: 10px 12px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .postList h2 {
+    transition: none;
+  }
+}
