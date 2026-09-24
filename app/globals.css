@@ -45,7 +45,7 @@ body {
 
 a {
   text-decoration: none;
-  transition: color 180ms ease, padding 180ms ease;
+  transition: color 180ms ease;
 }
 
 ::selection {

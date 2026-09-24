@@ -171,6 +171,7 @@
   border-bottom: 1px solid var(--line);
   color: var(--foreground);
   font-size: 1.1rem;
+  transition: color 180ms ease, padding-right 180ms ease;
 }
 
 .linkList a:hover {
@@ -265,5 +266,11 @@
   .footer {
     flex-direction: column;
     gap: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .linkList a {
+    transition: none;
   }
 }
