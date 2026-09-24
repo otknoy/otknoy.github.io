@@ -31,7 +31,7 @@ export default async function BlogPost({ params }: Props) {
   if (!post) notFound()
 
   return (
-    <main className={styles.page}>
+    <main className={`pageContainer ${styles.page}`}>
       <header className={styles.header}>
         <Link href="/blog">← Blog</Link>
         <Link href="/">Naoya Otsuka</Link>

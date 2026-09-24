@@ -3,7 +3,7 @@
 exports[`render <Home /> > snapshot 1`] = `
 <div>
   <main
-    class="_page_00c8fe"
+    class="pageContainer"
   >
     <header
       class="_header_00c8fe"
