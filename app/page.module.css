@@ -174,8 +174,8 @@
 
 .linkList a {
   display: grid;
-  width: 88px;
-  height: 88px;
+  width: 80px;
+  height: 80px;
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 4px;
