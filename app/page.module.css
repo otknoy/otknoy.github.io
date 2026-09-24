@@ -275,9 +275,3 @@
     gap: 14px;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .linkList a {
-    transition: none;
-  }
-}

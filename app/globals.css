@@ -76,8 +76,4 @@ a:focus-visible {
   html {
     scroll-behavior: auto;
   }
-
-  a {
-    transition: none;
-  }
 }
