@@ -13,7 +13,7 @@ export default function Blog() {
   const posts = getAllPosts()
 
   return (
-    <main className={styles.page}>
+    <main className={`pageContainer ${styles.page}`}>
       <header className={styles.header}>
         <Link href="/">← Naoya Otsuka</Link>
         <span className={styles.kicker}>BLOG</span>

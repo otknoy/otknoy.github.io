@@ -35,6 +35,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.pageContainer {
+  width: min(
+    100% - var(--page-gutter) - var(--page-gutter),
+    var(--page-max-width)
+  );
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
   transition: color 180ms ease, padding 180ms ease;
