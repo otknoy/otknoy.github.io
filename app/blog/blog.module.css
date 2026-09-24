@@ -16,9 +16,19 @@
   font-size: 0.8rem;
 }
 
-.header a:hover,
-.postList a:hover h2 {
+.header a:is(:hover, :focus-visible),
+.postList a:is(:hover, :focus-visible) h2 {
   color: var(--accent);
+}
+
+.postList a:is(:hover, :focus-visible) {
+  text-decoration: none;
+}
+
+.postList a:is(:hover, :focus-visible) h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.2em;
 }
 
 .title {
@@ -125,6 +135,14 @@
 
 .article a {
   color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--subtle);
+  text-underline-offset: 0.2em;
+}
+
+.article a:is(:hover, :focus-visible) {
+  color: var(--foreground);
+  text-decoration-color: var(--accent);
 }
 
 .article h2 {

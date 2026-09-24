@@ -24,6 +24,11 @@
   letter-spacing: -0.06em;
 }
 
+.wordmark:is(:hover, :focus-visible),
+.footer a:is(:hover, :focus-visible) {
+  color: var(--accent);
+}
+
 .wordmark span,
 .hero h1 span {
   color: var(--accent);
@@ -171,7 +176,9 @@
   border-bottom: 1px solid var(--line);
   color: var(--foreground);
   font-size: 1.1rem;
-  transition: color 180ms ease, padding-right 180ms ease;
+  transition:
+    color 180ms ease,
+    padding-right 180ms ease;
 }
 
 .linkList a:hover {
