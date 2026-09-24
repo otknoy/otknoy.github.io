@@ -258,7 +258,13 @@ exports[`render <Home /> > snapshot 1`] = `
       <a
         href="/blog"
       >
-        Read the blog →
+        Read the blog
+        <span
+          aria-hidden="true"
+          class="linkArrow"
+        >
+          →
+        </span>
       </a>
     </footer>
   </main>

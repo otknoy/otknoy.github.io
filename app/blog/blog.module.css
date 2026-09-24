@@ -16,8 +16,8 @@
   font-size: 0.8rem;
 }
 
-.header a:hover,
-.postList a:hover h2 {
+.header a:is(:hover, :focus-visible),
+.postList a:is(:hover, :focus-visible) h2 {
   color: var(--accent);
 }
 
@@ -125,6 +125,10 @@
 
 .article a {
   color: var(--accent);
+}
+
+.article a:is(:hover, :focus-visible) {
+  color: var(--foreground);
 }
 
 .article h2 {
