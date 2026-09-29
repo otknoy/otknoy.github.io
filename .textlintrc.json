@@ -1,0 +1,14 @@
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": true,
+    "preset-japanese": true,
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+        "space": ["alphabets"]
+      }
+    },
+    "@cffnpwr/textlint-rule-sentence-per-line": true
+  }
+}

@@ -59,7 +59,7 @@ CI は Node.js 24.x と 26.x で同じ検証を行います。
 短い英語の要約を使用します。例: `fix: include blog content in Docker build`。
 
 PR は `main` 向けに作成し、変更目的、主な変更点、検証結果を記載してください。
-関連 Issue があればリンクし、表示変更にはスクリーンショットを添付します。
+関連 Issue があればリンクしてください。
 `main` への push で GitHub Pages 配信が実行される点に注意してください。
 生成物の `out/`、`.next/` や秘密情報はコミットしないでください。
 
