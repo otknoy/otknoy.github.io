@@ -10,7 +10,8 @@
     "start": "npx serve out",
     "lint": "eslint .",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "textlint": "textlint content/blog/*.md"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,10 @@
     "jsdom": "^30.0.0",
     "prettier": "^3.8.1",
     "react-test-renderer": "^19.2.4",
+    "textlint": "^15.8.0",
+    "textlint-rule-preset-ja-spacing": "^3.0.3",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-preset-japanese": "^10.0.4",
     "typescript": "^6.0.0",
     "vitest": "^5.0.0"
   },
