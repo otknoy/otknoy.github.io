@@ -21,7 +21,6 @@
 
 html {
   background: var(--background);
-  scroll-behavior: smooth;
 }
 
 body {
@@ -71,11 +70,5 @@ a:is(:hover, :focus-visible) > .linkArrow {
 @media (max-width: 640px) {
   :root {
     --page-gutter: 14px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
   }
 }
