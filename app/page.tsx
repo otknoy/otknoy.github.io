@@ -90,12 +90,18 @@ export default function Home() {
         <div className={styles.sectionHeading}>
           <h2 id="profile-title">Profile</h2>
         </div>
-        <div className={styles.profileCopy}>
-          <p>主にバックエンド開発に従事する Web エンジニア</p>
-          <p>
-            アーキテクチャ設計や情報検索、Human-Computer Interaction に興味がある
-          </p>
-        </div>
+        <ul className={styles.profileCopy}>
+          <li>主にバックエンド開発に従事する Web エンジニア</li>
+          <li>
+            関心領域
+            <ul>
+              <li>システム・アーキテクチャ設計</li>
+              <li>ソフトウェアテスティング</li>
+              <li>情報検索</li>
+              <li>Human-Computer Interaction</li>
+            </ul>
+          </li>
+        </ul>
       </section>
 
       <section className={styles.section} aria-labelledby="skills-title">
