@@ -111,19 +111,31 @@
 .profileCopy {
   min-width: 0;
   max-width: 680px;
+  margin: 0;
+  padding-left: 1.2em;
 }
 
-.profileCopy p {
-  margin: 0 0 20px;
+.profileCopy li {
   color: var(--muted);
-  font-size: 1.05rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
-.profileCopy p:first-child {
+.profileCopy li + li {
+  margin-top: 8px;
+}
+
+.profileCopy > li:first-child {
   color: var(--foreground);
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-  line-height: 1.7;
+}
+
+.profileCopy ul {
+  margin-top: 4px;
+  padding-left: 1.2em;
+}
+
+.profileCopy ul li + li {
+  margin-top: 4px;
 }
 
 .skillGrid {
@@ -262,15 +274,6 @@
   .section {
     gap: 28px;
     padding: 52px 0;
-  }
-
-  .profileCopy p {
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-
-  .profileCopy p:first-child {
-    font-size: 1.2rem;
   }
 
   .skillGrid {
