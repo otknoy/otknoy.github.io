@@ -3,4 +3,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"20260930_home-k8s-configuration","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":131168,"c":"$Q2"}]]
-0:{"b":"wEf2mxdJh5egum_uq8YVZ","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+0:{"b":"Cb8qFnrJJbw3X0Pwy1s1g","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
