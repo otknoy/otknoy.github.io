@@ -187,6 +187,7 @@
 }
 
 .footer {
+  text-align: center;
   padding: 24px 0 32px;
   border-top: 1px solid var(--line);
   color: var(--subtle);
