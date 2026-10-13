@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import Markdown from '../../../components/Markdown'
+import Header from '../../../components/Header'
 import { formatDate, getAllPosts, getPost } from '../../../lib/blogs'
 import styles from '../blog.module.css'
 
@@ -32,10 +32,7 @@ export default async function BlogPost({ params }: Props) {
 
   return (
     <main className={`pageContainer ${styles.page}`}>
-      <header className={styles.header}>
-        <Link href="/blog">← Blog</Link>
-        <Link href="/">Naoya Otsuka</Link>
-      </header>
+      <Header activeBlog />
       <article>
         <header className={styles.articleHeader}>
           <h1>{post.title}</h1>

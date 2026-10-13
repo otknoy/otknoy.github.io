@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import Header from '../components/Header'
 import styles from './page.module.css'
 
 const skills = [
@@ -64,20 +65,13 @@ const links = [
 export default function Home() {
   return (
     <main className="pageContainer">
-      <header className={styles.header}>
-        <Link className={styles.wordmark} href="/">
-          NO<span>.</span>
-        </Link>
-        <nav aria-label="メインナビゲーション">
-          <Link href="/blog">Blog</Link>
-        </nav>
-      </header>
+      <Header />
 
       <section className={styles.hero}>
         <h1>
           Naoya
           <br />
-          Otsuka<span>.</span>
+          Otsuka
         </h1>
         <p className={styles.intro}>Web Engineer / Architect</p>
         <div className={styles.status}>

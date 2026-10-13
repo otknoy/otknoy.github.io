@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import Header from '../../components/Header'
 import { formatDate, getAllPosts } from '../../lib/blogs'
 import styles from './blog.module.css'
 
@@ -14,10 +15,7 @@ export default function Blog() {
 
   return (
     <main className={`pageContainer ${styles.page}`}>
-      <header className={styles.header}>
-        <Link href="/">← Naoya Otsuka</Link>
-        <span className={styles.kicker}>BLOG</span>
-      </header>
+      <Header activeBlog />
       <section className={styles.title}>
         <h1>Blog.</h1>
         <p>技術メモ。</p>
