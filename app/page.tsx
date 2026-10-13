@@ -1,4 +1,5 @@
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import styles from './page.module.css'
 
 const skills = [
@@ -137,9 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className={styles.footer}>
-        <span>{`© ${new Date().getFullYear()} Naoya Otsuka`}</span>
-      </footer>
+      <Footer />
     </main>
   )
 }
