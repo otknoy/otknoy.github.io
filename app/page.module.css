@@ -7,13 +7,17 @@
 }
 
 .header nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0 12px;
   color: var(--muted);
   font-size: 0.875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.header nav a:hover {
+.header nav a:is(:hover, :focus-visible) {
   color: var(--accent);
 }
 
@@ -37,17 +41,17 @@
 .hero {
   position: relative;
   display: grid;
-  min-height: min(680px, calc(100vh - 72px));
+  min-height: 480px;
   align-content: center;
-  padding: 56px 0;
+  padding: 80px 0;
 }
 
 .hero::after {
   position: absolute;
-  top: 14%;
+  top: 18%;
   right: 5%;
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
   border-radius: 50%;
   box-shadow: 0 0 100px color-mix(in srgb, var(--accent) 10%, transparent);
@@ -58,16 +62,16 @@
 .hero h1 {
   z-index: 1;
   margin: 0;
-  font-size: clamp(4.5rem, 13vw, 10rem);
+  font-size: clamp(4.5rem, 10vw, 8rem);
   font-weight: 750;
   letter-spacing: -0.075em;
-  line-height: 0.78;
+  line-height: 0.9;
   overflow-wrap: anywhere;
 }
 
 .intro {
   max-width: 600px;
-  margin: 32px 0 18px;
+  margin: 28px 0 14px;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: clamp(0.9rem, 2vw, 1.1rem);
@@ -112,26 +116,34 @@
   min-width: 0;
   max-width: 680px;
   margin: 0;
-  padding-left: 1.2em;
+  padding: 0;
+  list-style: none;
 }
 
 .profileCopy li {
   color: var(--muted);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.9;
 }
 
-.profileCopy li + li {
-  margin-top: 8px;
+.profileCopy > li + li {
+  margin-top: 28px;
+  color: var(--subtle);
+  font-size: 0.875rem;
 }
 
 .profileCopy > li:first-child {
   color: var(--foreground);
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
 }
 
 .profileCopy ul {
-  margin-top: 4px;
+  margin-top: 12px;
   padding-left: 1.2em;
+}
+
+.profileCopy ul li::marker {
+  color: var(--accent);
 }
 
 .profileCopy ul li + li {
@@ -256,7 +268,7 @@
 
   .hero::after {
     top: 40px;
-    right: -18px;
+    right: 0;
     width: clamp(104px, 32vw, 150px);
     height: clamp(104px, 32vw, 150px);
     opacity: 0.7;
