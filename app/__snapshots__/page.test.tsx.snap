@@ -269,17 +269,6 @@ exports[`render <Home /> > snapshot 1`] = `
       <span>
         © 2025 Naoya Otsuka
       </span>
-      <a
-        href="/blog"
-      >
-        Read the blog
-        <span
-          aria-hidden="true"
-          class="linkArrow"
-        >
-          →
-        </span>
-      </a>
     </footer>
   </main>
 </div>

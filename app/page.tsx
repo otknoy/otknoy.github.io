@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import Header from '../components/Header'
 import styles from './page.module.css'
 
@@ -141,12 +139,6 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <span>{`© ${new Date().getFullYear()} Naoya Otsuka`}</span>
-        <Link href="/blog">
-          Read the blog
-          <span className="linkArrow" aria-hidden="true">
-            →
-          </span>
-        </Link>
       </footer>
     </main>
   )
