@@ -6,16 +6,13 @@ exports[`render <Home /> > snapshot 1`] = `
     class="pageContainer"
   >
     <header
-      class="_header_00c8fe"
+      class="_header_b336ab"
     >
       <a
-        class="_wordmark_00c8fe"
+        class="_brand_b336ab"
         href="/"
       >
-        NO
-        <span>
-          .
-        </span>
+        No.
       </a>
       <nav
         aria-label="メインナビゲーション"
