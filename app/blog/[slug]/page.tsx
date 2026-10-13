@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 
 import Markdown from '../../../components/Markdown'
 import Header from '../../../components/Header'
+import Footer from '../../../components/Footer'
 import { formatDate, getAllPosts, getPost } from '../../../lib/blogs'
 import styles from '../blog.module.css'
 
@@ -43,6 +44,7 @@ export default async function BlogPost({ params }: Props) {
           <Markdown source={post.content} />
         </div>
       </article>
+      <Footer />
     </main>
   )
 }

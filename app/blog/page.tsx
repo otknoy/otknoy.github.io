@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import { formatDate, getAllPosts } from '../../lib/blogs'
 import styles from './blog.module.css'
 
@@ -44,6 +45,7 @@ export default function Blog() {
       ) : (
         <p className={styles.empty}>記事はまだありません。</p>
       )}
+      <Footer />
     </main>
   )
 }
