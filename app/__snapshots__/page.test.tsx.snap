@@ -34,9 +34,6 @@ exports[`render <Home /> > snapshot 1`] = `
         Naoya
         <br />
         Otsuka
-        <span>
-          .
-        </span>
       </h1>
       <p
         class="_intro_00c8fe"

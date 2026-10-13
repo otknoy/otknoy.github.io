@@ -77,7 +77,7 @@ export default function Home() {
         <h1>
           Naoya
           <br />
-          Otsuka<span>.</span>
+          Otsuka
         </h1>
         <p className={styles.intro}>Web Engineer / Architect</p>
         <div className={styles.status}>
