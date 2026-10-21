@@ -6,7 +6,7 @@ date: 2026-10-21
 
 外出先から自宅のアプリケーションを利用し、`kubectl`でクラスタを操作するために、Tailscale Kubernetes Operator を導入しました。
 
-[Tailscale Kubernetes Operator][operator] を使うと、Service や Ingress の設定をもとに、クラスタ内のサービスを tailnet へ公開できます。
+[Tailscale Kubernetes Operator][operator] は、Service や Ingress の設定を監視し、tailnet からの通信を中継するプロキシ Pod を自動で作成・設定します。
 さらに API server proxy を有効にすれば、Tailscale の認証情報を使って`kubectl`からクラスタを操作できます。
 
 マニフェストは [home_server リポジトリ][repository]で管理しています。
@@ -18,6 +18,7 @@ date: 2026-10-21
 マニフェストは Git に保存し、Argo CD で同期しています。
 
 tailnet は、Tailscale に接続した端末やサービスで構成するプライベートなネットワークです。
+Operator 自身と、作成されたプロキシがそれぞれ端末として登録されます。
 用途ごとの接続経路は次のとおりです。
 
 ```text
@@ -35,7 +36,7 @@ Tailscale に接続した端末
 使用しているマニフェストでは、`OPERATOR_INITIAL_TAGS`と`PROXY_TAGS`に次のタグが指定されています。
 Operator の初回登録時と、プロキシの作成時にそれぞれ自動で付与されます。
 
-- `tag:k8s-operator`：Tailscale に端末として登録される Operator 自身に付けるタグ
+- `tag:k8s-operator`：Operator 自身に付けるタグ
 - `tag:k8s`：アプリケーションへの通信を転送するプロキシに付けるタグ
 
 公式の[インストールガイド][install]に沿って、アクセス制御ポリシーの`tagOwners`に次の設定を追加します。
@@ -76,8 +77,8 @@ Argo CD で同期した後、Tailscale 管理画面の Machines を開きます�
 ## 3. アプリケーションを tailnet へ公開する
 
 Web アプリケーションは、`ingressClassName: tailscale`を指定した Ingress で公開できます。
-ここでは、既存の`example-web` Service の80番ポートへ転送する例を使います。
-ここでは Service が`default` namespace にあるものとし、次の内容を`example-web-ingress.yaml`に保存します。
+`default` namespace にある`example-web` Service の80番ポートへ転送する例です。
+次の内容を`example-web-ingress.yaml`に保存します。
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -117,7 +118,8 @@ kubectl get ingress -n default example-web
 
 ### Envoy Gateway 経由で公開する
 
-共通の入口に Envoy Gateway も使っています。
+Ingress がアプリケーションの Service を直接公開するのに対し、こちらは Envoy Gateway の Service を公開します。
+複数のアプリケーションへの振り分けは、Envoy Gateway の HTTPRoute で設定します。
 Envoy Gateway が生成する Service に、次のアノテーションを付けています。
 
 ```yaml
@@ -128,8 +130,7 @@ annotations:
 
 この設定は、[EnvoyProxy の`envoyService.annotations`][gateway] に記載しています。
 `tailscale.com/expose`が Service の公開を有効にし、`tailscale.com/hostname`が tailnet 上の端末名を指定します。
-Operator が作成するプロキシは Envoy Gateway の Service へ通信を転送します。
-Envoy Gateway が HTTPRoute の設定に従って各サービスへ振り分けます。
+Operator が作成するプロキシが、Envoy Gateway の Service へ通信を転送します。
 
 この方法では、Operator による HTTPS の終端は行いません。
 この Gateway は80番ポートの HTTP リスナーを使います。
