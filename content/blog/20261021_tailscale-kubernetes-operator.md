@@ -236,6 +236,14 @@ kubectl auth can-i create deployments -n default
 Pod 一覧を取得でき、Deployment の作成権限の確認で`yes`が返れば、`default` namespace への接続と操作権限を確認できます。
 以降は、このコンテキストで tailnet 経由の`kubectl`操作ができます。
 
+## まとめ
+
+Tailscale Kubernetes Operator を使って、アプリケーションの公開から`kubectl`による操作まで、tailnet 経由で行えるようになりました。
+公開先を Kubernetes のマニフェストで管理できるので、ほかのクラスタ設定と同じように Git と Argo CD で扱えます。
+
+普段使っている Tailscale の接続先に、Kubernetes のアプリケーションと API server が加わる感覚です。
+外出先でも、ブラウザと`kubectl`でいつものように使えるのが便利です。
+
 [operator]: https://tailscale.com/docs/kubernetes-operator
 [install]: https://tailscale.com/docs/kubernetes-operator/install-operator
 [ingress]: https://tailscale.com/docs/kubernetes-operator/ingress
