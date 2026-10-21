@@ -249,7 +249,7 @@ Tailscale Kubernetes Operator を使って、アプリケーションの公開�
 [ingress]: https://tailscale.com/docs/kubernetes-operator/ingress
 [api-server]: https://tailscale.com/docs/kubernetes-operator/api-server-access
 [auth-rbac]: https://tailscale.com/docs/kubernetes-operator/api-server-access/auth-and-rbac
-[repository]: https://github.com/otknoy/home_server/tree/313f0975b909a9ddb5b2b94b5ee9a369b738bad9
-[kustomization]: https://github.com/otknoy/home_server/blob/313f0975b909a9ddb5b2b94b5ee9a369b738bad9/k8s/manifest/platform/tailscale/kustomization.yaml
-[gateway]: https://github.com/otknoy/home_server/blob/313f0975b909a9ddb5b2b94b5ee9a369b738bad9/k8s/manifest/platform/gateway/gateway.yaml
-[proxy-rbac]: https://github.com/otknoy/home_server/blob/313f0975b909a9ddb5b2b94b5ee9a369b738bad9/k8s/manifest/platform/tailscale/api-server-proxy-rbac.yaml
+[repository]: https://github.com/otknoy/home_server/tree/14dd9bd59836043564f82c0fe507b9bd693c1d46
+[kustomization]: https://github.com/otknoy/home_server/blob/14dd9bd59836043564f82c0fe507b9bd693c1d46/k8s/manifest/platform/tailscale/kustomization.yaml
+[gateway]: https://github.com/otknoy/home_server/blob/14dd9bd59836043564f82c0fe507b9bd693c1d46/k8s/manifest/platform/gateway/gateway.yaml
+[proxy-rbac]: https://github.com/otknoy/home_server/blob/14dd9bd59836043564f82c0fe507b9bd693c1d46/k8s/manifest/platform/tailscale/api-server-proxy-rbac.yaml
