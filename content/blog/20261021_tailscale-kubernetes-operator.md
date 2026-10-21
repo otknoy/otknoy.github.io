@@ -24,9 +24,11 @@ Operator 自身と、作成されたプロキシがそれぞれ端末として�
 ```text
 Tailscale に接続した端末
   ├─ Tailscale Ingress → アプリケーションの Service
-  ├─ Tailscale プロキシ → Envoy Gateway → HTTPRoute → Service
+  ├─ Tailscale プロキシ → Envoy Gateway → Service
   └─ API server proxy → Kubernetes API server
 ```
+
+Envoy Gateway は、HTTPRoute に定義したルールに従って Service へ転送します。
 
 ## 1. タグと Operator の認証情報
 
