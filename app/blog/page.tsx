@@ -19,7 +19,7 @@ export default function Blog() {
       <Header activeBlog />
       <section className={styles.title}>
         <h1>Blog.</h1>
-        <p>技術メモ。</p>
+        <p>技術メモ。その他いろいろ。</p>
       </section>
 
       {posts.length > 0 ? (
