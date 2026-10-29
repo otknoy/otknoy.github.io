@@ -44,7 +44,7 @@
     "textlint-rule-preset-ja-spacing": "^3.0.3",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2",
     "textlint-rule-preset-japanese": "^10.0.4",
-    "typescript": "^6.0.0",
+    "typescript": "^7.0.0",
     "vitest": "^5.0.0"
   },
   "dependencies": {
